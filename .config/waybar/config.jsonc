@@ -1,0 +1,45 @@
+{
+    "include": [
+        "~/.config/waybar-niri-Win11Like/modules.jsonc",
+        "~/.config/waybar/modules.jsonc"
+    ],
+    "layer":"top",
+    "position": "top",
+    "height": 18,
+    "fixed-center": true,
+    "reload_style_on_change": true,
+    "modules-left": [
+        "custom/applauncher",
+        "clock",
+        "niri/workspaces",
+        "custom/updates",
+        "custom/cava",
+        "mpris",
+ //       "custom/screenshot",
+        "custom/wfrec",
+        "custom/colorpicker",
+        "niri/window",
+    ],
+    //"modules-center": [
+        //"custom/separator#2",
+    //    "cffi/niri-taskbar",
+    //],
+    "modules-right": [
+        "tray",
+        "group/ddcutil",
+	//"group/sysstats",
+        "group/audio",
+//        "bluetooth",
+        "network",
+        "idle_inhibitor",
+        "power-profiles-daemon",
+	//"cpu",
+//	"memory",
+//	"disk",
+	"cpu",
+	"memory",
+	"disk",
+        "battery",
+        "group/powermenu"
+    ],
+}

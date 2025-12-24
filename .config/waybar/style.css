@@ -1,0 +1,120 @@
+@import "colors.css";
+
+* {
+    border: none;
+    border-radius: 6px;
+    font-family: "JetBrainsMono NFP", "JetBrains Maple Mono";
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: @surface;
+    color: @on_surface;
+}
+
+tooltip {
+    background: @surface_container_high;
+    border: 1px solid @outline;
+    opacity: 1;
+}
+
+tooltip label {
+    color: @on_surface;
+    font-size: 0.9em;
+}
+
+#workspaces,
+#mpris,
+#custom-cava,
+#custom-screenshot,
+#custom-wfrec,
+#custom-colorpicker,
+#window,
+#custom-applauncher,
+#custom-updates,
+#tray,
+#custom-ddcutil-day,
+#custom-ddcutil-night,
+#custom-ddcutil-sleep,
+#custom-separator.1,
+#backlight,
+#backlight-slider,
+#pulseaudio,
+#pulseaudio-slider,
+#custom-cpu,
+#custom-memory,
+#custom-disk,
+#network,
+#bluetooth,
+#idle_inhibitor,
+#battery,
+#power-profiles-daemon,
+#clock,
+#custom-wlogout,
+#custom-reboot,
+#custom-lockscreen,
+#custom-logout {
+    background-color: @surface_container_high;
+    color: @secondary;
+    padding: 0px 8px;
+    margin: 4px;
+}
+
+#workspaces button {
+    padding: 0px 6px;
+    margin: 0px 2px;
+    color: @tertiary_container;
+}
+
+#workspaces button.active {
+    color: @tertiary;
+    background: @surface_bright;
+}
+
+#workspaces button:hover {
+    background: @surface_bright;
+}
+
+#custom-applauncher {
+    background-color: @primary;
+    color: @on_primary;
+}
+
+#custom-wfrec.recording,
+#battery.critical:not(.charging),
+#power-profiles-daemon.performance {
+    color: @error;
+}
+
+#bluetooth.disabled,
+#idle_inhibitor.activated {
+    color: @tertiary;
+}
+
+#pulseaudio-slider,
+#backlight-slider {
+    padding: 0px 6px;
+}
+
+#pulseaudio-slider trough,
+#backlight-slider trough {
+    min-height: 8px;
+    min-width: 60px;
+    border-radius: 6px;
+    background-color: @surface;
+}
+
+#pulseaudio-slider highlight,
+#backlight-slider highlight {
+    border-radius: 6px;
+    background-color: @secondary;
+}
+
+#pulseaudio-slider slider,
+#backlight-slider slider {
+    opacity: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    }
