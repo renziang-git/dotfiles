@@ -11,10 +11,20 @@
     "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂂", "󰁹"],
     "tooltip-format": " {capacity}% | -{power} | Time:{timeTo}",
   },
-   // CPU 使用率
+"keyboard-state": {
+    "numlock": false, 
+    "capslock": true,
+    "format": "{icon}", // 去掉多余的 {name} 和空格，这样关闭时才不会留空位
+    "device-path": "/dev/input/by-path/platform-i8042-serio-0-event-kbd",
+    "format-icons": {
+        "locked": "LOCKED", // 锁定状态显示的文字和图标
+        "unlocked": ""        // 未锁定状态设为空字符串
+    }
+},
+// CPU 使用率
   "cpu": {
     "interval": 2,
-    "format": " {usage}% ",
+    "format": "{usage}% ",
     "tooltip": true
   },
     // 内存
@@ -27,7 +37,7 @@
   "disk": {
     "interval": 30,
     "path": "/",
-    "format": " {used}/{total}",
+    "format": "{used}/{total}",
     "tooltip": true
   },
   //时钟

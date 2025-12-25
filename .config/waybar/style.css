@@ -49,6 +49,7 @@ tooltip label {
 #bluetooth,
 #idle_inhibitor,
 #battery,
+#keyboard-state,
 #power-profiles-daemon,
 #clock,
 #custom-wlogout,
@@ -118,3 +119,26 @@ tooltip label {
     border: none;
     box-shadow: none;
     }
+/* 键盘状态基础设置 */
+#keyboard-state {
+    padding: 0;
+    margin: 0;
+    background-color: transparent; /* 默认隐藏背景 */
+}
+
+/* 当大写锁定时显示样式 */
+#keyboard-state label.locked {
+    background-color: @primary;   /* 锁定时的背景色 */
+    color: @on_primary;           /* 锁定时的文字颜色 */
+    padding: 0px 8px;             /* 恢复内边距 */
+    margin: 4px;                  /* 恢复外边距 */
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+/* 当未锁定时强制隐藏 */
+#keyboard-state label.unlocked {
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+}

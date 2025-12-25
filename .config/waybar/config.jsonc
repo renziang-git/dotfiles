@@ -12,6 +12,7 @@
         "custom/applauncher",
         "clock",
         "niri/workspaces",
+	"keyboard-state",
         "custom/updates",
         "custom/cava",
         "mpris",
