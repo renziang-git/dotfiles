@@ -107,7 +107,7 @@ output "LVDS-1" {
     // so to put another output directly adjacent to it on the right, set its x to 1920.
     // If the position is unset or results in an overlap, the output is instead placed
     // automatically.
-    position x=1280 y=0
+    position x=0 y=0
 }
 
 // Settings that influence how windows are positioned and sized.
@@ -373,11 +373,13 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
     // 我的快捷键
     Mod+E {spawn "thunar";}
-    Mod+Shift+s {spawn "flameshot" "gui";}
+    //Mod+Shift+s {spawn "flameshot" "gui";}
     Mod+F2 {spawn-sh "pkill waybar || true && waybar";}
     Mod+Shift+W {spawn-sh "/home/r.za/bin/fuzzel-chrome-app.sh";}
-    Mod+Shift+Q {spawn-sh "/home/r.za/bin/screenshot-fuzzel.sh";}
-    
+    Mod+Shift+S {spawn-sh "/home/r.za/bin/screenshot-fuzzel.sh";}
+    Mod+Shift+T {  spawn-sh "fuzzel --dmenu | xargs -r ~/.local/bin/fuzzel-trans | fuzzel --dmenu";}
+
+
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
