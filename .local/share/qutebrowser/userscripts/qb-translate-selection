@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# ================= 基本配置 =================
+
+# 翻译目标语言
+TARGET_LANG="zh"
+
+# 翻译引擎（auto / google / bing / deepl）
+ENGINE="auto"
+
+# 代理（从 config.py 传入）
+PROXY_CMD=""
+if [ -n "$QB_PROXY" ]; then
+    PROXY_CMD="-x $QB_PROXY"
+fi
+
+# ================= 取选区 =================
+
+TEXT="$QUTE_SELECTED_TEXT"
+
+# 没有选区，直接退出（这是“单独划词翻译”的关键）
+if [ -z "$TEXT" ]; then
+    exit 0
+fi
+
+# ================= 执行翻译 =================
+
+RESULT=$(trans $PROXY_CMD -e "$ENGINE" -b -no-ansi :"$TARGET_LANG" -- "$TEXT")
+
+# 翻译失败直接退出
+[ -z "$RESULT" ] && exit 0
+
+# ================= 通知 =================
+
+notify-send \
+  -t 12000 \
+  "划词翻译" \
+  "$TEXT\n\n$RESULT"
