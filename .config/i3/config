@@ -36,7 +36,7 @@ exec --no-startup-id nm-applet
 
 
 #exec --no-startup-id polybar --config
-exec --no-startup-id ~/.config/polybar/launch.sh
+#exec --no-startup-id ~/.config/polybar/launch.sh
 #启动picom渲染i3
 #exec --no-startup-id picom --config ~/.config/picom/picom.conf
 exec --no-startup-id fcitx5 -d
@@ -70,8 +70,8 @@ bindsym $mod+Shift+w exec --no-startup-id ~/bin/rofi-chrome-app.sh
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui 
 
 # 安装brightnessctl 控制亮度
-bindsym XF86MonBrightnessUp exec brightnessctl s +1%
-bindsym XF86MonBrightnessDown exec brightnessctl s 1%-
+bindsym XF86MonBrightnessUp exec brightnessctl s +5%
+bindsym XF86MonBrightnessDown exec brightnessctl s 5%-
 
 
 # Use pactl to adjust volume in PulseAudio.
@@ -242,4 +242,11 @@ bindsym $mod+r mode "resize"
 #}
 
 # 取消窗口标题栏
-new_window pixel 1
+#new_window pixel 1
+
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+        status_command i3status
+}

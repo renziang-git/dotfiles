@@ -1,4 +1,18 @@
-
+#关闭download open_dispatcher
+c.downloads.open_dispatcher = None
+#外部编辑器
+c.editor.command = [
+    'kitty',
+    '--class', 'QuteEditor',
+    'vim',
+    '{file}'
+]
+#c.content.javascript.log = {
+#    'error': False,
+#    'warning': False,
+#    'info': False,
+#    'debug': False,
+#}
 # ==============================================================================
 # 基础
 # ==============================================================================
@@ -15,13 +29,14 @@ config.load_autoconfig(False)
 # - 让输入框失去焦点
 # - 切回英文输入法（fcitx5）
 # ==============================================================================
-
 cmd_escape_fcitx = (
     "mode-leave ;; "
     "jseval -q document.activeElement.blur() ;; "
     "spawn --detach sh -c 'command -v fcitx5-remote >/dev/null && fcitx5-remote -c'"
 )
 
+#v2raya
+config.bind(',k', 'spawn --userscript v2raya_fix')
 
 # ==============================================================================
 # Userscript / GreasyFork 脚本管理（声明式）
@@ -81,3 +96,11 @@ config.bind("<Alt-d>", "spawn --userscript qb-video-control up")
 config.bind("<Alt-z>", "spawn --userscript qb-video-control back")
 config.bind("<Alt-x>", "spawn --userscript qb-video-control forward")
 config.bind("<Alt-r>", "spawn --userscript qb-video-control 2.5")
+
+# 选中 tab（奇 / 偶）
+c.colors.tabs.selected.odd.bg = '#eeeeee'
+c.colors.tabs.selected.odd.fg = '#000000'
+c.colors.tabs.selected.even.bg = '#eeeeee'
+c.colors.tabs.selected.even.fg = '#000000'
+
+

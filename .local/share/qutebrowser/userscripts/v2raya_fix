@@ -1,0 +1,6 @@
+#!/bin/sh
+# qutebrowser userscript: fix v2rayA keyboard hints
+
+js='(function(){const el=document.querySelector("#statusTag");if(el){el.setAttribute("tabindex","0");el.setAttribute("role","button");}document.querySelectorAll("label.b-checkbox").forEach(function(e){e.setAttribute("tabindex","0");e.setAttribute("role","checkbox");});})();'
+
+printf 'jseval %s\n' "$js" >> "$QUTE_FIFO"
