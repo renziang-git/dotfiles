@@ -278,7 +278,7 @@ spawn-at-startup "fcitx5" "-d"
 spawn-at-startup "udiskie" "-t"
 spawn-at-startup "blueman-applet"
 spawn-at-startup "anki"
-spawn-at-startup "kitty" "vim" "/home/r.za/obsidian/技术学习/todo.md"
+spawn-at-startup "kitty" "nvim" "/home/r.za/obsidian/技术学习/todo.md"
 spawn-at-startup "swaybg" "-i" "/home/r.za/Pictures/wallpaper/wallpaper.png" "-m" "fill"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
