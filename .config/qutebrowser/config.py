@@ -71,6 +71,11 @@ config.bind(f"{SCRIPT_PREFIX}u", "spawn --userscript qb-update-gm")
 config.bind(f"{SCRIPT_PREFIX}t", "spawn --userscript qb-translate")
 config.bind(f"{SCRIPT_PREFIX}c", "spawn --userscript qb-translate-selection")
 
+#yt-dlp 下载控制，bv-video ba-audio bv+ba 合并
+config.bind(f"{SCRIPT_PREFIX}b", 'spawn yt-dlp -f "bv*+ba/b" {url}')
+config.bind(f"{SCRIPT_PREFIX}v", 'spawn yt-dlp -f bv {url}')
+config.bind(f"{SCRIPT_PREFIX}a", 'spawn yt-dlp -f ba {url}')
+
 
 # 进入视频控制模式
 config.bind("gv", "mode-enter passthrough")
