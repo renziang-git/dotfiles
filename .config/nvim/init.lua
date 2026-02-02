@@ -6,3 +6,5 @@ local notifier = require("utils.notify").detect()
 if notifier ~= "none" then
   vim.notify("Hello from nvim")
 end
+
+vim.opt.wrap = true
