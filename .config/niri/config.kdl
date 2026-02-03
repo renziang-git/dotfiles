@@ -380,8 +380,8 @@ binds {
     Mod+F2 {spawn-sh "pkill waybar || true && waybar";}
     Mod+Shift+W {spawn-sh "/home/r.za/bin/fuzzel-chrome-app.sh";}
     Mod+Shift+S {spawn-sh "/home/r.za/bin/screenshot-fuzzel.sh";}
-    Mod+Shift+T {  spawn-sh "fuzzel --dmenu | xargs -r ~/.local/bin/fuzzel-trans | fuzzel --dmenu";}
-
+    Mod+Shift+T {spawn-sh "fuzzel --dmenu | xargs -r ~/.local/bin/fuzzel-trans | fuzzel --dmenu";}
+    XF86Launch1 {spawn-sh "bash ~/dotfiles/bin/sioyek-translate.sh";}
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
