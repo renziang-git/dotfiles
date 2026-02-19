@@ -30,9 +30,9 @@ if [ -f "$PID_FILE" ]; then
   kill "$old_pid" 2>/dev/null
 fi
 
-# ---------- 5) 立刻打开 kitty，在里面做翻译 ----------
-kitty \
-  --class "sioyek-translate" \
+# ---------- 5) 立刻打开 foot，在里面做翻译 ----------
+foot \
+  --app-id "sioyek-translate" \
   --title "Translation" \
   sh -c "
 echo '[ Original ]'
@@ -57,4 +57,12 @@ echo
 read -n 1
 " &
 
-echo $! >"$PID_FILE"
+PID=$!
+echo "$PID" >"$PID_FILE"
+
+# 关键新增部分 ↓↓↓
+sleep 0.15
+
+#转移焦点到translate窗口
+niri msg focus-window --app-id sioyek-translate
+niri-sidebar toggle-window

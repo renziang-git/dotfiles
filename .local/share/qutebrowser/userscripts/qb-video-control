@@ -14,29 +14,28 @@ ACTION="$1"
 [ -z "$QUTE_FIFO" ] && exit 0
 
 case "$ACTION" in
-  2.5)
-    #快速调整到2.5
-    echo "jseval -q document.querySelectorAll('video').forEach(v => v.playbackRate = 2.5)" > "$QUTE_FIFO"
-    ;;
-  up)
-    # 加速 +0.1，最大 16x
-    echo "jseval -q document.querySelectorAll('video').forEach(v => v.playbackRate = Math.min(16, v.playbackRate + 0.1))" > "$QUTE_FIFO"
-    ;;
-  down)
-    # 减速 -0.1，最小 0.1x
-    echo "jseval -q document.querySelectorAll('video').forEach(v => v.playbackRate = Math.max(0.1, v.playbackRate - 0.1))" > "$QUTE_FIFO"
-    ;;
-  reset)
-    # 回到 1x
-    echo "jseval -q document.querySelectorAll('video').forEach(v => v.playbackRate = 1.0)" > "$QUTE_FIFO"
-    ;;
-  forward)
-    # 前进 1 秒
-    echo "jseval -q document.querySelectorAll('video').forEach(v => v.currentTime += 1)" > "$QUTE_FIFO"
-    ;;
-  back)
-    # 后退 3 秒
-    echo "jseval -q document.querySelectorAll('video').forEach(v => v.currentTime -= 3)" > "$QUTE_FIFO"
-    ;;
+2.5)
+  #快速调整到2.5
+  echo "jseval -q document.querySelectorAll('video').forEach(v => v.playbackRate = 2.5)" >"$QUTE_FIFO"
+  ;;
+up)
+  # 加速 +0.1，最大 16x
+  echo "jseval -q document.querySelectorAll('video').forEach(v => v.playbackRate = Math.min(16, v.playbackRate + 0.1))" >"$QUTE_FIFO"
+  ;;
+down)
+  # 减速 -0.1，最小 0.1x
+  echo "jseval -q document.querySelectorAll('video').forEach(v => v.playbackRate = Math.max(0.1, v.playbackRate - 0.1))" >"$QUTE_FIFO"
+  ;;
+reset)
+  # 回到 1x
+  echo "jseval -q document.querySelectorAll('video').forEach(v => v.playbackRate = 1.0)" >"$QUTE_FIFO"
+  ;;
+forward)
+  # 前进 1 秒
+  echo "jseval -q document.querySelectorAll('video').forEach(v => v.currentTime += 1)" >"$QUTE_FIFO"
+  ;;
+back)
+  # 后退 3 秒
+  echo "jseval -q document.querySelectorAll('video').forEach(v => v.currentTime -= 3)" >"$QUTE_FIFO"
+  ;;
 esac
-
