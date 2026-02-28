@@ -16,7 +16,7 @@ ACTION="$1"
 case "$ACTION" in
 2.5)
   #快速调整到2.5
-  echo "jseval -q document.querySelectorAll('video').forEach(v => v.playbackRate = 2.5)" >"$QUTE_FIFO"
+  echo "jseval -q document.querySelectorAll('video').forEach(v => v.playbackRate = 2)" >"$QUTE_FIFO"
   ;;
 up)
   # 加速 +0.1，最大 16x

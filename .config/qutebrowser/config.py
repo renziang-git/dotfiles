@@ -1,12 +1,17 @@
+
+config.load_autoconfig()
 #关闭download open_dispatcher
 c.downloads.open_dispatcher = None
+
+
+config.source('colors.py')
 #外部编辑器
-c.editor.command = [
-    'kitty',
-    '--class', 'QuteEditor',
-    'vim',
-    '{file}'
-]
+# c.editor.command = [
+#     'kitty',
+#     '--class', 'QuteEditor',
+#     'vim',
+#     '{file}'
+# ]
 #c.content.javascript.log = {
 #    'error': False,
 #    'warning': False,
@@ -53,11 +58,13 @@ enabled_scripts = [
 # 暂时禁用的脚本（不删除文件）
 disabled_scripts = [
 ]
-
+#-----------------------------------------------------------------------------
+#启用chrome扩展
+#config.set("content.extensions", True)
+#-----------------------------------------------------------------------------
 # 通过环境变量传给 userscript
 os.environ["QB_GM_LIST"] = " ".join(enabled_scripts)
 os.environ["QB_GM_DISABLED_LIST"] = " ".join(disabled_scripts)
-
 
 #快捷键
 SCRIPT_PREFIX = "gs"
@@ -103,9 +110,7 @@ config.bind("<Alt-x>", "spawn --userscript qb-video-control forward")
 config.bind("<Alt-r>", "spawn --userscript qb-video-control 2.5")
 
 # 选中 tab（奇 / 偶）
-c.colors.tabs.selected.odd.bg = '#eeeeee'
-c.colors.tabs.selected.odd.fg = '#000000'
-c.colors.tabs.selected.even.bg = '#eeeeee'
-c.colors.tabs.selected.even.fg = '#000000'
-
-
+# c.colors.tabs.selected.odd.bg = '#eeeeee'
+# c.colors.tabs.selected.odd.fg = '#000000'
+# c.colors.tabs.selected.even.bg = '#eeeeee'
+# c.colors.tabs.selected.even.fg = '#000000'
