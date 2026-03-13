@@ -53,7 +53,7 @@ exec --no-startup-id flameshot
 
 exec --no-startup-id anki
 
-exec --no-startup-id kitty vim /home/r.za/obsidian/技术学习/todo.md 
+exec --no-startup-id kitty nvim /home/r.za/obsidian/技术学习/todo.md 
 
 # 设置壁纸
 exec_always --no-startup-id feh --bg-scale ~/Pictures/wallpaper/wallpaper.png

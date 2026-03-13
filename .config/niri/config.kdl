@@ -336,7 +336,14 @@ window-rule {
 //     // default-column-width { proportion 0.25; }
 //     open-floating true;
 // }
-
+window-rule {
+    // 匹配腳本中設定的 WindowTitle
+    match title="NiriTranslator"
+    open-floating true
+    default-column-width { proportion 0.3; }
+    // 讓它不要搶走焦點，這樣你還能繼續閱讀
+    focus-ring { off; }
+}
 window-rule {
     match is-floating=true
     min-width 100
@@ -422,7 +429,7 @@ binds {
     //Mod+Shift+s {spawn "flameshot" "gui";}
     Mod+F2 {spawn-sh "pkill waybar || true && waybar";}
     Mod+Shift+W {spawn-sh "/home/r.za/bin/fuzzel-chrome-app.sh";}
-    //Mod+Shift+S {spawn-sh "/home/r.za/bin/screenshot-fuzzel.sh";}
+    Mod+Shift+X {spawn-sh "/home/r.za/bin/screenshot-fuzzel.sh";}
     Mod+Shift+T {spawn-sh "fuzzel --dmenu | xargs -r ~/.local/bin/fuzzel-trans | fuzzel --dmenu";}
     XF86Launch1 {spawn-sh "bash ~/dotfiles/bin/sioyek-translate.sh";}
     Mod+T {spawn-sh "python ~/dotfiles/bin/tmp-type.py";}

@@ -1,9 +1,5 @@
-
-config.load_autoconfig()
 #关闭download open_dispatcher
 c.downloads.open_dispatcher = None
-
-
 config.source('colors.py')
 #外部编辑器
 # c.editor.command = [
@@ -114,3 +110,25 @@ config.bind("<Alt-r>", "spawn --userscript qb-video-control 2.5")
 # c.colors.tabs.selected.odd.fg = '#000000'
 # c.colors.tabs.selected.even.bg = '#eeeeee'
 # c.colors.tabs.selected.even.fg = '#000000'
+#
+# 启用或禁用 Chromium 的低端设备模式，以减小内存占用。
+# 可选值："always"（总是启用）、"auto"（根据可用内存自动选择）、"never"（从不启用）。
+c.qt.chromium.low_end_device_mode = 'auto'
+
+# 强制软件渲染设置。有助于解决某些图形驱动的兼容性问题。
+# 可选值："software-opengl"（LibGL 使用软件实现）、"qt-quick"（Qt Quick 使用软件渲染）、
+# "chromium"（禁用 GPU，使用 Skia 软件渲染）、"none"（不强制软件渲染）。
+c.qt.force_software_rendering = 'none'
+
+# 处理 2D canvas 加速相关问题。禁用加速的 2D canvas 可以避免部分显卡的图形故障。
+# 可选值："always"、"auto"、"never"。
+c.qt.workarounds.disable_accelerated_2d_canvas = 'auto'
+
+# 启用网页的平滑滚动。设置为 True 时，将启用平滑滚动动画（不影响 :scroll-px 命令）。
+c.scrolling.smooth = True
+
+# 会话惰性恢复：仅在标签获得焦点时加载恢复的页面，可减少启动时资源占用。
+c.session.lazy_restore = False
+
+# 窗口透明背景。启用后，可以拥有透明的标签栏/状态栏，但可能降低性能。
+c.window.transparent = False
