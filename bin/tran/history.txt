@@ -1,0 +1,189 @@
+[03-26 15:35] Or: . decode | Tr: 。解码
+[03-26 10:01] Or: save the day. | Tr: 拯救世界。
+[03-26 10:00] Or: Here is where symbolic links save the day. | Tr: 这就是符号链接拯救世界的地方。
+[03-23 12:22] Or: already | Tr: 已经
+[03-21 18:31] Or: alias | Tr: 别名
+[03-21 18:29] Or: alert | Tr: 警报
+[03-20 18:30] Or: new setup | Tr: 新设置
+[03-20 17:42] Or: While he was exploring the config, he found a search feature. He told his friend that this tool was much better than his old one. If Alex practices every day, he will become a professional. He knows that learning a new setup takes time, but he feels very happy with his progress. | Tr: 当他探索配置时，他发现了一个搜索功能。他告诉他的朋友，这个工具比他以前的工具好多了。如果亚历克斯每天练习，他就会成为一名职业选手。他知道学习新的设置需要时间，但他对自己的进步感到非常高兴。
+[03-20 17:40] Or: He opened his computer and looked at the dashboard. He realized that he could change the buffer while he was writing his code. Alex thought that the colorscheme was very beautiful, but he wanted to find a keymap that could save his work quickly. | Tr: 他打开电脑，看着仪表板。他意识到他可以在编写代码时更改缓冲区。 Alex 认为配色方案非常漂亮，但他想找到一个可以快速保存他的工作的键盘映射。
+[03-20 17:10] Or: ======[ ATTENTION ]==================================================
+  When selecting a name for your character, keep in mind that the
+  administration will remove or rename characters that have been
+  created with a silly, inappropriate or offensive names. | Tr: ======[注意]==================================================== 当为您的角色选择名称时，请记住，管理人员将删除或重命名使用愚蠢、不恰当或冒犯性名称创建的角色。
+[03-20 17:09] Or: The game is owned by B.A.T. ry, a self-funded
+organization. 
+  1 - enter the game                    s - game status
+  2 - visit the game                    w - who is playing at
+the moment
+  3 - create a new character            q - quit
+renoan enter your choice or name: 
++---- - - - -                                                          +
+|  Forgot your password? Retrieve it from http://www.bat.org/
+   BatMUD runs on 2x Octa-core Xeon 6334 w/ 256GB mem (help hardware)  |
++       
+What is your name: renoan
+No such player. Please check your typing!
+  1 - enter the game                    s - game status
+  2 - visit the game                    w - who is playing at the moment
+  3 - create a new character            q - quit | Tr: 该游戏由自筹资金组织 BAT ry 所有。 1 - 进入游戏 s - 游戏状态 2 - 访问游戏 w - 目前正在玩的人 3 - 创建新角色 q - 退出 renoan 输入您的选择或名称： +---- - - - - + |忘记密码了吗？从 http://www.bat.org/ 检索 BatMUD 在 2x 八核 Xeon 6334 w/ 256GB 内存（帮助硬件）上运行 | + 你叫什么名字： renoan 没有这样的玩家。请检查您的打字！ 1 - 进入游戏 s - 游戏状态 2 - 访问游戏 w - 目前正在玩的人 3 - 创建新角色 q - 退出
+[03-20 17:04] Or: [Newbie]: DjVoltron gives you a REALLY warm welcome! | Tr: [新手]：DjVoltron 非常热烈地欢迎您！
+[03-20 17:02] Or: [Newbie]: DjVoltron gives you a REALLY warm welcome! | Tr: [新手]：DjVoltron 非常热烈地欢迎您！
+[03-20 17:02] Or: [ Press return to continue ]
+You feel your dagger skill increase by 2.
+NOTE: Paging is turned off by default so long screens will be sent all at once
+and anything that scrolls off can be seen with page up/page down or the scroll
+bar in most MUD clients. If you would prefer that Aardwolf sends information
+one screen at a time, use 'pagesize [lines]' once you are in the game. Pagesize
+30 is a good start point for most players.
+Outside the Aylorian Academy (G)
+  Standing before the main entrance of the Aylorian Academy, you can't help but
+notice the sheer scale of the structure. Many famous adventurers have passed 
+through these gates before you and many will follow. The mark you will leave 
+on this realm is to be determined by your actions, by fate, by skill and by 
+chance. 
+Type 'North' to begin your journey...
+[ Exits: north south down ]
+There are 154 players on, the most on this reboot was 195.
+There are 151 players using compression. | Tr: [按回车继续]你感觉你的匕首技能增加了2。注意：默认情况下分页是关闭的，因此长屏幕将被一次性发送，并且在大多数MUD客户端中可以通过向上翻页/向下翻页或滚动条看到滚动的任何内容。如果您希望 Aardwolf 一次一屏发送信息，请在进入游戏后使用“pagesize [lines]”。对于大多数玩家来说，Pagesize 30 是一个很好的起点。艾洛里安学院外 (G) 站在艾洛里安学院的正门前，你不禁会注意到其建筑的庞大规模。许多著名的冒险家在您之前已经穿过这些大门，并且许多人也会跟随。你将在这个领域留下的印记是由你的行动、命运、技能和偶然决定的。输入“North”开始你的旅程... [退出：北南向下] 有 154 名玩家，本次重启最多为 195 名。有 151 名玩家使用压缩。
+[03-20 17:01] Or: -----------------------------------------------------------------------------
+     Congratulations Renoan, you have now completed character creation.
+ You are about to enter the Aylorian academy where you will learn how to play
+ Aardwolf. Even if you are an experienced Aardwolf player, it is worth your 
+ while to complete the academy as the trainers there will reward you with
+ various amounts of gold, equipment, experience and quest points. 
+ You can exit the academy at any time and return to your lessons later, you
+ do not have to complete them all at once.
+ If you are a visually impaired player, we have special helpfiles and maps that
+ you may find useful. Read 'help vi' once you are in the game for more details. 
+                Enjoy your adventures, and welcome to Aardwolf!
+-----------------------------------------------------------------------------
+[ Press return to continue ] | Tr: ------------------------------------------------------------------------------------------ 恭喜 Renoan，您现在已经完成了角色创建。您即将进入艾洛瑞安学院，在那里您将学习如何玩土狼。即使您是一位经验丰富的土狼玩家，也值得您花时间完成学院，因为那里的训练师会奖励您各种数量的金币、​​装备、经验和任务点。您可以随时退出学院并稍后返回课程，您不必一次完成所有课程。如果您是视障玩家，我们有特殊的帮助文件和地图，您可能会觉得有用。进入游戏后请阅读“帮助 vi”以获取更多详细信息。享受您的冒险，欢迎来到土狼！ ---------------------------------------------------------------------------------------- 【按回车键继续】
+[03-20 17:00] Or: One last question - this will help the game customize some of your options
+based on your experience level with Aardwolf and with MUDs in general. Please 
+choose the option that most closely represents your character:
+               1.) Little or no experience with MUDs.
+               2.) Experienced MUD player but new to Aardwolf.
+               3.) Experienced Aardwolf player. | Tr: 最后一个问题 - 这将有助于游戏根据您对 Aardwolf 和 MUD 的经验水平定制一些选项。请选择最能代表您的角色的选项： 1.) 很少或没有 MUD 经验。 2.) 经验丰富的MUD玩家，但对Aardwolf新手。 3.) 经验丰富的土狼玩家。
+[03-20 17:00] Or: NOTE: Entering an email address is completely optional - please don't enter a
+fake one. Just press return to continue without an email address.
+Your email is used only to verify ownership of your character if you lose
+your password, to gain access to the Aardwolf idea tracker and (very rarely)
+to notify you of important game information. Your email address is flagged as
+private and cannot be seen by other players. | Tr: 注意：输入电子邮件地址完全是可选的 - 请不要输入虚假地址。只需按回车即可继续，无需电子邮件地址。您的电子邮件仅用于在您丢失密码时验证您的角色所有权、访问 Aardwolf 创意跟踪器以及（很少）通知您重要的游戏信息。您的电子邮件地址被标记为私人地址，其他玩家无法看到。
+[03-20 17:00] Or: Male/Female/Androgyne] | Tr: 男性/女性/雌雄同体]
+[03-20 16:59] Or: Your character's gender has no direct impact on gameplay, but some quests may
+interact with you differently based on gender and, of course, other players
+will too. Androgyne is our equivalent of neutral/none, see 'HELP ANDROGYNE'
+for more information on that gender. | Tr: 你的角色的性别对游戏玩法没有直接影响，但有些任务可能会根据性别与你进行不同的互动，当然，其他玩家也会如此。雌雄同体相当于中性/无，请参阅“帮助雌雄同体”以获取有关该性别的更多信息。
+[03-20 16:58] Or: Suggested Races for Mage:
+Eldar    : Mysterious ancient race, masters of magic and lore. 
+           Experts at mana preservation to cast for longer.  
+Elf      : Mentally and physically agile race enamoured with magic.
+           Very fast mana regen and some bonus to magic damage.
+Dark Elf : Outcast brothers of the elves, now living underground.
+           Bonus to magic damage and enhanced magical resistance.
+Wraith   : Weaker hits and stronger magic combined with good tanking
+           abilities and enhanced shadow damage.                   
+Diva     : Natural healers with mana bonus and regeneration. The highest 
+           heal spell bonus of all races and enhanced spell attacks.
+Sprite   : Small spirit type race. Small bonus to magic attacks with
+           faster overall regen and the ability to consume corpses for 
+           mana.
+Good all-round caster and fighter combinations:
+Centaur  : Slight bonus to all attack types. Also make good Rangers and
+           Paladins. 
+Troll    : More intelligent than their Ogre and Giant cousins, equally
+           comfortable casting spells.
+Vampire  : Undead creatures of the night. Good fighters with a small
+           bonus to magic.
+Other races available: 
+           Dwarf, Giant, Gargoyle, Giant, Halfling, 
+           Human, Naga, Ogre, Triton, Wolfen
+   More details on each race are available by typing 'help <racename>' | Tr: 法师的建议种族：灵族：神秘的古代种族，魔法和知识的大师。法力保存专家可以延长施法时间。精灵：精神和身体敏捷，迷恋魔法的种族。法力恢复速度非常快，并且魔法伤害有一定的加成。黑暗精灵：被遗弃的精灵兄弟，现在生活在地下。魔法伤害加成并增强魔法抗性。幽灵：较弱的命中和较强的魔法，结合良好的坦克能力和增强的暗影伤害。 Diva：具有法力加成和再生能力的自然治疗师。所有种族中最高的治疗法术加值和增强的法术攻击。精灵：小精灵类种族。魔法攻击的小奖励具有更快的整体恢复速度和消耗尸体以获得法力的能力。良好的全能施法者和战斗机组合：半人马：对所有攻击类型都有轻微的奖励。也可以成为优秀的游骑兵和圣骑士。巨魔：比他们的食人魔和巨人表亲更聪明，同样可以轻松施展法术。吸血鬼：夜间的不死生物。优秀的战士，对魔法有少量加成。其他可用种族：矮人、巨人、石像鬼、巨人、半身人、人类、娜迦、食人魔、海卫一、沃尔芬 有关每个种族的更多详细信息，请输入“帮助”<racename> &#39;
+[03-20 16:57] Or: MAGE SUBCLASSES:
+  Elementalist: Masters of the elements, members of this subclass enjoy
+  enhanced control over earth-, wind-, fire-, and water-related abilities,
+  whether defensive or offensive in nature.
+  Enchanter: Experts in truly understanding the nature of all items in the
+  realm, Enchanters are able to magically alter and enhance many things.
+  Highly-trained enchanters have also been known to enchant themselves!
+  Sorcerer: Specialized in sorcery and witchcraft, sorcerers have a wide
+  range of abilities to weaken, confuse, restrict and inflict extra damage
+  upon their victims. | Tr: 法师子类别： 元素师：元素大师，该子类别的成员对土、风、火和水相关能力拥有增强的控制能力，无论是防御性还是进攻性。附魔师：附魔师是真正理解领域内所有物品本质的专家，能够神奇地改变和增强许多东西。众所周知，训练有素的魔法师也会对自己施魔法！巫师：巫师专门从事巫术和巫术，拥有广泛的能力来削弱、迷惑、限制和对受害者造成额外伤害。
+[03-20 16:54] Or: You may change your class free of charge every 7 days. You will be able to add additional classes later in the game. You can use 'help [classname]' 'help mage' for example) for more information. | Tr: 您可以每 7 天免费更改您的课程。您稍后可以在游戏中添加其他类别。例如，您可以使用“help [classname]”“help mage”）获取更多信息。
+[03-20 16:53] Or: weak | Tr: 虚弱的
+[03-20 16:52] Or: in unarmed and weapon-based combat. | Tr: 在徒手和基于武器的战斗中。
+[03-20 16:52] Or: [3~5 | Tr: [3~5
+[03-20 16:51] Or: Mage     : High powered spellcasting class. Many offensive
+spells but weak | Tr: 法师：高能施法职业。攻击性法术较多但较弱
+[03-20 16:50] Or: Use Visually Impaired (VI) Features? [Y/N/back] : | Tr: 使用视障 (VI) 功能？ [是/否/返回] :
+[03-20 16:48] Or: Welcome to Aardwolf! First you need to choose the character name that you 
+will be known by. Just type the name below to get started. You will probably
+find that more common names are already taken so try to be creative! | Tr: 欢迎来到土狼！首先，您需要选择您将被熟知的角色名称。只需输入下面的名称即可开始。您可能会发现更常见的名称已被使用，因此请尝试发挥创意！
+[03-19 17:58] Or: Login: r.ziang@outlook.com
+Login: renoan
+1 1
+5 Invalid password.
+5 ErrorReason: Invalid ID/Password
+1 0
+1 0
+5 Sorry, the string you have typed is illegal.
+1 0                                                                                           ^C | Tr: 登录：r.ziang@outlook.com 登录：renoan 1 1 5 密码无效。 5 错误原因：ID/密码无效 1 0 1 0 5 抱歉，您输入的字符串不合法。 1 0 ^C
+[03-19 17:56] Or: To activate the account you need to log in to Pandanet within 20 hours.
+To start playing you will also need a client app to connect to Pandanet. We recommend using GoPanda2 as your desktop client and for mobile devices there are clients for iOS and Android
+Please, read the FAQ for help | Tr: 要激活帐户，您需要在 20 小时内登录 Pandanet。要开始玩，您还需要一个客户端应用程序来连接到 Pandanet。我们建议使用 GoPanda2 作为您的桌面客户端，对于移动设备，有适用于 iOS 和 Android 的客户端 请阅读常见问题解答以获取帮助
+[03-19 17:47] Or: The 'undo' and 'stored' functions have changed. | Tr: “撤消”和“存储”功能已更改。
+[03-19 17:47] Or: The 'undo' and 'stored' functions have changed.
+   See   help undoplease     help stored | Tr: “撤消”和“存储”功能已更改。查看帮助 撤消已存储的帮助
+[03-19 17:46] Or: introduction to go | Tr: 简介去
+[03-19 17:44] Or: There is no expectation of privacy on this server. There is no warranty implied or expressed, provided with this software. If you are new to IGs, you need to type guest when you see the Login prompt. You will be given a guest account with limited access. To register, please visit the IGs home page located at: http://pandanet-igs.com/ Online help is available after you enter IGS. For help, enter: help If you require further help, please send email to: igs-adm@panda-igs.joyjoy.net | Tr: 该服务器上没有隐私。本软件不提供任何暗示或明示的保证。如果您是 IG 新手，则需要在看到登录提示时输入 guest。您将获得一个访问权限有限的访客帐户。如需注册，请访问 IGs 主页：http://pandanet-igs.com/ 进入 IGS 后即可获得在线帮助。如需帮助，请输入：help 如果您需要进一步帮助，请发送电子邮件至：igs-adm@panda-igs.joyjoy.net
+[03-19 17:09] Or: dashboard | Tr: 仪表板
+[03-19 17:04] Or: dashboard | Tr: 仪表板
+[03-19 17:03] Or: He opened his computer and looked at the dashboard. He realized that he could change the buffer while he was writing his code. Alex thought that the colorscheme was very beautiful, but he wanted to find a keymap that could save his work quickly. | Tr: 他打开电脑，看着仪表板。他意识到他可以在编写代码时更改缓冲区。 Alex 认为配色方案非常漂亮，但他想找到一个可以快速保存他的工作的键盘映射。
+[03-19 17:01] Or: this is a dog | Tr: 这是一只狗
+[03-19 16:55] Or: audio | Tr: 声音的
+[03-19 16:54] Or: 23 | Tr: 2 3
+[03-19 16:47] Or: Alex is a student who wants to learn how to code faster. He heard that LazyVim is a great tool because it has many plugins that help users. Although the options in the menu looked difficult at first, Alex decided to try them. | Tr: 亚历克斯是一名想要学习如何更快地编码的学生。他听说 LazyVim 是一个很棒的工具，因为它有很多可以帮助用户的插件。尽管菜单上的选项一开始看起来很难，但亚历克斯决定尝试一下。
+[03-19 16:42] Or: histroy | Tr: 历史
+[03-19 16:38] Or: 2 | Tr: 2
+[03-19 16:38] Or: q | Tr: q
+[03-19 16:38] Or: qq | Tr: QQ
+[03-19 16:38] Or: :q | Tr: :q
+[03-19 16:32] Or: Terminal-Safe: Included a clear_screen helper to keep the UI clean | Tr: 终端安全：包含一个clear_screen帮助程序以保持用户界面干净
+[03-19 16:31] Or: Stable Input: Used standard Python input(instead of fzf | Tr: 稳定输入：使用标准Python输入（而不是fzf
+[03-19 16:30] Or: speek | Tr: 辐
+[03-19 16:28] Or: speek | Tr: 辐
+[03-19 16:22] Or: what' nyour r on mind? | Tr: 你在想什么？
+[03-19 16:20] Or: search | Tr: 搜索
+[03-19 16:19] Or: search | Tr: 搜索
+[03-19 16:03] Or: 1 | Tr: 1
+[03-19 16:03] Or: heard | Tr: 听到
+[03-19 16:00] Or: To make this fun, I've written a story about a student named Alex who is trying to learn LazyVim (a popular coding tool configuration). | Tr: 为了让这个有趣，我写了一个关于一个名叫 Alex 的学生的故事，他正在尝试学习 LazyVim（一种流行的编码工具配置）。
+[03-19 11:33] Or: Next OCR | Tr: 下一个 OCR
+[03-19 11:32] Or: reveal, show exif | Tr: 揭示，显示 exif
+[03-19 11:29] Or: [[[8.0, 8.0], [84.0, 8.0], [84.0, 29.0], [8.0, 30.0]], 'Reveal', '0.8568283149174282'] | Tr: [[[8.0, 8.0], [84.0, 8.0], [84.0, 29.0], [8.0, 30.0]], &#39;显示&#39;, &#39;0.8568283149174282&#39;]
+[03-19 11:29] Or: [[[97.0, 12.0], [147.0, 12.0], [147.0, 30.0], [97.0, 30.0]], 'show', '0.7975538492202758'] [[[10.0, 14.0], [49.0, 14.0], [49.0, 29.0], [10.0, 29.0]], 'reve', '0.6676171898841858'] [[[41.0, 14.0], [80.0, 10.0], [82.0, 28.0], [43.0, 32.0]], 'eal', '0.7377384901046753'] [[[151.0, 7.0], [202.0, 7.0], [202.0, 32.0], [151.0, 32.0]], 'exif', '0.729000699520111'] | Tr: [[[97.0, 12.0], [147.0, 12.0], [147.0, 30.0], [97.0, 30.0]], &#39;显示&#39;, &#39;0.7975538492202758&#39;] [[[10.0, 14.0], [49.0, 14.0], [49.0, 29.0], [10.0, 29.0]], &#39;雷夫&#39;, &#39;0.6676171898841858&#39;] [[[41.0, 14.0], [80.0, 10.0], [82.0, 28.0], [43.0, 32.0]], &#39;真实&#39;, &#39;0.7377384901046753&#39;] [[[151.0, 7.0], [202.0, 7.0], [202.0, 32.0], [151.0, 32.0]], &#39;exif&#39;, &#39;0.729000699520111&#39;]
+[03-19 11:28] Or: ╭Open with:──────────────────────────────────────╮            │               ││ Open                                          │            │               ││  Reveal                                        │            │               ││  Show EXIF | Tr: ╭打开方式：──────────────────────────────────╮ │ │ │ 打开 │ │ │ │ 显示 │ │ │ │ 显示 EXIF
+[03-19 11:27] Or: open | Tr: 打开
+[03-19 11:27] Or: [[[5.0, 2.0], [52.0, 5.0], [51.0, 25.0], [4.0, 23.0]], 'Open', '0.6768514454364777'] [[[5.0, 30.0], [72.0, 29.0], [72.0, 46.0], [6.0, 47.0]], 'Reveal', '0.7401815056800842'] [[[6.0, 56.0], [52.0, 56.0], [52.0, 72.0], [6.0, 71.0]], 'Show', '0.7220561385154725'] [[[59.0, 57.0], [104.0, 56.0], [104.0, 71.0], [60.0, 71.0]], 'EXIF', '0.7702430248260498'] | Tr: [[[5.0, 2.0], [52.0, 5.0], [51.0, 25.0], [4.0, 23.0]], &#39;打开&#39;, &#39;0.6768514454364777&#39;] [[[5.0, 30.0], [72.0, 29.0], [72.0, 46.0], [6.0, 47.0]], &#39;显示&#39;, &#39;0.7401815056800842&#39;] [[[6.0, 56.0], [52.0, 56.0], [52.0, 72.0], [6.0, 71.0]], &#39;显示&#39;, &#39;0.7220561385154725&#39;] [[[59.0, 57.0], [104.0, 56.0], [104.0, 71.0], [60.0, 71.0]], &#39;EXIF&#39;, &#39;0.7702430248260498&#39;]
+[03-17 18:44] Or: Be alive! All graduate students! Don’t give up your life! | Tr: 活着！都是研究生！不要放弃你的生命！
+[03-17 18:36] Or: 1 | Tr: 1
+[03-17 18:11] Or: KK, a popular Indian playback singer and songwriter with more than 300 film and TV credits, died Tuesday of cardiac arrest in Kolkata, shortly after performing a concert. | Tr: KK 是一位受欢迎的印度回放歌手和词曲作者，拥有 300 多部电影和电视作品，周二在加尔各答举行音乐会后不久因心脏骤停去世。
+[03-17 17:59] Or: Delhi native KK—short for Krishnakumar Kunnath—is a popular and prolific Bollywood playback singer | Tr: 德里人 KK（Krishnakumar Kunnath 的缩写）是一位受欢迎且多产的宝莱坞回放歌手
+[03-17 17:36] Or: ST connector, a type of optical fiber connector Atari ST, a personal computer Prefix of hard disk drives made by Seagate Technology ST 连接器，一种光纤连接器 Atari ST，个人电脑 Seagate Technology 制造的硬盘驱动器前缀 | Tr: ST connector, a type of optical fiber connector Atari ST, a personal computer Prefix of hard disk drives made by Seagate Technology ST 连接器，一种光纤连接器 Atari ST，个人电脑 Seagate Technology 制造的硬盘驱动器前缀
+[03-17 17:34] Or: import os import textwrap import shutil | Tr: 导入操作系统导入textwrap导入shutil
+[03-17 14:38] Or: role teacher | Tr: 角色老师
+[03-17 10:47] Or: Added --length_scale {speed) to the piper-tts command | Tr: 在 Piper-tts 命令中添加了 --length_scale {speed)
+[03-17 10:46] Or: expanduser | Tr: 扩展用户
+[03-17 10:46] Or: expanduser | Tr: 扩展用户
+[03-17 10:40] Or: It might be a Path Expansion issue in Niri. | Tr: 这可能是 Niri 中的路径扩展问题。
+[03-17 10:40] Or: Paste & Translate 粘贴和翻译 | Tr: Paste & Translate 粘贴和翻译
+[03-17 10:38] Or: Paste & Translate | Tr: 粘贴和翻译
+[03-16 19:23] 原: 2. 📋 Paste & Translate | 译: 2. 📋 粘贴和翻译
+[03-16 18:08] 原: Suggested binds for running programs: terminal, app launcher, | 译: 运行程序的建议绑定：终端、应用程序启动器、
+[03-16 18:25] 原: The reason it's flashing and closing is | 译: 它闪烁和关闭的原因是
+[03-16 18:43] 原: 原文: The reason it's flashing and closing is 译文: 它闪烁和关闭的原因是 | 译: 原文: The reason it's flashing and closing is 译文: 它闪烁和关闭的原因是
+[03-16 19:10] 原: ST is a global high-tech company creating semiconductor technologies for a smarter, greener, and more sustainable future | 译: ST是一家全球高科技公司，为更智能、更环保、更可持续的未来创造半导体技术
+[03-16 19:10] 原: not told | 译: 没有告诉
+[03-16 19:13] 原: 原文: not told 译文: 没有告诉 | 译: 原文: not told 译文: 没有告诉

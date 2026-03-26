@@ -337,28 +337,27 @@ window-rule {
 //     open-floating true;
 // }
 window-rule {
-    // 匹配腳本中設定的 WindowTitle
-    match title="NiriTranslator"
-    open-floating true
-    default-column-width { proportion 0.3; }
-    // 讓它不要搶走焦點，這樣你還能繼續閱讀
-    focus-ring { off; }
+    match app-id="tran-tool"
+    open-floating false
+    // Optional: Set a good size for the X230 screen
+    default-column-width { fixed 450; }
 }
+
 window-rule {
     match is-floating=true
     min-width 100
     min-height 100
 }
-window-rule {
-    match app-id="sioyek-translate"
-    open-floating true
-
-    // min-width 60
-    // max-width 300
-    // min-height 400
-    // max-height 700
-//    default-floating-position x=10 y=5 relative-to="top-left"
-  }
+// window-rule {
+//     match app-id="sioyek-translate"
+//     open-floating true
+//
+//     // min-width 60
+//     // max-width 300
+//     // min-height 400
+//     // max-height 700
+// //    default-floating-position x=10 y=5 relative-to="top-left"
+//   }
 window-rule {
     match app-id=r#"^tmp-type\.py$"# title="^Tmptype$"
     open-floating true;
@@ -414,10 +413,10 @@ binds {
     
     //niri-sidebar config ////////////////////
     // Toggle the focused window into/out of the sidebar
-    Mod+S { spawn-sh "~/.local/bin/niri-sidebar toggle-window"; }
+    Mod+Shift+S { spawn-sh "~/.local/bin/niri-sidebar toggle-window"; }
 
     // Toggle sidebar visibility (hide/show)
-    Mod+Shift+S { spawn-sh "~/.local/bin/niri-sidebar toggle-visibility"; }
+    Mod+S { spawn-sh "~/.local/bin/niri-sidebar toggle-visibility"; }
 
     // Flip the order of the sidebar
     Mod+Ctrl+S { spawn-sh "~/.local/bin/niri-sidebar flip"; }
@@ -430,9 +429,18 @@ binds {
     Mod+F2 {spawn-sh "pkill waybar || true && waybar";}
     Mod+Shift+W {spawn-sh "/home/r.za/bin/fuzzel-chrome-app.sh";}
     Mod+Shift+X {spawn-sh "/home/r.za/bin/screenshot-fuzzel.sh";}
-    Mod+Shift+T {spawn-sh "fuzzel --dmenu | xargs -r ~/.local/bin/fuzzel-trans | fuzzel --dmenu";}
-    XF86Launch1 {spawn-sh "bash ~/dotfiles/bin/sioyek-translate.sh";}
-    Mod+T {spawn-sh "python ~/dotfiles/bin/tmp-type.py";}
+   // Mod+Shift+T {spawn-sh "fuzzel --dmenu | xargs -r ~/.local/bin/fuzzel-trans | fuzzel --dmenu";}
+    // XF86Launch1 {spawn-sh "bash ~/dotfiles/bin/sioyek-translate.sh";}
+    // Mod+T {spawn-sh "python ~/dotfiles/bin/tmp-type.py";}
+    Mod+T { spawn "foot" "-a" "tran-tool" "-e" "/home/r.za/dotfiles/bin/tran/tran.py"; }
+    // Alt+1: 弹出 Foot 窗口并直接开始 OCR
+    Mod+Alt+1 { spawn "foot" "-a" "tran-tool" "-e" "/home/r.za/dotfiles/ai_env/bin/python" "/home/r.za/dotfiles/bin/tran/tran.py" "ocr"; }
+    // Alt+2: 弹出 Foot 窗口并直接翻译剪贴板
+    Mod+Alt+2 { spawn "foot" "-a" "tran-tool" "-e" "/home/r.za/dotfiles/ai_env/bin/python" "/home/r.za/dotfiles/bin/tran/tran.py" "paste"; }
+   // Alt+3: 划词朗读 
+    Mod+Alt+3 { spawn "/home/r.za/dotfiles/ai_env/bin/python" "/home/r.za/dotfiles/bin/tran/tran.py" "primary"; }
+    // Alt+3: 暂停/播放音频 (这个不需要窗口，保持后台运行即可)
+    Mod+Alt+4 { spawn "/home/r.za/dotfiles/ai_env/bin/python" "/home/r.za/dotfiles/bin/tran/tran.py" "stop"; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
@@ -459,6 +467,7 @@ binds {
     XF86AudioStop        allow-when-locked=true { spawn-sh "playerctl stop"; }
     XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
     XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
+
 
     // Example brightness key mappings for brightnessctl.
     // You can use regular spawn with multiple arguments too (to avoid going through "sh"),
@@ -658,8 +667,8 @@ binds {
     Mod+Shift+Equal { set-window-height "+10%"; }
 
     // Move the focused window between the floating and the tiling layout.
-    Mod+V       { toggle-window-floating; }
-    Mod+Shift+V { switch-focus-between-floating-and-tiling; }
+    Mod+Shift+V       { toggle-window-floating; }
+    Mod+V { switch-focus-between-floating-and-tiling; }
 
     // Toggle tabbed column display mode.
     // Windows in this column will appear as vertical tabs,

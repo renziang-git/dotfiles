@@ -39,6 +39,10 @@ cmd_escape_fcitx = (
 #v2raya
 config.bind(',k', 'spawn --userscript v2raya_fix')
 
+# 使用快捷键（例如 'td'，代表 Toggle Darkmode）在暗黑模式间切换
+config.bind('td', 'config-cycle colors.webpage.darkmode.enabled true false')
+
+
 # ==============================================================================
 # Userscript / GreasyFork 脚本管理（声明式）
 # ==============================================================================
@@ -86,9 +90,9 @@ config.bind("gv", "mode-enter passthrough")
 c.bindings.commands["passthrough"] = {
     # 速度
     "a": "spawn --userscript qb-video-control down",
-    "s": "spawn --userscript qb-video-control reset",
-    "d": "spawn --userscript qb-video-control up",
-    "r": "spawn --userscript qb-video-control 2.5",
+    "r": "spawn --userscript qb-video-control reset",
+    "s": "spawn --userscript qb-video-control up",
+    "e": "spawn --userscript qb-video-control 2.5",
     # 时间跳转
     "z": "spawn --userscript qb-video-control back",
     "x": "spawn --userscript qb-video-control forward",
@@ -99,11 +103,11 @@ c.bindings.commands["passthrough"] = {
 
 # Alt 快捷键（normal 模式）
 config.bind("<Alt-a>", "spawn --userscript qb-video-control down")
-config.bind("<Alt-s>", "spawn --userscript qb-video-control reset")
-config.bind("<Alt-d>", "spawn --userscript qb-video-control up")
+config.bind("<Alt-r>", "spawn --userscript qb-video-control reset")
+config.bind("<Alt-s>", "spawn --userscript qb-video-control up")
 config.bind("<Alt-z>", "spawn --userscript qb-video-control back")
 config.bind("<Alt-x>", "spawn --userscript qb-video-control forward")
-config.bind("<Alt-r>", "spawn --userscript qb-video-control 2.5")
+config.bind("<Alt-e>", "spawn --userscript qb-video-control 2.5")
 
 # 选中 tab（奇 / 偶）
 # c.colors.tabs.selected.odd.bg = '#eeeeee'
