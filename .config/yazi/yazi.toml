@@ -1,0 +1,11 @@
+[opener]
+# 定义一个新的打开器叫 "swappy"
+swappy = [
+    { run = 'swappy -f "$1"', desc = "Swappy", orphan = true, for = "linux" }
+]
+
+[open]
+rules = [
+    # 将 swappy 加入到图片的打开规则中
+    { mime = "image/*", use = [ "open", "reveal", "swappy" ] },
+]

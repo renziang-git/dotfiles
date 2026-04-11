@@ -1,24 +1,21 @@
 #!/bin/bash
 
-# 确保安装了 wl-clipboard (Wayland) 或 xclip (X11)
-# 该脚本从剪贴板读取文本，并通过 piper-tts 调整语速后播放
+# 1. 配置路径（请确认 .onnx 和 .json 文件都在此目录下）
+MODEL_PATH="$HOME/Downloads/zh_CN-huayan-medium.onnx"
+SPEED=1.1
 
-# 1. 获取剪贴板内容
-# Wayland 用户使用: wl-paste
-# X11 用户使用: xclip -selection clipboard -o
-CONTENT=$(wl-paste 2>/dev/null || xclip -selection clipboard -o 2>/dev/null)
+# 2. 获取 Wayland 下鼠标选中的文本 (--primary)
+# 如果选区为空，则尝试获取剪贴板内容
+CONTENT=$(wl-paste --primary 2>/dev/null || wl-paste 2>/dev/null)
 
+# 3. 检查内容是否为空
 if [ -z "$CONTENT" ]; then
-  echo "剪贴板为空或未找到剪贴板工具。"
+  notify-send "Piper TTS" "未检测到选中文本 (Wayland)"
   exit 1
 fi
 
-# 2. 设置模型路径和参数
-MODEL_PATH="$HOME/models/tts/en_US-lessac-low.onnx"
-# length_scale 越小语速越快，1.0 为正常，1.5-2.0 较慢
-SPEED=1
-
-# 3. 管道传输并播放
+# 4. 朗读并播放
+# 注意：有些发行版命令是 piper，有些是 piper-tts，请根据你安装的情况调整
 echo "$CONTENT" |
   piper-tts \
     --model "$MODEL_PATH" \

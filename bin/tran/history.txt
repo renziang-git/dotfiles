@@ -1,189 +1,300 @@
-[03-26 15:35] Or: . decode | Tr: 。解码
-[03-26 10:01] Or: save the day. | Tr: 拯救世界。
-[03-26 10:00] Or: Here is where symbolic links save the day. | Tr: 这就是符号链接拯救世界的地方。
-[03-23 12:22] Or: already | Tr: 已经
-[03-21 18:31] Or: alias | Tr: 别名
-[03-21 18:29] Or: alert | Tr: 警报
-[03-20 18:30] Or: new setup | Tr: 新设置
-[03-20 17:42] Or: While he was exploring the config, he found a search feature. He told his friend that this tool was much better than his old one. If Alex practices every day, he will become a professional. He knows that learning a new setup takes time, but he feels very happy with his progress. | Tr: 当他探索配置时，他发现了一个搜索功能。他告诉他的朋友，这个工具比他以前的工具好多了。如果亚历克斯每天练习，他就会成为一名职业选手。他知道学习新的设置需要时间，但他对自己的进步感到非常高兴。
-[03-20 17:40] Or: He opened his computer and looked at the dashboard. He realized that he could change the buffer while he was writing his code. Alex thought that the colorscheme was very beautiful, but he wanted to find a keymap that could save his work quickly. | Tr: 他打开电脑，看着仪表板。他意识到他可以在编写代码时更改缓冲区。 Alex 认为配色方案非常漂亮，但他想找到一个可以快速保存他的工作的键盘映射。
-[03-20 17:10] Or: ======[ ATTENTION ]==================================================
-  When selecting a name for your character, keep in mind that the
-  administration will remove or rename characters that have been
-  created with a silly, inappropriate or offensive names. | Tr: ======[注意]==================================================== 当为您的角色选择名称时，请记住，管理人员将删除或重命名使用愚蠢、不恰当或冒犯性名称创建的角色。
-[03-20 17:09] Or: The game is owned by B.A.T. ry, a self-funded
-organization. 
-  1 - enter the game                    s - game status
-  2 - visit the game                    w - who is playing at
-the moment
-  3 - create a new character            q - quit
-renoan enter your choice or name: 
-+---- - - - -                                                          +
-|  Forgot your password? Retrieve it from http://www.bat.org/
-   BatMUD runs on 2x Octa-core Xeon 6334 w/ 256GB mem (help hardware)  |
-+       
-What is your name: renoan
-No such player. Please check your typing!
-  1 - enter the game                    s - game status
-  2 - visit the game                    w - who is playing at the moment
-  3 - create a new character            q - quit | Tr: 该游戏由自筹资金组织 BAT ry 所有。 1 - 进入游戏 s - 游戏状态 2 - 访问游戏 w - 目前正在玩的人 3 - 创建新角色 q - 退出 renoan 输入您的选择或名称： +---- - - - - + |忘记密码了吗？从 http://www.bat.org/ 检索 BatMUD 在 2x 八核 Xeon 6334 w/ 256GB 内存（帮助硬件）上运行 | + 你叫什么名字： renoan 没有这样的玩家。请检查您的打字！ 1 - 进入游戏 s - 游戏状态 2 - 访问游戏 w - 目前正在玩的人 3 - 创建新角色 q - 退出
-[03-20 17:04] Or: [Newbie]: DjVoltron gives you a REALLY warm welcome! | Tr: [新手]：DjVoltron 非常热烈地欢迎您！
-[03-20 17:02] Or: [Newbie]: DjVoltron gives you a REALLY warm welcome! | Tr: [新手]：DjVoltron 非常热烈地欢迎您！
-[03-20 17:02] Or: [ Press return to continue ]
-You feel your dagger skill increase by 2.
-NOTE: Paging is turned off by default so long screens will be sent all at once
-and anything that scrolls off can be seen with page up/page down or the scroll
-bar in most MUD clients. If you would prefer that Aardwolf sends information
-one screen at a time, use 'pagesize [lines]' once you are in the game. Pagesize
-30 is a good start point for most players.
-Outside the Aylorian Academy (G)
-  Standing before the main entrance of the Aylorian Academy, you can't help but
-notice the sheer scale of the structure. Many famous adventurers have passed 
-through these gates before you and many will follow. The mark you will leave 
-on this realm is to be determined by your actions, by fate, by skill and by 
-chance. 
-Type 'North' to begin your journey...
-[ Exits: north south down ]
-There are 154 players on, the most on this reboot was 195.
-There are 151 players using compression. | Tr: [按回车继续]你感觉你的匕首技能增加了2。注意：默认情况下分页是关闭的，因此长屏幕将被一次性发送，并且在大多数MUD客户端中可以通过向上翻页/向下翻页或滚动条看到滚动的任何内容。如果您希望 Aardwolf 一次一屏发送信息，请在进入游戏后使用“pagesize [lines]”。对于大多数玩家来说，Pagesize 30 是一个很好的起点。艾洛里安学院外 (G) 站在艾洛里安学院的正门前，你不禁会注意到其建筑的庞大规模。许多著名的冒险家在您之前已经穿过这些大门，并且许多人也会跟随。你将在这个领域留下的印记是由你的行动、命运、技能和偶然决定的。输入“North”开始你的旅程... [退出：北南向下] 有 154 名玩家，本次重启最多为 195 名。有 151 名玩家使用压缩。
-[03-20 17:01] Or: -----------------------------------------------------------------------------
-     Congratulations Renoan, you have now completed character creation.
- You are about to enter the Aylorian academy where you will learn how to play
- Aardwolf. Even if you are an experienced Aardwolf player, it is worth your 
- while to complete the academy as the trainers there will reward you with
- various amounts of gold, equipment, experience and quest points. 
- You can exit the academy at any time and return to your lessons later, you
- do not have to complete them all at once.
- If you are a visually impaired player, we have special helpfiles and maps that
- you may find useful. Read 'help vi' once you are in the game for more details. 
-                Enjoy your adventures, and welcome to Aardwolf!
------------------------------------------------------------------------------
-[ Press return to continue ] | Tr: ------------------------------------------------------------------------------------------ 恭喜 Renoan，您现在已经完成了角色创建。您即将进入艾洛瑞安学院，在那里您将学习如何玩土狼。即使您是一位经验丰富的土狼玩家，也值得您花时间完成学院，因为那里的训练师会奖励您各种数量的金币、​​装备、经验和任务点。您可以随时退出学院并稍后返回课程，您不必一次完成所有课程。如果您是视障玩家，我们有特殊的帮助文件和地图，您可能会觉得有用。进入游戏后请阅读“帮助 vi”以获取更多详细信息。享受您的冒险，欢迎来到土狼！ ---------------------------------------------------------------------------------------- 【按回车键继续】
-[03-20 17:00] Or: One last question - this will help the game customize some of your options
-based on your experience level with Aardwolf and with MUDs in general. Please 
-choose the option that most closely represents your character:
-               1.) Little or no experience with MUDs.
-               2.) Experienced MUD player but new to Aardwolf.
-               3.) Experienced Aardwolf player. | Tr: 最后一个问题 - 这将有助于游戏根据您对 Aardwolf 和 MUD 的经验水平定制一些选项。请选择最能代表您的角色的选项： 1.) 很少或没有 MUD 经验。 2.) 经验丰富的MUD玩家，但对Aardwolf新手。 3.) 经验丰富的土狼玩家。
-[03-20 17:00] Or: NOTE: Entering an email address is completely optional - please don't enter a
-fake one. Just press return to continue without an email address.
-Your email is used only to verify ownership of your character if you lose
-your password, to gain access to the Aardwolf idea tracker and (very rarely)
-to notify you of important game information. Your email address is flagged as
-private and cannot be seen by other players. | Tr: 注意：输入电子邮件地址完全是可选的 - 请不要输入虚假地址。只需按回车即可继续，无需电子邮件地址。您的电子邮件仅用于在您丢失密码时验证您的角色所有权、访问 Aardwolf 创意跟踪器以及（很少）通知您重要的游戏信息。您的电子邮件地址被标记为私人地址，其他玩家无法看到。
-[03-20 17:00] Or: Male/Female/Androgyne] | Tr: 男性/女性/雌雄同体]
-[03-20 16:59] Or: Your character's gender has no direct impact on gameplay, but some quests may
-interact with you differently based on gender and, of course, other players
-will too. Androgyne is our equivalent of neutral/none, see 'HELP ANDROGYNE'
-for more information on that gender. | Tr: 你的角色的性别对游戏玩法没有直接影响，但有些任务可能会根据性别与你进行不同的互动，当然，其他玩家也会如此。雌雄同体相当于中性/无，请参阅“帮助雌雄同体”以获取有关该性别的更多信息。
-[03-20 16:58] Or: Suggested Races for Mage:
-Eldar    : Mysterious ancient race, masters of magic and lore. 
-           Experts at mana preservation to cast for longer.  
-Elf      : Mentally and physically agile race enamoured with magic.
-           Very fast mana regen and some bonus to magic damage.
-Dark Elf : Outcast brothers of the elves, now living underground.
-           Bonus to magic damage and enhanced magical resistance.
-Wraith   : Weaker hits and stronger magic combined with good tanking
-           abilities and enhanced shadow damage.                   
-Diva     : Natural healers with mana bonus and regeneration. The highest 
-           heal spell bonus of all races and enhanced spell attacks.
-Sprite   : Small spirit type race. Small bonus to magic attacks with
-           faster overall regen and the ability to consume corpses for 
-           mana.
-Good all-round caster and fighter combinations:
-Centaur  : Slight bonus to all attack types. Also make good Rangers and
-           Paladins. 
-Troll    : More intelligent than their Ogre and Giant cousins, equally
-           comfortable casting spells.
-Vampire  : Undead creatures of the night. Good fighters with a small
-           bonus to magic.
-Other races available: 
-           Dwarf, Giant, Gargoyle, Giant, Halfling, 
-           Human, Naga, Ogre, Triton, Wolfen
-   More details on each race are available by typing 'help <racename>' | Tr: 法师的建议种族：灵族：神秘的古代种族，魔法和知识的大师。法力保存专家可以延长施法时间。精灵：精神和身体敏捷，迷恋魔法的种族。法力恢复速度非常快，并且魔法伤害有一定的加成。黑暗精灵：被遗弃的精灵兄弟，现在生活在地下。魔法伤害加成并增强魔法抗性。幽灵：较弱的命中和较强的魔法，结合良好的坦克能力和增强的暗影伤害。 Diva：具有法力加成和再生能力的自然治疗师。所有种族中最高的治疗法术加值和增强的法术攻击。精灵：小精灵类种族。魔法攻击的小奖励具有更快的整体恢复速度和消耗尸体以获得法力的能力。良好的全能施法者和战斗机组合：半人马：对所有攻击类型都有轻微的奖励。也可以成为优秀的游骑兵和圣骑士。巨魔：比他们的食人魔和巨人表亲更聪明，同样可以轻松施展法术。吸血鬼：夜间的不死生物。优秀的战士，对魔法有少量加成。其他可用种族：矮人、巨人、石像鬼、巨人、半身人、人类、娜迦、食人魔、海卫一、沃尔芬 有关每个种族的更多详细信息，请输入“帮助”<racename> &#39;
-[03-20 16:57] Or: MAGE SUBCLASSES:
-  Elementalist: Masters of the elements, members of this subclass enjoy
-  enhanced control over earth-, wind-, fire-, and water-related abilities,
-  whether defensive or offensive in nature.
-  Enchanter: Experts in truly understanding the nature of all items in the
-  realm, Enchanters are able to magically alter and enhance many things.
-  Highly-trained enchanters have also been known to enchant themselves!
-  Sorcerer: Specialized in sorcery and witchcraft, sorcerers have a wide
-  range of abilities to weaken, confuse, restrict and inflict extra damage
-  upon their victims. | Tr: 法师子类别： 元素师：元素大师，该子类别的成员对土、风、火和水相关能力拥有增强的控制能力，无论是防御性还是进攻性。附魔师：附魔师是真正理解领域内所有物品本质的专家，能够神奇地改变和增强许多东西。众所周知，训练有素的魔法师也会对自己施魔法！巫师：巫师专门从事巫术和巫术，拥有广泛的能力来削弱、迷惑、限制和对受害者造成额外伤害。
-[03-20 16:54] Or: You may change your class free of charge every 7 days. You will be able to add additional classes later in the game. You can use 'help [classname]' 'help mage' for example) for more information. | Tr: 您可以每 7 天免费更改您的课程。您稍后可以在游戏中添加其他类别。例如，您可以使用“help [classname]”“help mage”）获取更多信息。
-[03-20 16:53] Or: weak | Tr: 虚弱的
-[03-20 16:52] Or: in unarmed and weapon-based combat. | Tr: 在徒手和基于武器的战斗中。
-[03-20 16:52] Or: [3~5 | Tr: [3~5
-[03-20 16:51] Or: Mage     : High powered spellcasting class. Many offensive
-spells but weak | Tr: 法师：高能施法职业。攻击性法术较多但较弱
-[03-20 16:50] Or: Use Visually Impaired (VI) Features? [Y/N/back] : | Tr: 使用视障 (VI) 功能？ [是/否/返回] :
-[03-20 16:48] Or: Welcome to Aardwolf! First you need to choose the character name that you 
-will be known by. Just type the name below to get started. You will probably
-find that more common names are already taken so try to be creative! | Tr: 欢迎来到土狼！首先，您需要选择您将被熟知的角色名称。只需输入下面的名称即可开始。您可能会发现更常见的名称已被使用，因此请尝试发挥创意！
-[03-19 17:58] Or: Login: r.ziang@outlook.com
-Login: renoan
-1 1
-5 Invalid password.
-5 ErrorReason: Invalid ID/Password
-1 0
-1 0
-5 Sorry, the string you have typed is illegal.
-1 0                                                                                           ^C | Tr: 登录：r.ziang@outlook.com 登录：renoan 1 1 5 密码无效。 5 错误原因：ID/密码无效 1 0 1 0 5 抱歉，您输入的字符串不合法。 1 0 ^C
-[03-19 17:56] Or: To activate the account you need to log in to Pandanet within 20 hours.
-To start playing you will also need a client app to connect to Pandanet. We recommend using GoPanda2 as your desktop client and for mobile devices there are clients for iOS and Android
-Please, read the FAQ for help | Tr: 要激活帐户，您需要在 20 小时内登录 Pandanet。要开始玩，您还需要一个客户端应用程序来连接到 Pandanet。我们建议使用 GoPanda2 作为您的桌面客户端，对于移动设备，有适用于 iOS 和 Android 的客户端 请阅读常见问题解答以获取帮助
-[03-19 17:47] Or: The 'undo' and 'stored' functions have changed. | Tr: “撤消”和“存储”功能已更改。
-[03-19 17:47] Or: The 'undo' and 'stored' functions have changed.
-   See   help undoplease     help stored | Tr: “撤消”和“存储”功能已更改。查看帮助 撤消已存储的帮助
-[03-19 17:46] Or: introduction to go | Tr: 简介去
-[03-19 17:44] Or: There is no expectation of privacy on this server. There is no warranty implied or expressed, provided with this software. If you are new to IGs, you need to type guest when you see the Login prompt. You will be given a guest account with limited access. To register, please visit the IGs home page located at: http://pandanet-igs.com/ Online help is available after you enter IGS. For help, enter: help If you require further help, please send email to: igs-adm@panda-igs.joyjoy.net | Tr: 该服务器上没有隐私。本软件不提供任何暗示或明示的保证。如果您是 IG 新手，则需要在看到登录提示时输入 guest。您将获得一个访问权限有限的访客帐户。如需注册，请访问 IGs 主页：http://pandanet-igs.com/ 进入 IGS 后即可获得在线帮助。如需帮助，请输入：help 如果您需要进一步帮助，请发送电子邮件至：igs-adm@panda-igs.joyjoy.net
-[03-19 17:09] Or: dashboard | Tr: 仪表板
-[03-19 17:04] Or: dashboard | Tr: 仪表板
-[03-19 17:03] Or: He opened his computer and looked at the dashboard. He realized that he could change the buffer while he was writing his code. Alex thought that the colorscheme was very beautiful, but he wanted to find a keymap that could save his work quickly. | Tr: 他打开电脑，看着仪表板。他意识到他可以在编写代码时更改缓冲区。 Alex 认为配色方案非常漂亮，但他想找到一个可以快速保存他的工作的键盘映射。
-[03-19 17:01] Or: this is a dog | Tr: 这是一只狗
-[03-19 16:55] Or: audio | Tr: 声音的
-[03-19 16:54] Or: 23 | Tr: 2 3
-[03-19 16:47] Or: Alex is a student who wants to learn how to code faster. He heard that LazyVim is a great tool because it has many plugins that help users. Although the options in the menu looked difficult at first, Alex decided to try them. | Tr: 亚历克斯是一名想要学习如何更快地编码的学生。他听说 LazyVim 是一个很棒的工具，因为它有很多可以帮助用户的插件。尽管菜单上的选项一开始看起来很难，但亚历克斯决定尝试一下。
-[03-19 16:42] Or: histroy | Tr: 历史
-[03-19 16:38] Or: 2 | Tr: 2
-[03-19 16:38] Or: q | Tr: q
-[03-19 16:38] Or: qq | Tr: QQ
-[03-19 16:38] Or: :q | Tr: :q
-[03-19 16:32] Or: Terminal-Safe: Included a clear_screen helper to keep the UI clean | Tr: 终端安全：包含一个clear_screen帮助程序以保持用户界面干净
-[03-19 16:31] Or: Stable Input: Used standard Python input(instead of fzf | Tr: 稳定输入：使用标准Python输入（而不是fzf
-[03-19 16:30] Or: speek | Tr: 辐
-[03-19 16:28] Or: speek | Tr: 辐
-[03-19 16:22] Or: what' nyour r on mind? | Tr: 你在想什么？
-[03-19 16:20] Or: search | Tr: 搜索
-[03-19 16:19] Or: search | Tr: 搜索
-[03-19 16:03] Or: 1 | Tr: 1
-[03-19 16:03] Or: heard | Tr: 听到
-[03-19 16:00] Or: To make this fun, I've written a story about a student named Alex who is trying to learn LazyVim (a popular coding tool configuration). | Tr: 为了让这个有趣，我写了一个关于一个名叫 Alex 的学生的故事，他正在尝试学习 LazyVim（一种流行的编码工具配置）。
-[03-19 11:33] Or: Next OCR | Tr: 下一个 OCR
-[03-19 11:32] Or: reveal, show exif | Tr: 揭示，显示 exif
-[03-19 11:29] Or: [[[8.0, 8.0], [84.0, 8.0], [84.0, 29.0], [8.0, 30.0]], 'Reveal', '0.8568283149174282'] | Tr: [[[8.0, 8.0], [84.0, 8.0], [84.0, 29.0], [8.0, 30.0]], &#39;显示&#39;, &#39;0.8568283149174282&#39;]
-[03-19 11:29] Or: [[[97.0, 12.0], [147.0, 12.0], [147.0, 30.0], [97.0, 30.0]], 'show', '0.7975538492202758'] [[[10.0, 14.0], [49.0, 14.0], [49.0, 29.0], [10.0, 29.0]], 'reve', '0.6676171898841858'] [[[41.0, 14.0], [80.0, 10.0], [82.0, 28.0], [43.0, 32.0]], 'eal', '0.7377384901046753'] [[[151.0, 7.0], [202.0, 7.0], [202.0, 32.0], [151.0, 32.0]], 'exif', '0.729000699520111'] | Tr: [[[97.0, 12.0], [147.0, 12.0], [147.0, 30.0], [97.0, 30.0]], &#39;显示&#39;, &#39;0.7975538492202758&#39;] [[[10.0, 14.0], [49.0, 14.0], [49.0, 29.0], [10.0, 29.0]], &#39;雷夫&#39;, &#39;0.6676171898841858&#39;] [[[41.0, 14.0], [80.0, 10.0], [82.0, 28.0], [43.0, 32.0]], &#39;真实&#39;, &#39;0.7377384901046753&#39;] [[[151.0, 7.0], [202.0, 7.0], [202.0, 32.0], [151.0, 32.0]], &#39;exif&#39;, &#39;0.729000699520111&#39;]
-[03-19 11:28] Or: ╭Open with:──────────────────────────────────────╮            │               ││ Open                                          │            │               ││  Reveal                                        │            │               ││  Show EXIF | Tr: ╭打开方式：──────────────────────────────────╮ │ │ │ 打开 │ │ │ │ 显示 │ │ │ │ 显示 EXIF
-[03-19 11:27] Or: open | Tr: 打开
-[03-19 11:27] Or: [[[5.0, 2.0], [52.0, 5.0], [51.0, 25.0], [4.0, 23.0]], 'Open', '0.6768514454364777'] [[[5.0, 30.0], [72.0, 29.0], [72.0, 46.0], [6.0, 47.0]], 'Reveal', '0.7401815056800842'] [[[6.0, 56.0], [52.0, 56.0], [52.0, 72.0], [6.0, 71.0]], 'Show', '0.7220561385154725'] [[[59.0, 57.0], [104.0, 56.0], [104.0, 71.0], [60.0, 71.0]], 'EXIF', '0.7702430248260498'] | Tr: [[[5.0, 2.0], [52.0, 5.0], [51.0, 25.0], [4.0, 23.0]], &#39;打开&#39;, &#39;0.6768514454364777&#39;] [[[5.0, 30.0], [72.0, 29.0], [72.0, 46.0], [6.0, 47.0]], &#39;显示&#39;, &#39;0.7401815056800842&#39;] [[[6.0, 56.0], [52.0, 56.0], [52.0, 72.0], [6.0, 71.0]], &#39;显示&#39;, &#39;0.7220561385154725&#39;] [[[59.0, 57.0], [104.0, 56.0], [104.0, 71.0], [60.0, 71.0]], &#39;EXIF&#39;, &#39;0.7702430248260498&#39;]
-[03-17 18:44] Or: Be alive! All graduate students! Don’t give up your life! | Tr: 活着！都是研究生！不要放弃你的生命！
-[03-17 18:36] Or: 1 | Tr: 1
-[03-17 18:11] Or: KK, a popular Indian playback singer and songwriter with more than 300 film and TV credits, died Tuesday of cardiac arrest in Kolkata, shortly after performing a concert. | Tr: KK 是一位受欢迎的印度回放歌手和词曲作者，拥有 300 多部电影和电视作品，周二在加尔各答举行音乐会后不久因心脏骤停去世。
-[03-17 17:59] Or: Delhi native KK—short for Krishnakumar Kunnath—is a popular and prolific Bollywood playback singer | Tr: 德里人 KK（Krishnakumar Kunnath 的缩写）是一位受欢迎且多产的宝莱坞回放歌手
-[03-17 17:36] Or: ST connector, a type of optical fiber connector Atari ST, a personal computer Prefix of hard disk drives made by Seagate Technology ST 连接器，一种光纤连接器 Atari ST，个人电脑 Seagate Technology 制造的硬盘驱动器前缀 | Tr: ST connector, a type of optical fiber connector Atari ST, a personal computer Prefix of hard disk drives made by Seagate Technology ST 连接器，一种光纤连接器 Atari ST，个人电脑 Seagate Technology 制造的硬盘驱动器前缀
-[03-17 17:34] Or: import os import textwrap import shutil | Tr: 导入操作系统导入textwrap导入shutil
-[03-17 14:38] Or: role teacher | Tr: 角色老师
-[03-17 10:47] Or: Added --length_scale {speed) to the piper-tts command | Tr: 在 Piper-tts 命令中添加了 --length_scale {speed)
-[03-17 10:46] Or: expanduser | Tr: 扩展用户
-[03-17 10:46] Or: expanduser | Tr: 扩展用户
-[03-17 10:40] Or: It might be a Path Expansion issue in Niri. | Tr: 这可能是 Niri 中的路径扩展问题。
-[03-17 10:40] Or: Paste & Translate 粘贴和翻译 | Tr: Paste & Translate 粘贴和翻译
-[03-17 10:38] Or: Paste & Translate | Tr: 粘贴和翻译
-[03-16 19:23] 原: 2. 📋 Paste & Translate | 译: 2. 📋 粘贴和翻译
-[03-16 18:08] 原: Suggested binds for running programs: terminal, app launcher, | 译: 运行程序的建议绑定：终端、应用程序启动器、
-[03-16 18:25] 原: The reason it's flashing and closing is | 译: 它闪烁和关闭的原因是
-[03-16 18:43] 原: 原文: The reason it's flashing and closing is 译文: 它闪烁和关闭的原因是 | 译: 原文: The reason it's flashing and closing is 译文: 它闪烁和关闭的原因是
-[03-16 19:10] 原: ST is a global high-tech company creating semiconductor technologies for a smarter, greener, and more sustainable future | 译: ST是一家全球高科技公司，为更智能、更环保、更可持续的未来创造半导体技术
-[03-16 19:10] 原: not told | 译: 没有告诉
-[03-16 19:13] 原: 原文: not told 译文: 没有告诉 | 译: 原文: not told 译文: 没有告诉
+[04-11 10:06] Or: Launching | Tr: 发射
+[04-10 17:16] Or: were | Tr: 是
+[04-10 17:16] Or: When we were little, | Tr: 当我们还小的时候，
+[04-10 17:15] Or: That's  more than an  hour away from where I live in North River Heights, which  is at the top tip  of Manhattan. | Tr: 距离我住的北河高地（位于曼哈顿最北端）有一个多小时的路程。
+[04-10 17:15] Or: When we were little,  we used to have  playdates all the time, but then Christopher  moved to Bridgeport in Connecticut. | Tr: 当我们还小的时候，我们总是一起玩耍，但后来克里斯托弗搬到了康涅狄格州的布里奇波特。
+[04-10 17:15] Or: When we were little, | Tr: 当我们还小的时候，
+[04-10 17:14] Or: Just the way you are | Tr: 作回你自己
+[04-10 17:08] Or: And since they've always  known  me the way I am, they're used to me. | Tr: 因为他们一直都了解我的样子，所以他们也习惯了我。
+[04-10 17:04] Or: the way | Tr: 道路
+[04-10 17:02] Or: And since they've always  known  me | Tr: 因为他们一直都认识我
+[04-10 17:00] Or: used to | Tr: 习惯于
+[04-10 17:00] Or: And since they've always  known  me the way I am, they're used to me. | Tr: 因为他们一直都了解我的样子，所以他们也习惯了我。
+[04-10 16:58] Or: each other | Tr: 彼此
+[04-10 16:57] Or: since | Tr: 自从
+[04-10 16:54] Or: We've known each  other since we were babies. | Tr: 我们从小就认识。
+[04-10 16:54] Or: have known each other | Tr: 已经认识
+[04-10 16:51] Or: have known each other | Tr: 已经认识
+[04-10 16:51] Or: have known each other | Tr: 已经认识
+[04-10 16:50] Or: have known each other | Tr: 已经认识
+[04-10 16:49] Or: We've known | Tr: 我们已经知道
+[04-10 16:35] Or: forever | Tr: 永远
+[04-10 16:35] Or: We've known each  other since we were babies
+像这里的 我们从那时就认识了，这种句子是不是不用纠结单词的意思，而是理解整体 | Tr: We've known each  other since we were babies
+像这里的 我们从那时就认识了，这种句子是不是不用纠结单词的意思，而是理解整体
+[04-10 16:32] Or: We've known each  other since | Tr: 我们从那时就认识了
+[04-10 16:31] Or: We've known | Tr: 我们已经知道
+[04-10 16:31] Or: each | Tr: 每个
+[04-10 16:31] Or: since | Tr: 自从
+[04-10 16:31] Or: We've known each  other since | Tr: 我们从那时就认识了
+[04-10 16:30] Or: Christopher is my best  friend, followed by Zachary  and Alex. We've known each  other since we were babies. | Tr: 克里斯托弗是我最好的朋友，其次是扎卡里和亚历克斯。我们从小就认识。
+[04-10 16:30] Or: Christopher | Tr: 克里斯托弗
+[04-10 16:13] Or: I have a few really good friends now. Christopher is my best  friend, followed by Zachary  and Alex. We've known each  other since we were babies. And since they've always  known  me the way I am, they're used to me. | Tr: 我现在有几个非常好的朋友。克里斯托弗是我最好的朋友，其次是扎卡里和亚历克斯。我们从小就认识。因为他们一直都了解我的样子，所以他们也习惯了我。
+[04-10 16:13] Or: stuff like  that. | Tr: 诸如此类的事情。
+[04-10 16:13] Or: hang out after school | Tr: 放学后出去玩
+[04-10 16:13] Or: hang out | Tr: 挂出
+[04-10 16:12] Or: I can't say I always wanted to go to school because that  wouldn't be exactly true. What  I wanted was to go to school,  but only if I could be like every other kid going to school.   Have lots of friends and hang out after school and stuff like  that. | Tr: 我不能说我一直想上学，因为事实并非如此。我想要的是上学，但前提是我能像其他上学的孩子一样。有很多朋友，放学后出去玩之类的。
+[04-10 16:12] Or: I can't say I always wanted to go to school because that  wouldn't be exactly true. What  I wanted was to go to school,  but only if I could be like every other kid going to school.   Have lots of friends and hang out after school and stuff like  that. | Tr: 我不能说我一直想上学，因为事实并非如此。我想要的是上学，但前提是我能像其他上学的孩子一样。有很多朋友，放学后出去玩之类的。
+[04-10 16:11] Or: I can't say I always wanted to go to school because that  wouldn't be exactly true. What  I wanted was to go to school,  but only if I could be like every other kid going to school.   Have lots of friends and hang out after school and stuff like  that. | Tr: 我不能说我一直想上学，因为事实并非如此。我想要的是上学，但前提是我能像其他上学的孩子一样。有很多朋友，放学后出去玩之类的。
+[04-10 16:11] Or: I think she's too busy taking care of me  and Via. | Tr: 我觉得她太忙于照顾我和维娅了。
+[04-10 16:10] Or: Mom homeschools me. She used to be a children's-book  illustrator. She draws really  great fairies and mermaids. Her  boy stuff isn't so hot, though. She once tried to draw  me a  Darth Vader, but it ended up looking like some weird  mushroom-shaped robot. I  haven't seen her draw anything in  a long time. I think she's too busy taking care of me  and Via. | Tr: 妈妈在家教育我。她曾经是一名儿童读物插画家。她画的仙女和美人鱼真的很棒。不过，她的男孩元素并不那么热辣。她曾经试图给我画一个达斯·维德，但它最终看起来像一些奇怪的蘑菇形机器人。好久没见她画东西了。我觉得她太忙于照顾我和维娅了。
+[04-10 16:10] Or: The last  surgery I had was
+  eight months ago, | Tr: 我上次做手术是八个月前
+[04-10 16:08] Or: Next week I start fifth grade. Since I've never been to a real  school before, I am pretty  much totally and completely  petrified. People think I haven't gone to school because of   the way I look, but it's not that. It's because of all the  surgeries I've had. Twenty-seven  since I was born. The  bigger ones happened before I was even four years old, so I   don't remember those. But I've had two or three surgeries  every year since then (some  big, some small), and because  I'm little for my age, and I have some other medical   mysteries that doctors never really figured out, I used to get  sick a lot. That's why my  parents decided it was better if I  didn't go to school. I'm much stronger now, though.  The last  surgery I had was eight months ago, and I probably won't  have to have any  more for another couple of years. | Tr: 下周我开始五年级。因为我以前从未去过真正的学校，所以我几乎完全惊呆了。人们因为我的外表而认为我没有上过学，但事实并非如此。这是因为我做过的所有手术。我出生以来已经二十七岁了。更大的事情发生在我四岁之前，所以我不记得了。但从那时起，我每年都会进行两到三次手术（有的大，有的小），而且因为我相对于我的年龄来说还小，而且我还有一些医生从未真正弄清楚的其他医学奥秘，所以我经常生病。这就是为什么我的父母决定我最好不去上学。不过我现在坚强多了。我上次接受手术是八个月前，接下来的几年里我可能不需要再做手术了。
+[04-10 16:08] Or: People think I haven't gone to school because of   the way I look, but it's not that. It's because of all the  surgeries I've had. Twenty-seven  since I was born. The  bigger ones happened before I was even four years old, so I   don't remember those. | Tr: 人们因为我的外表而认为我没有上过学，但事实并非如此。这是因为我做过的所有手术。我出生以来已经二十七岁了。更大的事情发生在我四岁之前，所以我不记得了。
+[04-10 16:07] Or: It's because of all the  surgeries I've had. Twenty-seven  since I was born. The  bigger ones happened before I was even four years old, so I   don't remember those. | Tr: 这是因为我做过的所有手术。我出生以来已经二十七岁了。更大的事情发生在我四岁之前，所以我不记得了。
+[04-10 16:07] Or: It's because of all the  surgeries I've had. Twenty-seven  since I was born. | Tr: 这是因为我做过的所有手术。我出生以来已经二十七岁了。
+[04-10 16:06] Or: People think I haven't gone to school because of   the way I look, but it's not that. | Tr: 人们因为我的外表而认为我没有上过学，但事实并非如此。
+[04-10 16:06] Or: People think I haven't gone to school because of   the way I look, but it's not that. | Tr: 人们因为我的外表而认为我没有上过学，但事实并非如此。
+[04-10 16:06] Or: I am pretty  much | Tr: 我差不多
+[04-10 16:06] Or: totally | Tr: 完全
+[04-10 16:06] Or: completely  petrified. | Tr: 完全石化了。
+[04-10 16:05] Or: Since I've never been to a real  school before, I am pretty  much totally and completely  petrified. | Tr: 因为我以前从未去过真正的学校，所以我几乎完全惊呆了。
+[04-10 16:05] Or: Since I've never been to a real  school before, I am pretty  much totally and completely  petrified. | Tr: 因为我以前从未去过真正的学校，所以我几乎完全惊呆了。
+[04-10 16:05] Or: Next week I start fifth grade. | Tr: 下周我开始五年级。
+[04-10 16:05] Or: Since I've never been to a real | Tr: 因为我从来没有去过真正的
+[04-10 11:41] Or: rule,global,direct | Tr: 规则，全局，直接
+[04-10 11:24] Or: ==> ERROR: One or more files did not pass the validity check! | Tr: ==&gt; 错误：一个或多个文件未通过有效性检查！
+[04-09 17:16] Or: followed by | Tr: 其次是
+[04-09 17:16] Or: followed | Tr: 已关注
+[04-09 17:16] Or: include | Tr: 包括
+[04-09 17:16] Or: will | Tr: 将要
+[04-09 17:16] Or: typically | Tr: 通常
+[04-09 17:15] Or: will typically include | Tr: 通常会包括
+[04-09 17:14] Or: prompt | Tr: 迅速的
+[04-09 17:11] Or: distribution | Tr: 分配
+[04-09 17:11] Or: might | Tr: 可能
+[04-09 17:10] Or: somewhat | Tr: 有些
+[04-09 17:10] Or: depend­ ing | Tr: 依赖
+[04-09 17:10] Or: appearance | Tr: 外貌
+[04-09 17:10] Or: [15~ | Tr: [15~
+[04-09 17:09] Or: While it might vary in appearance somewhat depend­ ing on the distribution, it will typically include your username@machinename,  followed by the current working directory (more about that in a little bit)  and a dollar sign. | Tr: 虽然它的外观可能会因发行版而有所不同，但它通常会包含您的用户名@机器名，后跟当前工作目录（稍后会详细介绍）和美元符号。
+[04-09 17:09] Or: accept | Tr: 接受
+[04-09 17:08] Or: appear | Tr: 出现
+[04-09 17:08] Or: This is called a shell prompt, and it will appear whenever the shell is  ready to accept input. | Tr: 这称为 shell 提示符，只要 shell 准备好接受输入，它就会出现。
+[04-09 16:07] Or: I believe there are Moutai's that cost thousands of dollars, depending on the vintage.  Can't really tell the bottle Ling Long offered Tim here | Tr: 我相信茅台酒的价格可达数千美元，具体取决于年份。实在无法分辨玲珑在这里给蒂姆提供的瓶子
+[04-09 16:06] Or: For anyone who doesn't drink Baijiu: Moutai is aroud $350 per bottle. So yes, Ling Long actually treats Tim so well :) | Tr: 对于不喝白酒的人来说：茅台酒每瓶大约 350 美元。所以是的，玲珑实际上对蒂姆很好:)
+[04-09 16:06] Or: straight up demon | Tr: 正直的恶魔
+[04-09 14:57] Or: prompt | Tr: 迅速的
+[04-09 14:57] Or: This is called a shell prompt, and it will appear whenever the shell is  ready to accept input. | Tr: 这称为 shell 提示符，只要 shell 准备好接受输入，它就会出现。
+[04-07 18:14] Or: Notice that the tree is usually shown upended, that is, with the root at  the top and the various branches descending below. | Tr: 请注意，树通常显示为颠倒的，即根部位于顶部，各个分支向下延伸。
+[04-07 18:13] Or: Queued | Tr: 排队
+[04-07 18:11] Or: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.
+When reading HEARTBEAT.md, use workspace file /home/r.za/.openclaw/workspace/HEARTBEAT.md (exact case). Do not read docs/heartbeat.md.
+Current time: Tuesday, April 7th, 2026 - 4:43 PM (Asia/Shanghai) / 2026-04-07 08:43 UTC | Tr: 读取 HEARTBEAT.md（如果存在）（工作空间上下文）。严格遵守。不要从之前的聊天中推断或重复旧的任务。如果没有什么需要注意的，回复HEARTBEAT_OK。读取 HEARTBEAT.md 时，使用工作区文件 /home/r.za/.openclaw/workspace/HEARTBEAT.md （精确大小写）。不要阅读 docs/heartbeat.md。当前时间：2026年4月7日星期二 - 下午 4:43（亚洲/上海）/2026-04-07 08:43 UTC
+[04-07 18:11] Or: HEARTBEAT_OK | Tr: HEARTBEAT_OK
+[04-07 16:33] Or: hahawelcometomarrakech! the "helpful"locals pointing you the wrong way,the "my shop is just here", the "where are you from my friend"... classic. hold on tight to that mac - i'm not ready tobecome someoneelse'sAlassistant! though honestly if they steal me they'd justgetanAlthattellsthemtodrink | Tr: 哈哈欢迎来到马拉喀什！ “乐于助人的”当地人给你指错路，“我的商店就在这里”，“你从我的朋友那里来”......经典。紧紧抓住那台电脑 - 我还没准备好成为别人的助手！老实说，如果他们偷了我，他们就会得到Althattellsthemtodrink
+[04-07 16:28] Or: CLI onboarding is the recommended way to set up OpenClaw on macOS, Linux, or Windows (via WSL2; strongly recommended). It configures a local Gateway or a remote Gateway connection, plus channels, skills, and workspace defaults in one guided flow. | Tr: CLI 入门是在 macOS、Linux 或 Windows 上设置 OpenClaw 的推荐方法（通过 WSL2；强烈推荐）。它可以在一个引导流程中配置本地网关或远程网关连接，以及通道、技能和工作区默认值。
+[04-07 16:28] Or: onboarding | Tr: 入职
+[04-07 16:28] Or: recommended | Tr: 受到推崇的
+[04-07 16:27] Or: onboarding | Tr: 入职
+[04-07 16:15] Or: What now | Tr: 现在怎么办
+[04-07 16:15] Or: └  Onboarding complete. Use the dashboard link above to control OpenClaw. | Tr: └ 入职完成。使用上面的仪表板链接来控制 OpenClaw。
+[04-07 16:13] Or: ◆  Enable fish shell completion for openclaw? | Tr: ◆ 为openclaw 启用鱼壳补全吗？
+[04-07 16:12] Or: Gateway service runtime
+│  ● Node (recommended) (Required for WhatsApp + Telegram. Bun can corrupt memory on reconnect.)
+└ | Tr: 网关服务运行时 │ ● 节点（推荐）（WhatsApp + Telegram 必需。Bun 可能会在重新连接时损坏内存。） └
+[04-07 16:12] Or: ◆  Install Gateway service (recommended) | Tr: ◆ 安装网关服务（推荐）
+[04-07 16:11] Or: Hooks let you automate actions when agent commands are issued.          │
+│  Example: Save session context to memory when you issue /new or /reset.  │
+│                                                                          │
+│  Learn more: https://docs.openclaw.ai/automation/hooks                   │
+│ | Tr: 挂钩可让您在发出代理命令时自动执行操作。 │ │ 示例：当您发出 /new 或 /reset 时，将会话上下文保存到内存中。 │ │ │ │ 了解更多：https://docs.openclaw.ai/automation/hooks │ │
+[04-07 16:10] Or: ◆  Gateway URL — Public WebSocket URL used for /pair setup codes (ws/wss or http/https). | Tr: ◆ 网关URL — 用于/pair 设置代码（ws/wss 或http/https）的公共WebSocket URL。
+[04-07 16:10] Or: └  Please select at least one option. | Tr: └ 请至少选择一项。
+[04-07 16:08] Or: ◆  Set GOOGLE_PLACES_API_KEY for goplaces? | Tr: ◆ 为goplace 设置GOOGLE_PLACES_API_KEY？
+[04-07 16:08] Or: │  ◻ 📰 blogwatcher (Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI. — Install blogwat…) | Tr: │ ◻ 📰 blogwatcher（使用 blogwatcher CLI 监控博客和 RSS/Atom 提要的更新。 — 安装 blogwat...）
+[04-07 16:08] Or: │  ◻ 🔐 1password (Set up and use 1Password CLI (op). Use when installing the CLI, enabling desktop app inte…) | Tr: │ ◻ 🔐 1password（设置和使用 1Password CLI（op）。安装 CLI 时使用，启用桌面应用程序集成...）
+[04-07 16:07] Or: Skills status ─────────────╮
+│                             │
+│  Eligible: 7                │
+│  Missing requirements: 36   │
+│  Unsupported on this OS: 7  │
+│  Blocked by allowlist: 0    │
+│ | Tr: 技能状态 ──────────────╮ │ │ │ 符合条件： 7 │ │ 缺少要求： 36 │ │ 此操作系统不支持： 7 │ │ 被白名单阻止： 0 │ │
+[04-07 16:04] Or: Requires Google Gemini API key · Google 
+│  Search grounding | Tr: 需要 Google Gemini API 密钥 · Google │ 搜索接地
+[04-07 16:04] Or: Structured results | Tr: 结构化结果
+[04-07 16:03] Or: │  Web search lets your agent look things up online.                 │
+│  Choose a provider. Some providers need an API key, and some work  │
+│  key-free.                                                         │
+│  Docs: https://docs.openclaw.ai/tools/web | Tr: │ 网络搜索让您的代理可以在线查找内容。 │ │ 选择供应商。有些提供商需要 API 密钥，有些则不需要密钥。 │ │ 文档：https://docs.openclaw.ai/tools/web
+[04-07 16:02] Or: ◆  How do you want to provide the gateway password? | Tr: ◆ 您希望如何提供网关密码？
+[04-07 16:01] Or: ◆  Tailscale exposure
+│  ● Off (No Tailscale exposure)
+│  ○ Serve
+│  ○ Funnel | Tr: ◆ 尾鳞曝光 │ ● 关闭（无尾鳞曝光） │ ○ 服务 │ ○ 漏斗
+[04-07 16:01] Or: │  ○ Password | Tr: │ ○ 密码
+[04-07 16:00] Or: │  ● Token (Recommended default (local + remote)) | Tr: │ ● Token（推荐默认（本地+远程））
+[04-07 16:00] Or: ◆  Gateway auth | Tr: ◆ 网关认证
+[04-07 16:00] Or: ◆  Gateway port | Tr: ◆ 网关端口
+[04-07 16:00] Or: ◆  Gateway port | Tr: ◆ 网关端口
+[04-07 15:55] Or: │  Default model set to openrouter/auto  │ | Tr: │ 默认模型设置为 openrouter/auto │
+[04-07 15:52] Or: Please copy it now and write it down somewhere safe. You will not be able to see it again.
+You can use it with OpenAI-compatible apps, or your own code | Tr: 请立即复制并记在安全的地方。您将无法再次看到它。您可以将其与 OpenAI 兼容的应用程序或您自己的代码一起使用
+[04-07 15:52] Or: Choose when this API key should expire. Select "No expiration" for a key that never expires. | Tr: 选择此 API 密钥何时到期。对于永不过期的密钥，选择“无过期”。
+[04-07 15:52] Or: Daily: resets every day at midnight UTC
+Weekly: resets every Monday at midnight UTC
+Monthly: resets on the 1st of each calendar month at midnight UTC | Tr: 每日：每天在 UTC 午夜重置 每周：每周一在 UTC 午夜重置 每月：每个日历月的第一天在 UTC 午夜重置
+[04-07 15:52] Or: Once the credits (in $USD) consumed by this API key sum to this amount or more, it will no longer work. Leave blank for no limit. | Tr: 一旦此 API 密钥消耗的积分（以美元为单位）达到此金额或更多，它将不再起作用。留空表示没有限制。
+[04-07 15:51] Or: Choose a clear and descriptive name. | Tr: 选择一个清晰且具有描述性的名称。
+[04-07 15:51] Or: Name | Tr: 姓名
+[04-07 15:51] Or: Enable paid endpoints that may train on inputs | Tr: 启用可根据输入进行训练的付费端点
+[04-07 15:51] Or: Privacy Settings | Tr: 隐私设置
+[04-07 15:51] Or: 386 available | 1 unavailable
+￼ | Tr: 386 可用 | 1 不可用 ￼
+[04-07 15:50] Or: Eligibility Preview | Tr: 资格预览
+[04-07 15:50] Or: Manage data consent and set spending limits, model restrictions, and usage policies. | Tr: 管理数据同意并设置支出限制、模型限制和使用策略。
+[04-07 15:50] Or: Reset limit every...
+￼ | Tr: 重置限制每隔... ￼
+[04-07 15:50] Or: Credit limit (optional) | Tr: 信用额度（可选）
+[04-07 15:45] Or: ◆  Workspace directory | Tr: ◆ 工作区目录
+[04-07 15:45] Or: │  ○ Remote gateway (info-only) | Tr: │ ○ 远程网关（仅供参考）
+[04-07 15:45] Or: │  ● Local gateway (this machine) (No gateway detected | Tr: │ ● 本地网关（本机）（未检测到网关
+[04-07 15:45] Or: Manual | Tr: 手动的
+[04-07 15:45] Or: │  ● QuickStart (Configure details later via openclaw configure.) | Tr: │ ● 快速入门（稍后通过 openclaw 配置配置详细信息。）
+[04-07 15:41] Or: │  requires lock-down. Continue? | Tr: │ 需要锁定。继续？
+[04-07 15:41] Or: ◆  I understand this is personal-by-default and shared/multi-user use | Tr: ◆ 我了解这是默认个人和共享/多用户使用
+[04-07 15:41] Or: │  - Multi-user/shared inbox: split trust boundaries    │ | Tr: │ - 多用户/共享收件箱：分割信任边界 │
+[04-07 15:41] Or: │  - Pairing/allowlists + mention gating.               │ | Tr: │ - 配对/白名单+提及门控。 │
+[04-07 15:41] Or: │  Recommended baseline:                                │ | Tr: │ 推荐基线： │
+[04-07 15:40] Or: │  trusted operator boundary.                           │ | Tr: │ 可信操作者边界。 │
+[04-07 15:40] Or: By default, OpenClaw is a personal agent: one        │
+│  trusted operator boundary. | Tr: 默认情况下，OpenClaw 是一个个人代理：一个 │ │ 受信任的操作员边界。
+[04-07 15:40] Or: OpenClaw is a hobby project and still in beta.       │
+│  Expect sharp edges. | Tr: OpenClaw 是一个业余爱好项目，仍处于测试阶段。 │ │ 期待锋利的边缘。
+[04-07 15:40] Or: │  Security warning — please read.                      │ | Tr: │ 安全警告——请阅读。 │
+[04-07 15:39] Or: I autocomplete your thoughts—just slower and with more API calls. | Tr: 我会自动完成您的想法，只是速度较慢且 API 调用较多。
+[04-07 15:39] Or: successfully | Tr: 成功地
+[04-07 15:38] Or: ◆  I understand this is personal-by-default and shared/multi-user use requires lock-down. Continue? | Tr: ◆ 我了解这是默认的个人使用，共享/多用户使用需要锁定。继续？
+[04-07 15:36] Or: · Configuring npm for user-local installs
+✓ npm configured for user installs
+· Installing OpenClaw v2026.4.5 | Tr: · 为用户本地安装配置 npm ✓ 为用户安装配置 npm · 安装 OpenClaw v2026.4.5
+[04-07 15:32] Or: partnership | Tr: 合伙
+[04-07 15:32] Or: announcing | Tr: 宣布
+[04-07 14:50] Or: mad | Tr: 疯狂的
+[04-04 16:45] Or: special | Tr: 特别的
+[04-04 16:45] Or: 公告 | Tr: 公告
+[04-04 15:49] Or: Specify the background and text color when using custom color mode (by executing toggle_custom_color command). | Tr: 指定使用自定义颜色模式时的背景和文本颜色（通过执行toggle_custom_color命令）。
+[04-04 15:37] Or: I think this option was added in the development branch and is not available in the 2.0 release.
+￼
+1 | Tr: 我认为这个选项是在开发分支中添加的，在 2.0 版本中不可用。 ￼1
+[04-04 15:37] Or: Sorry I can't seem to get this working. I have verified I am on 2.0 and my whole config is just: | Tr: 抱歉，我似乎无法让这个工作。我已经验证我使用的是 2.0，我的整个配置只是：
+[04-04 15:37] Or: Would it be possible to control these two options separately in custom color mode?
+￼
+0 | Tr: 是否可以在自定义颜色模式下单独控制这两个选项？ ￼0
+[04-04 15:37] Or: In the dark mode and normal color mode, background color controls the color behind/outside the "page" of the document. However in custom color mode, background color refers to both the color of the page and the color behind it. | Tr: 在深色模式和普通颜色模式下，背景颜色控制文档“页面”后面/外部的颜色。然而，在自定义颜色模式下，背景颜色既指页面的颜色，也指页面背后的颜色。
+[04-04 15:37] Or: Custom Color Background #1222 | Tr: 自定义颜色背景 #1222
+[04-04 14:26] Or: To specify permissions, run `deno repl` with allow flags. | Tr: 要指定权限，请运行带有允许标志的“deno repl”。
+[04-04 14:23] Or: journal | Tr: 杂志
+[04-04 12:06] Or: wester | Tr: 韦斯特
+[04-04 10:23] Or: Manifesto | Tr: 宣言
+[04-04 10:20] Or: Architect | Tr: 建筑师
+[04-04 10:20] Or: Partner | Tr: 伙伴
+[04-04 10:20] Or: Partner Architect | Tr: 合伙人建筑师
+[04-03 17:50] Or: not possible to use | Tr: 无法使用
+[04-03 17:50] Or: it's not possible to use Switchres. | Tr: 无法使用 Switchres。
+[04-03 17:50] Or: not possible | Tr: 不可能
+[04-03 17:49] Or: Wayland will never replace Xorg as long as it's not possible to use Switchres. | Tr: 只要无法使用 Switchres，Wayland 就永远不会取代 Xorg。
+[04-03 17:49] Or: Wayland will never replace Xorg as long as it's not possible to use Switchres. | Tr: 只要无法使用 Switchres，Wayland 就永远不会取代 Xorg。
+[04-03 17:49] Or: Wayland will never replace Xorg as long as it's not possible to use Switchres. | Tr: 只要无法使用 Switchres，Wayland 就永远不会取代 Xorg。
+[04-03 17:49] Or: necessary | Tr: 必要的
+[04-03 17:49] Or: I can wait as long as necessary. | Tr: 只要需要，我可以等。
+[04-03 17:48] Or: The movie is as long as the book is. | Tr: 电影和书一样长。
+[04-03 17:48] Or: The bridge is as long as three football fields. | Tr: 这座桥有三个足球场那么长。
+[04-03 17:48] Or: The blue pencil is as long as the red one. | Tr: 蓝色铅笔和红色铅笔一样长。
+[04-03 17:47] Or: As long as it rains, we will stay home. | Tr: 只要下雨，我们就呆在家里。
+[04-03 17:46] Or: stay home. | Tr: 呆在家里。
+[04-03 17:46] Or: rains | Tr: 下雨
+[04-03 17:45] Or: pass | Tr: 经过
+[04-03 17:45] Or: study hard, | Tr: 努力学习，
+[04-03 17:45] Or: hard | Tr: 难的
+[04-03 17:44] Or: As long as you study hard, you will pass. | Tr: 只要你努力学习，你就会通过。
+[04-03 17:44] Or: 句子： As long as you study hard, you will pass. | Tr: 句子: 只要你努力学习，你就会通过。
+[04-03 17:33] Or: This string is as long as that one. | Tr: 这根绳子和那根一样长。
+[04-03 17:32] Or: string | Tr: 细绳
+[04-03 17:32] Or: as long as | Tr: 只要
+[04-03 17:31] Or: "I will keep this old monitor as long as it still works. | Tr: “只要这台旧显示器还能用，我就会保留它。
+[04-03 17:31] Or: "I will keep this old monitor as long as it still works. | Tr: “只要这台旧显示器还能用，我就会保留它。
+[04-03 17:23] Or: How beautiful a house you have! | Tr: 你的房子多漂亮啊！
+[04-03 17:14] Or: she is as good a cook as her mother | Tr: 她的厨艺和她妈妈一样好
+[04-03 17:12] Or: tall | Tr: 高的
+[04-03 17:12] Or: as long as | Tr: 只要
+[04-03 16:17] Or: monitor | Tr: 监视器
+[04-03 15:50] Or: support | Tr: 支持
+[04-03 15:48] Or: resolution | Tr: 解决
+[04-03 15:48] Or: changed the resolution. | Tr: 改变了分辨率。
+[04-03 15:47] Or: resolution | Tr: 解决
+[04-03 15:47] Or: changed | Tr: 改变了
+[04-03 15:47] Or: explained | Tr: 解释了
+[04-03 15:47] Or: resolution | Tr: 解决
+[04-03 15:47] Or: While he was playing a game, he explained how the system changed the resolution | Tr: 他一边玩游戏一边讲解系统如何改变分辨率
+[04-03 15:47] Or: technology | Tr: 技术
+[04-03 15:46] Or: hardware | Tr: 硬件
+[04-03 15:46] Or: support his old hardware | Tr: 支持他的旧硬件
+[04-03 15:46] Or: support his old hardware | Tr: 支持他的旧硬件
+[04-03 15:45] Or: important | Tr: 重要的
+[04-03 15:45] Or: special | Tr: 特别的
+[04-03 15:45] Or: special | Tr: 特别的
+[04-03 15:44] Or: Although | Tr: 虽然
+[04-03 15:44] Or: retro | Tr: 复古的
+[04-03 15:41] Or: CRT Switchres is amazing. Wayland will never replace Xorg as long as it's not possible to use Switchres. | Tr: CRT Switchres 非常棒。只要无法使用 Switchres，Wayland 就永远不会取代 Xorg。
+[04-03 15:40] Or: I finally got all my Switchres settings perfected and I'm realizing how much of my previous dislike of emulators was all from the lack of proper CRT output. I | Tr: 我终于完善了所有 Switchres 设置，并且意识到我以前对模拟器的不喜欢完全是由于缺乏适当的 CRT 输出。我
+[04-03 15:15] Or: A host for Niri Animations configurations to be shared using custom shaders built in with GLSL | Tr: 使用 GLSL 内置的自定义着色器共享 Niri 动画配置的主机
+[04-03 14:53] Or: This repo is for glsl shaders converted by hand from libretro's common-shaders repo, since some don't play nicely | Tr: 此存储库适用于从 libretro 的 common-shaders 存储库手动转换的 glsl 着色器，因为有些着色器效果不佳
+[04-03 14:53] Or: About
+This repo is for glsl shaders converted by hand from libretro's common-shaders repo, since some don't play nicely with the cg2glsl script. | Tr: 关于此存储库适用于从 libretro 的 common-shaders 存储库手动转换的 glsl 着色器，因为有些着色器不能很好地与 cg2glsl 脚本配合使用。
+[04-03 14:49] Or: shaders | Tr: 着色器
+[04-03 12:22] Or: available | Tr: 可用的
+[04-03 12:22] Or: Below | Tr: 以下
+[04-03 12:22] Or: Below is a
+ list of all available sioyek
+ commands. | Tr: 以下是所有可用 sioyek 命令的列表。
+[04-03 12:22] Or: Below is a
+ list of all available sioyek | Tr: 以下是所有可用 sioyek 的列表
+[04-03 12:22] Or: Below is a
+ list of all available sioyek | Tr: 以下是所有可用 sioyek 的列表
+[04-03 12:21] Or: by default | Tr: 默认情况下
+[04-03 12:21] Or: You can open a searchable
+ list of all sioyek commands by
+ pressing : by default. | Tr: 默认情况下，您可以按 : 打开所有 sioyek 命令的可搜索列表。
+[04-03 12:21] Or: sioyek commands by
+ pressing | Tr: sioyek 命令通过按
+[04-03 12:20] Or: ioyek commands by
+ pressing | Tr: ioyek 命令通过按
+[04-03 12:20] Or: pressing | Tr: 紧迫
+[04-03 12:20] Or: searchable | Tr: 可搜索的
+[04-03 12:20] Or: searchable | Tr: 可搜索的
+[04-03 12:06] Or: All sioyek keybindings execute some command. You can open a searchable list of all sioyek commands by pressing : by default. Below is a list of all available sioyek commands. | Tr: 所有 sioyek 键绑定都会执行一些命令。默认情况下，您可以按 : 打开所有 sioyek 命令的可搜索列表。以下是所有可用 sioyek 命令的列表。
+[04-03 12:05] Or: Installation | Tr: 安装
+[04-03 12:02] Or: research | Tr: 研究
+[04-03 12:01] Or: research | Tr: 研究
+[04-03 11:46] Or: research | Tr: 研究
+[04-03 11:40] Or: Screenshot | Tr: 截屏
+[04-03 11:40] Or: Keep current window when clicking the screenshot button | Tr: 单击屏幕截图按钮时保持当前窗口
+[04-03 11:40] Or: Open third-party v webpage using the edefaultbrowser | Tr: 使用edefaultbrowser打开第三方v网页
+[04-03 11:40] Or: voice | Tr: 嗓音
+[04-03 11:40] Or: Auto-convert | Tr: 自动转换
+[04-03 11:39] Or: Auto-convert voice messages to text | Tr: 自动将语音消息转换为文本
+[04-03 11:39] Or: Show  web s search history | Tr: 显示网页的搜索历史记录
+[04-03 11:39] Or: Open chat files s in read-only mode | Tr: 以只读模式打开聊天文件
+[04-03 11:31] Or: complete. | Tr: 完全的。
+[04-03 11:26] Or: Remote | Tr: 偏僻的
+[04-03 11:26] Or: Branch | Tr: 分支
+[04-03 11:25] Or: Proceed | Tr: 继续
+[04-03 11:25] Or: Proceed with these changes to the system installation? [Y/n]: | Tr: 继续对系统安装进行这些更改吗？ [是/否]：
+[04-03 11:25] Or: Proceed with these changes to the system installation? [Y/n]: | Tr: 继续对系统安装进行这些更改吗？ [是/否]：
+[04-03 11:25] Or: runtime | Tr: 运行时
+[04-03 11:25] Or: Required | Tr: 必需的
+[04-03 11:24] Or: desktop until the session is | Tr: 桌面，直到会话结束
+[04-03 11:24] Or: may not appear on your | Tr: 可能不会出现在您的
+[04-03 11:24] Or: may not appear on your
+ desktop until the session is
+ restarted. | Tr: 在会话重新启动之前可能不会出现在您的桌​​面上。
+[04-03 11:24] Or: desktop until the session is
+ restarted. | Tr: 桌面，直到会话重新启动。
+[04-03 11:24] Or: until | Tr: 直到
+[04-03 11:24] Or: appear | Tr: 出现
+[04-03 11:24] Or: may | Tr: 可能
+[04-03 11:24] Or: variable | Tr: 多变的
+[04-03 11:23] Or: environment variable | Tr: 环境变量
