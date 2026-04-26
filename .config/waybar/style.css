@@ -1,27 +1,30 @@
 @import "colors.css";
 
 * {
-    border: none;
-    border-radius: 6px;
-    font-family: "JetBrainsMono NFP", "JetBrains Maple Mono";
-    font-size: 14px;
-    min-height: 0;
+  border: none;
+  border-radius: 6px;
+  font-family: "JetBrainsMono NFP", "JetBrains Maple Mono";
+  /* font-family: "SF Pro Display", "PingFang SC", "Symbols Nerd Font", sans-serif; */
+  font-size: 16px;
+  /* font-weight: 400; */
+  /* letter-spacing: 0px; */
+  min-height: 0;
 }
 
 window#waybar {
-    background: @surface;
-    color: @on_surface;
+  background: @surface;
+  color: @on_surface;
 }
 
 tooltip {
-    background: @surface_container_high;
-    border: 1px solid @outline;
-    opacity: 1;
+  background: @surface_container_high;
+  border: 1px solid @outline;
+  opacity: 1;
 }
 
 tooltip label {
-    color: @on_surface;
-    font-size: 0.9em;
+  color: @on_surface;
+  font-size: 0.9em;
 }
 
 #workspaces,
@@ -56,89 +59,89 @@ tooltip label {
 #custom-reboot,
 #custom-lockscreen,
 #custom-logout {
-    background-color: @surface_container_high;
-    color: @secondary;
-    padding: 0px 8px;
-    margin: 4px;
+  background-color: @surface_container_high;
+  color: @secondary;
+  padding: 0px 8px;
+  margin: 4px;
 }
 
 #workspaces button {
-    padding: 0px 6px;
-    margin: 0px 2px;
-    color: @tertiary_container;
+  padding: 0px 6px;
+  margin: 0px 2px;
+  color: @tertiary_container;
 }
 
 #workspaces button.active {
-    color: @tertiary;
-    background: @surface_bright;
+  color: @tertiary;
+  background: @surface_bright;
 }
 
 #workspaces button:hover {
-    background: @surface_bright;
+  background: @surface_bright;
 }
 
 #custom-applauncher {
-    background-color: @primary;
-    color: @on_primary;
+  background-color: @primary;
+  color: @on_primary;
 }
 
 #custom-wfrec.recording,
 #battery.critical:not(.charging),
 #power-profiles-daemon.performance {
-    color: @error;
+  color: @error;
 }
 
 #bluetooth.disabled,
 #idle_inhibitor.activated {
-    color: @tertiary;
+  color: @tertiary;
 }
 
 #pulseaudio-slider,
 #backlight-slider {
-    padding: 0px 6px;
+  padding: 0px 6px;
 }
 
 #pulseaudio-slider trough,
 #backlight-slider trough {
-    min-height: 8px;
-    min-width: 60px;
-    border-radius: 6px;
-    background-color: @surface;
+  min-height: 8px;
+  min-width: 60px;
+  border-radius: 6px;
+  background-color: @surface;
 }
 
 #pulseaudio-slider highlight,
 #backlight-slider highlight {
-    border-radius: 6px;
-    background-color: @secondary;
+  border-radius: 6px;
+  background-color: @secondary;
 }
 
 #pulseaudio-slider slider,
 #backlight-slider slider {
-    opacity: 0;
-    background: none;
-    border: none;
-    box-shadow: none;
-    }
+  opacity: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
 /* 键盘状态基础设置 */
 #keyboard-state {
-    padding: 0;
-    margin: 0;
-    background-color: transparent; /* 默认隐藏背景 */
+  padding: 0;
+  margin: 0;
+  background-color: transparent; /* 默认隐藏背景 */
 }
 
 /* 当大写锁定时显示样式 */
 #keyboard-state label.locked {
-    background-color: @primary;   /* 锁定时的背景色 */
-    color: @on_primary;           /* 锁定时的文字颜色 */
-    padding: 0px 8px;             /* 恢复内边距 */
-    margin: 4px;                  /* 恢复外边距 */
-    border-radius: 6px;
-    font-weight: bold;
+  background-color: @primary; /* 锁定时的背景色 */
+  color: @on_primary; /* 锁定时的文字颜色 */
+  padding: 0px 8px; /* 恢复内边距 */
+  margin: 4px; /* 恢复外边距 */
+  border-radius: 6px;
+  font-weight: bold;
 }
 
 /* 当未锁定时强制隐藏 */
 #keyboard-state label.unlocked {
-    font-size: 0;
-    padding: 0;
-    margin: 0;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
 }

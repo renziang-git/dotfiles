@@ -2,12 +2,19 @@
 #command = "swww"
 command = "swaybg"
 #arguments = ["img", "--transition-type", "center"]
-#set = false 
+set = false 
+
+
+[templates.foot]
+input_path = '~/.config/matugen/templates/foot.conf'
+output_path = '~/.config/foot/colors.ini'
+
+# 切換桌布後，自動通知所有開啟的 foot 實例重新載入顏色
+post_hook = 'pkill -USR1 foot'
 
 [templates.waybar]
 input_path = '~/.config/matugen/templates/colors.css'
 output_path = '~/.config/waybar/colors.css'
-# post_hook='rm ~/.config/waybar-niri-Win11Like/colors.css && ln -s ~/.config/waybar/colors.css ~/.config/waybar-niri-Win11Like/colors.css'
 
 # [templates.pywalfox]
 # input_path = '~/.config/matugen/templates/pywalfox-colors.json'
@@ -45,11 +52,11 @@ post_hook='makoctl reload &'
 # [templates.starship]
 # input_path = '~/.config/matugen/templates/starship-colors.toml'
 # output_path = '~/.config/starship.toml'
-#
-# [templates.yazi]
-# input_path = '~/.config/matugen/templates/yazi-theme.toml'
-# output_path = '~/.config/yazi/theme.toml'
-#
+
+[templates.yazi]
+input_path = '~/.config/matugen/templates/yazi-theme.toml'
+output_path = '~/.config/yazi/theme.toml'
+
 # [templates.wlogout]
 # input_path = '~/.config/matugen/templates/colors.css'
 # output_path = '~/.config/wlogout/colors.css'
@@ -94,11 +101,11 @@ post_hook='makoctl reload &'
 # #input_path = '~/.config/matugen/templates/niriswitcher-colors.css'
 # #output_path = '~/.config/niriswitcher/style.css'
 # #post_hook= 'pkill niriswitcher || true && niriswitcher & disown'
-#
-# [templates.niri]
-# input_path = '~/.config/matugen/templates/niri-colors.kdl'
-# output_path = '~/.config/niri/colors.kdl'
-#
+
+ [templates.niri]
+ input_path = '~/.config/matugen/templates/niri-colors.kdl'
+ output_path = '~/.config/niri/colors.kdl'
+
 # [templates.gtk-folder]
 # input_path = '~/.config/matugen/templates/gtk-folder/recolor.sh'
 # output_path = '~/.cache/matugen/recoloricons.sh'
@@ -112,11 +119,11 @@ post_hook='makoctl reload &'
 # #[templates.swaylock-effects]
 # #input_path = '~/.config/matugen/templates/swaylock-colors'
 # #output_path = '~/.config/swaylock/config'
-#
-# [templates.fastfetch]
-# input_path = '~/.config/matugen/templates/fastfetch-config.jsonc'
-# output_path = '~/.config/fastfetch/config.jsonc'
-#
+
+ [templates.fastfetch]
+ input_path = '~/.config/matugen/templates/fastfetch-config.jsonc'
+ output_path = '~/.config/fastfetch/config.jsonc'
+
 # #[templates.neovim]
 # #input_path = '~/.config/matugen/templates/neovim/template.lua'
 # #output_path = '~/.config/nvim/generated.lua'

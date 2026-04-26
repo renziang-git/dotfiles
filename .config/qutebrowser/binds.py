@@ -23,23 +23,6 @@ config.bind(f"{SCRIPT_PREFIX}b", 'spawn yt-dlp -f "bv*+ba/b" {url}')
 config.bind(f"{SCRIPT_PREFIX}v", 'spawn yt-dlp -f bv {url}')
 config.bind(f"{SCRIPT_PREFIX}a", 'spawn yt-dlp -f ba {url}')
 
-# 进入视频控制模式
-config.bind("gv", "mode-enter passthrough")
-
-c.bindings.commands["passthrough"] = {
-    # 速度
-    "a": "spawn --userscript qb-video-control down",
-    "r": "spawn --userscript qb-video-control reset",
-    "s": "spawn --userscript qb-video-control up",
-    "e": "spawn --userscript qb-video-control 2.5",
-    # 时间跳转
-    "z": "spawn --userscript qb-video-control back",
-    "x": "spawn --userscript qb-video-control forward",
-
-    # 退出
-    "<Escape>": "mode-leave",
-}# 视频控制（userscript 测试）
-
 # Alt 快捷键（normal 模式）
 config.bind("<Alt-a>", "spawn --userscript qb-video-control down")
 config.bind("<Alt-r>", "spawn --userscript qb-video-control reset")

@@ -2,6 +2,7 @@
 // "/-" comments out the following node.
 // Check the wiki for a full description of the configuration:
 // https://yalter.github.io/niri/Configuration:-Introduction
+include "colors.kdl"
 prefer-no-csd
 
 // Input device configuration.
