@@ -1,0 +1,194 @@
+return {
+	-- 	-- 基础依赖
+	-- {
+	-- 	"rcarriga/nvim-notify",
+	-- 	config = function()
+	-- 		vim.notify = require("notify")
+	-- 		require("notify").setup({
+	-- 			stages = "fade", -- ✔ 淡入淡出
+	-- 			timeout = 2000,
+	-- 			background_colour = "#000000",
+	-- 		})
+	-- 	end,
+	-- },
+	-- {
+	-- 	"folke/noice.nvim",
+	-- 	event = "VeryLazy",
+	-- 	dependencies = {
+	-- 		"MunifTanjim/nui.nvim",
+	-- 		"rcarriga/nvim-notify",
+	-- 	},
+	-- 	opts = {
+	-- 		cmdline = {
+	-- 			view = "cmdline_popup",
+	-- 		},
+	--
+	-- 		-- 🔑 新增：通知视图配置
+	-- 		notify = {
+	-- 			-- 方案A：用 mini 视图（极简，推荐）
+	-- 			view = "mini",
+	-- 			timeout = 3000, -- 3秒后自动消失
+	-- 		},
+	--
+	-- 		views = {
+	-- 			cmdline_popup = {
+	-- 				position = {
+	-- 					row = 2,
+	-- 					col = "50%",
+	-- 				},
+	-- 				size = {
+	-- 					width = 60,
+	-- 					height = "auto",
+	-- 				},
+	-- 			},
+	--
+	-- 			-- 🔑 新增：如果上面用 mini，这行可省略
+	-- 			-- 如果保留默认弹窗但想调位置，用下面这段：
+	-- 			-- notify = {
+	-- 			--     position = {
+	-- 			--         row = 1,
+	-- 			--         col = "100%",
+	-- 			--     },
+	-- 			--     size = {
+	-- 			--         width = 50,
+	-- 			--         height = "auto",
+	-- 			--     },
+	-- 			-- },
+	-- 		},
+	-- 	},
+	-- },
+
+	--
+	--
+	-- 	{
+	-- 		"saghen/blink.cmp",
+	--
+	-- 		dependencies = {
+	-- 			"rafamadriz/friendly-snippets",
+	-- 		},
+	--
+	-- 		version = "*",
+	--
+	-- 		opts = {
+	-- 			keymap = {
+	-- 				preset = "default",
+	-- 			},
+	--
+	-- 			appearance = {
+	-- 				nerd_font_variant = "mono",
+	-- 			},
+	--
+	-- 			completion = {
+	-- 				documentation = {
+	-- 					auto_show = true,
+	-- 				},
+	-- 			},
+	--
+	-- 			sources = {
+	-- 				default = { "lsp", "path", "buffer" },
+	-- 			},
+	-- 		},
+	-- 	},
+	--
+	-- 	-- {
+	-- 	-- 	"yetone/avante.nvim",
+	-- 	-- 	build = "make",
+	-- 	-- 	dependencies = {
+	-- 	-- 		"stevearc/dressing.nvim",
+	-- 	-- 		"nvim-lua/plenary.nvim",
+	-- 	-- 		"MunifTanjim/nui.nvim",
+	-- 	-- 		"nvim-tree/nvim-web-devicons",
+	-- 	-- 		"zbirenbaum/copilot.lua",
+	-- 	-- 		{
+	-- 	-- 			"HakonHarnes/img-clip.nvim",
+	-- 	-- 			event = "VeryLazy",
+	-- 	-- 			opts = { recommended = true },
+	-- 	-- 		},
+	-- 	-- 		{ "MeanderingProgrammer/render-markdown.nvim", opts = { file_types = { "markdown", "Avante" } } },
+	-- 	-- 	},
+	-- 	-- 	event = "VeryLazy",
+	-- 	-- 	keys = {
+	-- 	-- 		{
+	-- 	-- 			"<leader>aa",
+	-- 	-- 			function()
+	-- 	-- 				require("avante.api").ask()
+	-- 	-- 			end,
+	-- 	-- 			desc = "Avante: Ask",
+	-- 	-- 		},
+	-- 	-- 		{
+	-- 	-- 			"<leader>ac",
+	-- 	-- 			function()
+	-- 	-- 				require("avante.api").chat()
+	-- 	-- 			end,
+	-- 	-- 			desc = "Avante: Chat",
+	-- 	-- 		},
+	-- 	-- 		{
+	-- 	-- 			"<leader>ae",
+	-- 	-- 			function()
+	-- 	-- 				require("avante.api").edit()
+	-- 	-- 			end,
+	-- 	-- 			desc = "Avante: Edit",
+	-- 	-- 		},
+	-- 	-- 	},
+	-- 	-- 	opts = {
+	-- 	-- 		provider = "deepseek-flash",
+	-- 	-- 		providers = {
+	-- 	-- 			["deepseek-flash"] = {
+	-- 	-- 				__inherited_from = "openai",
+	-- 	-- 				endpoint = "https://api.deepseek.com/v1",
+	-- 	-- 				model = "deepseek-v4-flash",
+	-- 	-- 				api_key_name = "DEEPSEEK_API_KEY",
+	-- 	-- 				max_tokens = 4096,
+	-- 	-- 				extra_request_body = {
+	-- 	-- 					-- temperature = 0.7,
+	-- 	-- 					-- -- ✅ 关键：禁用 thinking/reasoning
+	-- 	-- 					-- thinking = false,
+	-- 	-- 					-- reasoning = false,
+	-- 	-- 				},
+	-- 	-- 			},
+	-- 	-- 			["deepseek-pro"] = {
+	-- 	-- 				__inherited_from = "openai",
+	-- 	-- 				endpoint = "https://api.deepseek.com/v1",
+	-- 	-- 				model = "deepseek-v4-pro",
+	-- 	-- 				api_key_name = "DEEPSEEK_API_KEY",
+	-- 	-- 				max_tokens = 4096,
+	-- 	-- 				extra_request_body = {
+	-- 	-- 					temperature = 0.7,
+	-- 	-- 					-- ✅ 关键：禁用 thinking/reasoning
+	-- 	-- 					thinking = false,
+	-- 	-- 					reasoning = false,
+	-- 	-- 				},
+	-- 	-- 			},
+	-- 	-- 		},
+	-- 	-- 		input = {
+	-- 	-- 			provider = "snacks",
+	-- 	-- 			provider_opts = {
+	-- 	-- 				icon = " ",
+	-- 	-- 				title = "Avante",
+	-- 	-- 			},
+	-- 	-- 		},
+	-- 	-- 	},
+	-- 	-- },
+	--
+	-- 	{
+	-- 		"zbirenbaum/copilot.lua",
+	-- 		cmd = "Copilot",
+	-- 		event = "InsertEnter",
+	--
+	-- 		opts = {
+	-- 			suggestion = {
+	-- 				enabled = true,
+	-- 				auto_trigger = true,
+	-- 				keymap = {
+	-- 					accept = "<Tab>",
+	-- 				},
+	-- 			},
+	--
+	-- 			panel = {
+	-- 				enabled = false,
+	-- 			},
+	-- 		},
+	-- 	},
+	--
+	-- 	-- LSP（新版写法）
+}

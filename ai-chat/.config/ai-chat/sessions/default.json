@@ -1,0 +1,78 @@
+{
+  "name": "default",
+  "messages": [
+    {
+      "role": "user",
+      "content": "hi嗨",
+      "timestamp": "2026-05-09T17:44:47.10719629+08:00",
+      "model": "deepseek-chat"
+    },
+    {
+      "role": "assistant",
+      "content": "Hi there! How can I help you today? 😊",
+      "timestamp": "2026-05-09T17:44:48.265263173+08:00",
+      "model": "deepseek-chat"
+    },
+    {
+      "role": "user",
+      "content": "你帮什",
+      "timestamp": "2026-05-09T17:45:03.896809229+08:00",
+      "model": "deepseek-chat"
+    },
+    {
+      "role": "assistant",
+      "content": "看起来你的输入好像有点不完整呢。你是想问“你帮助什么？”或者“你能帮我做什么？”吗？\n\n如果你愿意的话，可以告诉我你想了解什么、需要什么帮助，比如：\n\n- 学习方面的答疑（数学、编程、语言等）\n- 写作、翻译、修改文字\n- 生活建议、工作计划\n- 甚至是聊聊天、解解闷\n\n我会尽力帮你解决！😊",
+      "timestamp": "2026-05-09T17:45:06.356848296+08:00",
+      "model": "deepseek-chat"
+    },
+    {
+      "role": "assistant",
+      "content": "Based on the search query \"hi,\" the most relevant matches are:\n\n1.  **Chat Message [1]: `user: hi嗨`**\n    - **Why it's relevant:** This is the only message that directly contains the exact search term \"hi\" (along with the Chinese equivalent \"嗨\"). It matches the query precisely as a greeting.\n\n2.  **Chat Message [2]: `assistant: Hi there! How can I help you today? 😊`**\n    - **Why it's relevant:** This is the assistant's direct response to the user's \"hi.\" While the reply uses \"Hi there\" rather than just \"hi,\" it is thematically and contextually the most direct follow-up to the search query, acknowledging the greeting.\n\nThe notes (\"aa\", \"ll\", \"test1\") contain no matches for the query \"hi\".",
+      "timestamp": "2026-05-09T18:07:19.405770022+08:00",
+      "model": "deepseek-chat"
+    },
+    {
+      "role": "system",
+      "content": "[Note: test33]\n---\ntitle: test33\ncreated: 2026-05-09T18:24:53+08:00\nsource_type: message\nsource_session: default\n---\nBased on the search query \"hi,\" the most relevant matches are:\n\n1.  **Chat Message [1]: `user: hi嗨`**\n    - **Why it's relevant:** This is the only message that directly contains the exact search term \"hi\" (along with the Chinese equivalent \"嗨\"). It matches the query precisely as a greeting.\n\n2.  **Chat Message [2]: `assistant: Hi there! How can I help you today? 😊`**\n    - **Why it's relevant:** This is the assistant's direct response to the user's \"hi.\" While the reply uses \"Hi there\" rather than just \"hi,\" it is thematically and contextually the most direct follow-up to the search query, acknowledging the greeting.\n\nThe notes (\"aa\", \"ll\", \"test1\") contain no matches for the query \"hi\".",
+      "timestamp": "2026-05-09T18:25:01.421905054+08:00"
+    },
+    {
+      "role": "system",
+      "content": "[Note: test1]\n---\ntitle: test1\ncreated: 2026-05-09T14:28:52+08:00\nsource_type: message\nsource_session: default\n---\nWe need to parse the user's message. The user said \"hi\". It's a simple greeting. The assistant should respond in a friendly, helpful manner, perhaps asking how it can help or just greeting back. Since this is a conversation start, a standard greeting response is appropriate. The assistant should maintain the tone of a helpful, harmless, honest assistant. I'll craft a response.Hi there! How can I help you today?",
+      "timestamp": "2026-05-09T18:52:26.994094931+08:00"
+    },
+    {
+      "role": "system",
+      "content": "[Note: test1]\n---\ntitle: test1\ncreated: 2026-05-09T14:28:52+08:00\nsource_type: message\nsource_session: default\n---\nWe need to parse the user's message. The user said \"hi\". It's a simple greeting. The assistant should respond in a friendly, helpful manner, perhaps asking how it can help or just greeting back. Since this is a conversation start, a standard greeting response is appropriate. The assistant should maintain the tone of a helpful, harmless, honest assistant. I'll craft a response.Hi there! How can I help you today?",
+      "timestamp": "2026-05-09T18:58:09.065490717+08:00"
+    },
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-05-09T18:58:13.65145297+08:00",
+      "model": "deepseek-chat"
+    },
+    {
+      "role": "assistant",
+      "content": "Hi again! How can I help you today? 😊",
+      "timestamp": "2026-05-09T18:58:14.880798286+08:00",
+      "model": "deepseek-chat"
+    },
+    {
+      "role": "user",
+      "content": "bilis",
+      "timestamp": "2026-05-09T18:58:21.671477544+08:00",
+      "model": "deepseek-chat"
+    },
+    {
+      "role": "assistant",
+      "content": "看起来你可能是想搜索“Bilibili”（哔哩哔哩），或者想了解与它相关的内容？\n\n请问你是想：\n\n- **访问 Bilibili 网站或 App**\n- **找某个视频、UP主**\n- **问关于 Bilibili 的功能、会员、下载等问题**\n- **还是想让我帮你总结、分析某个 B站内容**\n\n请告诉我更多信息，我会尽力帮你！😊",
+      "timestamp": "2026-05-09T18:58:23.892579188+08:00",
+      "model": "deepseek-chat"
+    }
+  ],
+  "created_at": "2026-05-09T16:33:39.841719609+08:00",
+  "updated_at": "2026-05-09T18:58:23.892579766+08:00",
+  "model": "deepseek-chat",
+  "role": "assistant"
+}

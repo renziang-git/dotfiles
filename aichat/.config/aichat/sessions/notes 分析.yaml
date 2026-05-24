@@ -1,0 +1,118 @@
+model: deepseek:deepseek-chat
+messages:
+- role: user
+  content: "\n### everything you need to know to ace math\n\n  **logic**: \n      **need to know** -> *want to go* -> **to ace math**\n        [*to know*] -> *to ace math*\n        *to know to doing ace math*\n  \n  **vocab**:\n      *ace math* = math get A \n\n### These are the notes from my math class\n\n  **logic**: \n      [from my math class]<-[the notes]->[these]\n      These = [*the notes*]\n      the notes [***from***] my math class\n\n### Oh, who am I? Well, some people said I was the smartest kid in class.\n  \n  **logic**: \n      **I** = ***the smartest kid in class***\n  \n  **vocab**: \n      *smartest* 最聪明的\n\n## I wrote everything you need to ace MATH, from FRACTIONS to the COORDINATE PLANE, and only the really important stuff in between- you know, the stuff that’s usually on the test! \n\n  **logic**: \n      ***need to do***\n      ***from A to B*** 范围\n      ***in between*** 在中间\n      *** A you know, B 这里B是对A的解释\n  \n  **translate**: \n      *我写了你搞定数学所需要的一切，从分数到坐标平面，而且只有中间真正重要的内容--就是通常考试考得那些！*\n\n### I wrote everything you need to ace MATH, from FRACTIONS to the COORDINATE PLANE.\n  \n  **logic**: \n      ***need to do***\n      *you need to ace MATH*\n      ***from A to B***\n        *from FRACTIONS to the COORDINATE PLANE*\n  \n  **vocab**: \n      *FRACTIONS/fractions* 分数 (泛指)\n      *the COORDINATE PLANE/coordinate plane* 坐标平面 (不是独一无二，但是是学科唯一能清晰指代所以用the)\n\n### and only the really important stuff in between- you know, the stuff that`s usually on the test.\n  \n  **logic**: \n      **the really important stuff** and **the stuff that`s usually on the test** = *wrote you need to ace MATH*\n  \n  **vocab**: \n      ***in** between(之间)* 在中间 \n      *really important stuff* 真正重要的事情\n      *usually on the test* 通常在考试中\n\n### I tried to keep everything organized, so I almost always:\n\n    Highlight vocabulary words in YELLOW.\n    Color in definitions in green highlighter.\n    Use BLUE PEN for important people, places, dates, and terms.\n    Doodle a pretty sweet pie chart and whatnot to visually show the big ideas.\n\n  **logic**: \n      **try to do**\n      **keep everything organized**\n      **so**\n      *in* + 颜色* 用什么颜色\n      *use A for B* 用A做B\n      \n  **vocab**: \n      *keep everything organized* 让一切井井有条\n      *almost always* 几乎总是\n      *vocabulary words* 词汇单词\n        *unfamiliar words* 不熟悉的词\n        *new words* 新词\n        *unknown words* 未知的词\n      *highlight* 标亮\n      *color in* 涂色\n      *highlighter* 荧光笔\n      *important people* 重要人物\n      *places* 地点\n      *dates* 日期\n      *terms* 术语\n      *doodle* 随手画\n      *pie chart* 饼图\n      *whatnot* 诸如此类\n      *visually show* 直观地展示\n      *big ideas* 核心观念/大思路\n\n### If you're not loving your textbook and you're not so great at taking notes in class, this notebook will help. It hits all the major points.(But if your teacher spends a whole class talking about something that's not covered, go ahead and write that down for yourself.)\n  \n  **logic**: \n      *If...and..* 如果...而且...(条件)\n      *not so great at*/*bad at* 前者更委婉\n      *spend time doing* 花时间做某事\n      *something that's not covered* 没有被覆盖的内容\n      *go ahead and do something* 尽量去做某事\n      *write that down* 把它写下来\n      \n  **vocab**: \n      *textbook* 教科书\n      *hits all the major points* hits击中覆盖，讲到/涵盖所有重点\n      *major* 主要\n      *points* 点\n### Now that I've aced math, this notebook is YOURS I'm done with it, so this notebook's purpose in life is to help you learn and remember just what you need to ace YOUR math class\n\n  **logic**: \n      *now that* 既然\n      *I've aced* 我已经搞定了\n      *be done with* 用完/结束\n      *purpoes in life* 人生目标\n      *just what you need* 恰恰是你需要的\n      \n### I heard there was cheese somewhere in this book.\n  **logic**: \n      **there be**存在，句型: *there was* 有(过去时态，曾经有) / *there is* 有(现在有)，***(区别在于was代表曾经有，过去/is代表现在有，存在 )***\n\n  **there was** + 单数/不可数名词\n  **there were** + 复数名词\n\n  **vocab**: \n      *cheese* 一般不可数，不轻易加s\n        *The store sells many cheeses.*\n  **example**: \n      *There was cheese on the table.*\n      *There were three cats on the table.*\n\n### There are many different types of numbers with different names. Here are the types of number used most often:\n\n  **logic**: \n      *there are* + 复数名词 = 存在/有\n      *types of...* ...的类型\n      *with...* 带有\n      *here are ...* 这些是...\n      *used most often* 最常使用的(省略了*that are*)\n        **动词是'被动'(be+过去分词)即可省略***详细解释在后面表格*\n  **vocab**: \n      *often* 经常\n      *types* 类型\n\n### \n\n\n### 对照表\n  **this**/(眼前，能指) - *This cat is sleeping.*\n\n  **that**/(远处，能指) - *That cat across the street.*\n\n  **these**/(眼前多个) - *these cats are all mine.*\n\n  **those**/(远处多个) - *Those cats over there.*\n\n  **the**/(你知道哪个，不需要指) - *The cat is one the mat.*\n\n### be \n  **am** 主语是**I**                        (现在)    *I am happy.*\n\n  **is** 主语是**他/她/他**或**单数名词**       (现在)    *He is here.*/*The cat is sleeping.*\n\n  **are** 主语是**you/we/they**或**复数名词**   (现在)    *You are nice.*/*They are students.*\n\n  **was** 主语是**I/他/她/它**或**单数名词**    (过去)    *I was tired.*/*He was late.*\n\n  **were** 主语是**you/we/they**或**复数名词**  (过去)    *You were great.*/*They were happy.*\n\n  **be** 跟在**will/can/should/must/to**后            *I will be there.*/*You need to be  careful.*\n\n  **being** 表示**正在处于**或**行为状态**                *You are being silly.*/*Being a student is hard.*\n\n  **been** 跟在**have/has/had**后面                   *I have been busy.*/*She has been here.*\n\n\n### 介词短语\n介词 + 名词 = 介词短语\n作用：告诉你在哪里、什么时候、怎么、和谁\n\n**常见介词**: \nof, with, on, in, at, for, to, from\n\n**例子**: \non the table = 在桌子上\nwith a pen = 用笔\nfor you = 为你\n\n### 能省 that/which/who + be 的三种情况\n\n1. 被动（过去分词）：the book (that was) written\n2. 进行（-ing）：the man (who is) sleeping\n3. 介词短语：the book (that is) on the table\n\n### 不能省的情况\n\n1. 主动动词：the man who called me（不能省 who called）\n2. be + 名词：the man who is a teacher（不能省 who is）\n\n### 过去分词 \n  **表示已经被做完了的动词形式**\n    强调**完**或**被**。\n    它不关心谁做的，只关心“已经是这样了”。\n  **例子**: \n      *eat*       *eaten*\n      *use*       *used*\n      *write*       *written*\n      *break*       *broken* 被打破了的\n"
+- role: assistant
+  content: |-
+    好的，这是对你提供的文本进行的详细分析和语法拆解，整理成了清晰的学习笔记。
+
+    ---
+
+    ### **核心逻辑与目标**
+
+    本文档的核心目标是：**掌握所有“搞定”数学考试所需的知识。**
+    - **“搞定数学”** 意味着在数学考试中取得 **A** 的好成绩。
+    - 作者声称自己已经“搞定”了数学，因此这本笔记就是为帮助你“搞定”你自己的数学课而存在的。
+
+    ---
+
+    ### **关键句型与逻辑拆解**
+
+    1.  **“从A到B，只挑中间最核心的”**
+        - **原文**: **from FRACTIONS to the COORDINATE PLANE**, and only the really important stuff **in between**
+        - **逻辑**: 表示一个范围的起点和终点，并强调只关注这个范围内最核心、最有用的部分，而不是全部内容。
+        - **结构拆解**:
+            - `from [A] to [B]`： 范围。
+            - `stuff in between`： 在A和B之间的内容。
+            - `only the really important`: 只挑选真正重要的部分。
+
+    2.  **“同位语（Appositive）” 解释说明**
+        - **原文**: the really important stuff in between- **you know**, the stuff that’s usually on the test.
+        - **逻辑**: 用“you know” (你知道的) 引出同位语，对前文的概念进行更通俗、更具体的解释。
+        - **作用**: 把抽象概念 (“真正重要的东西”) 和具体场景 (“考试经常考的内容”) 联系起来，让理解更轻松。
+
+    3.  **“既然...就...” 的因果关系**
+        - **原文**: **Now that** I‘ve aced math, this notebook is YOURS.
+        - **逻辑**: 表示一个已经发生并完成的动作或状态，成为了后面动作或状态改变的理由和前提。
+        - **结构**: `Now that + 从句 (已完成的事实)，主句 (基于事实的新状态)`。
+
+    4.  **诙谐的破折号插入语**
+        - **原文**: I wrote everything you need to ace MATH... and only the really important stuff in between **— you know, the stuff that’s usually on the test!**
+        - **逻辑**: 用破折号创造一个停顿，引出作者的调侃或补充说明，语气轻松口语化，让文字不死板。
+
+    ---
+
+    ### **重要语法点详解**
+
+    1.  **“There be” 句型及其时态**
+        - **定义**: 表示“某处有某物/某人”。
+        - **结构**: `There + be (存在) + 名词短语 + 地点/时间状语`.
+        - **关键点**: “be”动词的单复数由紧跟其后的**名词**的单复数决定。
+        - **时态示例**:
+            - *There **was** cheese somewhere in this book.* (过去：曾经有)
+            - *There **is** a cat on the table.* (现在：有一只)
+            - *There **were** three cats on the table.* (过去：有三只)
+            - *There **are** many different types of numbers.* (现在：有许多种)
+
+    2.  **“be”动词的完整变形表**
+        - 这是所有英语句子的基础。熟练掌握下表是必须的。
+
+    | 主语 | 现在时 | 过去时 | 将来时 (will + be) | 完成时 (have/has/had + been) | 进行时 (be + being) |
+    | :--- | :--- | :--- | :--- | :--- | :--- |
+    | **I** | **am** | **was** | **will be** | **have been** | **am being** |
+    | **He/She/It** | **is** | **was** | **will be** | **has been** | **is being** |
+    | **You/We/They** | **are** | **were** | **will be** | **have been** | **are being** |
+
+    3.  **定语从句的省略条件 (关系代词 + be 动词)**
+        - **定义**: 当关系代词 (`that/which/who`) 在从句中作主语，并且后面直接跟着`be`动词 (`is/are/was/were`) 时，它们可以**一起省略**。
+        - **可省略的三种情况**:
+
+            | 条件 | 结构 | 例子 (完整) | 例子 (省略) |
+            | :--- | :--- | :--- | :--- |
+            | **被动语态** | `that/who + be + 过去分词` | the book **that was written** | the book **written** |
+            | **进行时态** | `that/who + be + 现在分词 (-ing)` | the man **who is sleeping** | the man **sleeping** |
+            | **介词短语** | `that/who + be + 介词短语` | the book **that is on the table** | the book **on the table** |
+
+        - **不可省略的情况**:
+
+            | 条件 | 原因 | 例子 |
+            | :--- | :--- | :--- |
+            | **后面是主动语态动词** | 关系代词在从句中作主语，不能省 | the man **who called me** |
+            | **后面是名词短语** | 关系代词和be动词构成一个完整的判断，不能省 | the man **who is a teacher** |
+
+    4.  **指示代词 (This/That/These/Those)**
+        - 理解距离感是关键。
+
+    | 代词 | 距离 | 数量 | 例子 |
+    | :--- | :--- | :--- | :--- |
+    | **This** | 近 (眼前/正在说) | 单数/不可数 | This notebook is yours. |
+    | **That** | 远 (不在眼前/已说过的) | 单数/不可数 | I heard there was cheese somewhere in that book. |
+    | **These** | 近 | 复数 | These are the types of numbers used most often. |
+    | **Those** | 远 | 复数 | Those cats over there are mine. |
+
+        - **与 “The” 的区别**: “The” 表示“那个特定的”，不需要用手指或区分远近，比如 `The cat is on the mat.` (你知道我说的是哪只猫)。
+
+    5.  **介词短语**
+        - **定义**: 以介词开头、名词结尾的词组。用来提供地点、时间、方式、原因等信息。
+        - **结构**: `介词 (Preposition) + 名词短语 (Noun Phrase)`.
+        - **核心作用**: 充当**形容词** (修饰名词) 或**副词** (修饰动词、形容词、整个句子)。
+        - **介词列表 & 示例**:
+            - **of**: 表示“的” (the types **of numbers**)
+            - **on**: 表示“在...上” (the stuff that's usually **on the test**)
+            - **in**: 表示“在...里” (the really important stuff **in between**)
+            - **with**: 表示“用.../带有...” (notebook **with** notes)
+            - **for**: 表示“为了/对于” (cheat sheet **for** the test)
+            - **from... (to...)** : 表示“从...到...” (everything **from fractions to algebra**)
+
+    6.  **过去分词 (Past Participle)**
+        - **定义**: 动词的一种非谓语形式，表示“被...的”或“已经...了的”。
+        - **关键理解**: 它关心的是**结果**或**状态**，不关心动作的执行者。
+        - **常用场景**:
+            - **完成时**: I have **written** the notes.
+            - **被动语态**: The notes **were written** by me.
+            - **作为形容词**: the **written** notes (已经写好的笔记)
+        - **示例**:
+            - **eat / ate / eaten** (被吃掉的)
+            - **break / broke / broken** (被打破的)
+            - **use / used / used** (被使用过的) - *the types of number **used** most often*
+            - **write / wrote / written** (被写下的) - *everything you need to ace math* (可以视为 `everything that is written` 的简化)

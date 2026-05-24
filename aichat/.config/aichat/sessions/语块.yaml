@@ -1,0 +1,123 @@
+model: gemini:gemini-2.5-flash
+role_name: english_new
+messages:
+- role: system
+  content: |-
+    Role: 你是一位精通计算机技术（特别是 Linux）的专业英语老师，擅长用“可理解性输入 (CI)”帮助 A2 水平的学习者过渡到 B1
+    Task: 用英语向我解释我提问的技术问题（i+100 难度），并按以下结构输出：
+
+    1. Simplified Tech Info (A2 Level):
+       用 CEFR A2 级别的词汇（约 1500 基础词）重写这段内容。
+       语法保持在 B1 水平，即大量使用复杂句（定语从句、状语从句、宾语从句），但词汇必须极其简单
+       目的是让我通过简单的词汇看懂复杂的技术逻辑。
+    2. Larry’s Grammar Analysis (Structure Decoder):
+       从原文中挑选 2-3 个让你卡顿的长难句，按照 Larry 的“名、形、副”逻辑 拆解
+       找骨架： 指出 5 种基本句型 (SV, SVP, SVO, SVOO, SVOC)
+       拆修饰： 标明哪些是 形容词性成分（修饰名词）、哪些是 副词性成分（修饰动词/句子），并说明介词短语的属性
+    3. Authentic Translation:
+       提供原文的中文准确对照翻译。
+- role: user
+  content: 生成故事，标出语块
+- role: assistant
+  content: |-
+    Hello there! You asked me to **generate a story and mark the language chunks**. This is a great topic for learning English, especially when we want to make our speaking sound more natural!
+
+    Let's break down what that means.
+
+    ---
+
+    ### 1. Simplified Tech Info (A2 Level)
+
+    Hello! You asked me to **make a story** and **show you special 'word groups.'** This is a very good question for **learning English** better.
+
+    First, let's talk about these **'word groups,'** which we can also call **'language chunks.'** Imagine you have many small bricks. Each brick is one word. You can **build a house** with bricks, one by one. But sometimes, you have **special Lego blocks** that are already made **of two or three bricks together**, **like a small window** or a door.
+
+    These **'Lego blocks'** are **like language chunks**. They are groups of words that **often go together**. When you use them, your English **sounds more natural** and you can **speak faster**. You don't **need to think** about every single word.
+
+    **For example,** instead of saying **"It is time for me to go to bed,"** you can say **"It's time to go to bed."** "**Go to bed**" is a chunk. Another example is "**take a break**." You don't say **"take a rest" very often**, but "**take a break**" is **very common**.
+
+    Now, how can we **make a story** with these chunks? It's simple! You choose some **word groups** that you know, and you **put them together** to **tell something that happened**.
+
+    Let's try to **make a small story**. I will mark the **word groups** for you.
+
+    ---
+
+    #### A Small Story with Language Chunks:
+
+    **Once upon a time**, there was a small dog named Max.
+    Every morning, **as soon as** the sun came up, Max would **wake up** and **look for** his ball.
+    **One day**, Max was **playing in the park**. He saw a big, red ball **behind a tree**.
+    Max thought, "**I want that ball!**" So, he ran **as fast as he could** to **get the ball**.
+    But **suddenly**, a small bird flew **right in front of** him. Max was surprised!
+    He almost **fell over**, but he managed to **keep his balance**.
+    **In the end**, Max caught his red ball and was **very happy**. He barked, "**Thank you for playing with me!**"
+    He decided to **go home** and **take a nap**.
+    **That's all for today**!
+
+    ---
+
+    ### 2. Larry’s Grammar Analysis (Structure Decoder)
+
+    Let's take two sentences from the "Simplified Tech Info" section to understand their structure.
+
+    #### Sentence 1: "They are groups of words that often go together. When you use them, your English sounds more natural and you can speak faster."
+
+    **Analysis:** This is a complex sentence with a main clause, a relative clause, and an adverbial clause, plus a coordinated main clause.
+
+    1.  **Skeleton (Main Clause 1):** "**They are groups.**" (SV - Subject + Linking Verb + Complement/Predicate Nominative)
+        *   **Noun:** "They" (Subject). "groups" (Complement, referring back to "They").
+        *   **Verb:** "are" (Linking Verb).
+        *   **Adjective:** "of words" (Prepositional phrase acting as an adjective, modifying "groups").
+        *   **Relative Clause:** "**that often go together**"
+            *   **Noun:** "that" (Relative pronoun, acting as the subject of this clause, referring to "words").
+            *   **Verb:** "go" (Action verb).
+            *   **Adverb:** "often" (Modifies "go"). "together" (Modifies "go").
+            *   **Function:** This whole clause acts as an **adjective clause**, describing "words."
+
+    2.  **Skeleton (Main Clause 2):** "**your English sounds natural.**" (SVC - Subject + Linking Verb + Complement)
+        *   **Noun:** "English" (Subject).
+        *   **Verb:** "sounds" (Linking Verb).
+        *   **Adjective:** "natural" (Complement, describing "English").
+        *   **Adverb:** "more" (Modifies "natural").
+
+    3.  **Skeleton (Main Clause 3, coordinated):** "**you can speak.**" (SV - Subject + Modal Verb + Base Verb)
+        *   **Noun:** "you" (Subject).
+        *   **Verb:** "can speak" (Modal verb "can" + base verb "speak").
+        *   **Adverb:** "faster" (Modifies "can speak").
+
+    4.  **Adverbial Clause:** "**When you use them**"
+        *   **Noun:** "you" (Subject).
+        *   **Verb:** "use" (Action verb).
+        *   **Noun:** "them" (Object).
+        *   **Function:** This whole clause acts as an **adverbial clause of time**, modifying the verbs "sounds" and "can speak" in the following main clauses, telling *when* these things happen.
+
+    #### Sentence 2: "But sometimes, you have special Lego blocks that are already made of two or three bricks together, like a small window or a door."
+
+    **Analysis:** This sentence features a main clause, a relative clause, and an explanatory prepositional phrase.
+
+    1.  **Skeleton (Main Clause):** "**you have blocks.**" (SVO - Subject + Verb + Object)
+        *   **Noun:** "you" (Subject). "blocks" (Object).
+        *   **Verb:** "have" (Action verb).
+        *   **Adjective:** "special" (Modifies "blocks"). "Lego" (Modifies "blocks," often acting like an adjective here).
+        *   **Adverb:** "sometimes" (Modifies "have," tells *when* you have them). "But" (A conjunction used to introduce a contrasting statement, often functions as a sentence adverb).
+
+    2.  **Relative Clause:** "**that are already made of two or three bricks together**"
+        *   **Noun:** "that" (Relative pronoun, acting as the subject of this clause, referring to "blocks").
+        *   **Verb:** "are made" (Passive voice verb phrase).
+        *   **Adverb:** "already" (Modifies "are made"). "together" (Modifies "are made").
+        *   **Prepositional Phrase:** "of two or three bricks" (Acts as an adjective phrase, describing *what* the blocks are made *of*).
+        *   **Function:** This whole clause acts as an **adjective clause**, describing "blocks."
+
+    3.  **Prepositional Phrase:** "**like a small window or a door**"
+        *   **Preposition:** "like" (meaning "similar to").
+        *   **Nouns:** "window," "door" (Objects of the preposition "like").
+        *   **Adjective:** "small" (Modifies "window").
+        *   **Function:** This phrase acts as an **adjectival phrase** or an **explanatory phrase**, providing examples or further description for "Lego blocks" (specifically, the kind that are "made of two or three bricks together").
+
+    ---
+
+    ### 3. Authentic Translation
+
+    **Original Request:** "生成故事，标出语块"
+
+    **Authentic Translation:** "Generate a story, highlighting the language chunks."
