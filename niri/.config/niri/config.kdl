@@ -424,27 +424,27 @@ binds {
     
     //Mod+Shift+s {spawn "flameshot" "gui";}
     Mod+F2 {spawn-sh "pkill waybar || true && waybar";}
-    Mod+Shift+W {spawn-sh "/home/r.za/bin/fuzzel-chrome-app.sh";}
-    Mod+Shift+X {spawn-sh "/home/r.za/bin/screenshot-fuzzel.sh";}
+    Mod+Shift+W {spawn-sh "/home/r.za/.local/bin/fuzzel-chrome-app.sh";}
+    Mod+Shift+X {spawn-sh "/home/r.za/.local/bin/screenshot-fuzzel.sh";}
 
    // Mod+Shift+T {spawn-sh "fuzzel --dmenu | xargs -r ~/.local/bin/fuzzel-trans | fuzzel --dmenu";}
     // XF86Launch1 {spawn-sh "bash ~/dotfiles/bin/sioyek-translate.sh";}
     // Mod+T {spawn-sh "python ~/dotfiles/bin/tmp-type.py";}
-    Mod+T { spawn "foot" "-a" "tran-tool" "-e" "/home/r.za/dotfiles/bin/tran/tran.py"; }
+    Mod+T { spawn "foot" "-a" "tran-tool" "-e" "/home/r.za/ai_env/bin/python" "/home/r.za/.local/bin/tran/tran.py"; }
     //Alt+1:直接开始 OCR 后朗读
-    Mod+Alt+1 { spawn  "/home/r.za/dotfiles/ai_env/bin/python" "/home/r.za/dotfiles/bin/tran/tran.py" "ocr"; }
+    Mod+Alt+1 { spawn "/home/r.za/ai_env/bin/python" "/home/r.za/.local/bin/tran/tran.py" "ocr"; }
     //Alt+2:直接朗读粘贴板内容
-    Mod+Alt+2 { spawn  "/home/r.za/dotfiles/ai_env/bin/python" "/home/r.za/dotfiles/bin/tran/tran.py" "paste"; }
+    Mod+Alt+2 { spawn "/home/r.za/ai_env/bin/python" "/home/r.za/.local/bin/tran/tran.py" "paste"; }
     //Alt+3:朗读选中内容
-    Mod+Alt+3 { spawn "/home/r.za/dotfiles/ai_env/bin/python" "/home/r.za/dotfiles/bin/tran/tran.py" "primary"; }
+    Mod+Alt+3 { spawn "/home/r.za/ai_env/bin/python" "/home/r.za/.local/bin/tran/tran.py"  "primary"; }
     //Alt+Q:ocr 翻译
-    Mod+Alt+Q { spawn "foot" "-a" "tran-tool" "-e" "/home/r.za/dotfiles/ai_env/bin/python" "/home/r.za/dotfiles/bin/tran/tran.py" "ocr_ui"; }
+    Mod+Alt+Q { spawn "foot" "-a" "tran-tool" "-e" "/home/r.za/ai_env/bin/python" "/home/r.za/.local/bin/tran/tran.py" "ocr_ui"; }
     //Alt+W:粘贴板翻译
-    Mod+Alt+W { spawn "foot" "-a" "tran-tool" "-e" "/home/r.za/dotfiles/ai_env/bin/python" "/home/r.za/dotfiles/bin/tran/tran.py" "paste_ui"; }
+    Mod+Alt+W { spawn "foot" "-a" "tran-tool" "-e" "/home/r.za/ai_env/bin/python" "/home/r.za/.local/bin/tran/tran.py" "paste_ui"; }
     //Alt+E:选中翻译
-    Mod+Alt+E { spawn "foot" "-a" "tran-tool" "-e" "/home/r.za/dotfiles/ai_env/bin/python" "/home/r.za/dotfiles/bin/tran/tran.py" "primary_ui"; }
+    Mod+Alt+E { spawn "foot" "-a" "tran-tool" "-e" "/home/r.za/ai_env/bin/python" "/home/r.za/.local/bin/tran/tran.py" "primary_ui"; }
     //Alt+4:暂停/播放音频
-    Mod+Alt+4 { spawn "/home/r.za/dotfiles/ai_env/bin/python" "/home/r.za/dotfiles/bin/tran/tran.py" "stop"; }
+    Mod+Alt+4 { spawn "/home/r.za/ai_env/bin/python" "/home/r.za/.local/bin/tran/tran.py" "stop"; }
     // Mod+Alt+R: 重新朗读上一次的内容
     Mod+Alt+R { spawn "/home/r.za/dotfiles/ai_env/bin/python" "/home/r.za/dotfiles/bin/tran/tran.py" "respeak"; }
 
@@ -452,7 +452,7 @@ binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: foot" { spawn "foot"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     // Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
-    Super+Alt+L {spawn-sh "/home/r.za/dotfiles/bin/lock-random.sh";}
+    Super+Alt+L {spawn-sh "/home/r.za/.local/bin/lock-random.sh";}
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
     // For example, this is a standard bind to toggle the screen reader (orca).

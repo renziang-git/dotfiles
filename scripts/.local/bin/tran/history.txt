@@ -1,0 +1,300 @@
+[05-28 10:00] Or: failed to connect to local tailscaled; it doesn't appear to be running (sudo systemctl start tailscaled ?) | Tr: 无法连接到本地tailscaled；它似乎没有运行（sudo systemctl start tailscaled？）
+[05-25 12:33] Or: Hi,
+You've recently submitted a download my data request to OpenAI. We are working on the request and will notify you by email when the request is complete. Visit our Privacy Request Portal at https://privacy.openai.com/en/ to check the status of your request or cancel it at any time.
+Best regards,
+OpenAI Privacy Team
+———
+Do not respond to this email as this inbox is not monitored. Please direct any questions to privacy@openai.com | Tr: 您好，您最近向 OpenAI 提交了下载我的数据请求。我们正在处理该请求，并会在请求完成后通过电子邮件通知您。请访问我们的隐私请求门户 https://privacy.openai.com/en/ 查看您的请求的状态或随时取消请求。谨致问候， OpenAI 隐私团队 ——— 不要回复此电子邮件，因为此收件箱不受监控。如有任何问题，请直接发送至privacy@openai.com
+[05-25 12:30] Or: Request Submitted Successfully! | Tr: 请求提交成功！
+[05-25 12:27] Or: Download my data
+Submit a request to receive access to / a copy of personal data associated with your account. You will receive an email confirming receipt of this request, and another email with a link to your data download when ready. If you don’t see the information you’re looking for, contact us at privacy@openai.com and we’ll be happy to help. | Tr: 下载我的数据 提交请求以获取与您的帐户关联的个人数据的访问权限/副本。您将收到一封电子邮件，确认收到此请求，并在准备好后收到另一封包含数据下载链接的电子邮件。如果您没有看到所需的信息，请通过privacy@openai.com 与我们联系，我们将很乐意为您提供帮助。
+[05-25 12:27] Or: Country/State of Residency* | Tr: 居住国家/州*
+[05-24 18:02] Or: templates | Tr: 模板
+[05-24 18:01] Or: personal | Tr: 个人的
+[05-24 17:43] Or: The Silent Comeback | Tr: 悄然回归
+[05-24 17:42] Or: Silent | Tr: 沉默的
+[05-24 17:31] Or: pattern | Tr: 图案
+[05-24 17:31] Or: patten | Tr: 彭定康
+[05-24 16:35] Or: aliases | Tr: 别名
+[05-23 16:35] Or: AI works wonders, doesn't it?
+￼ | Tr: 人工智能创造奇迹，不是吗？ ￼
+[05-22 12:27] Or: If you don't want Obsidian's additional UI features, you can disable them and suppress this warning by setting 'ui.enable = false' in your Obsidian nvim config. | Tr: 如果您不想要 Obsidian 的附加 UI 功能，您可以通过在 Obsidian nvim 配置中设置 &#39;ui.enable = false&#39; 来禁用它们并抑制此警告。
+[05-22 12:27] Or: See https://github.com/epwalsh/obsidian.nvim/issues/286 for more details. | Tr: 有关更多详细信息，请参阅 https://github.com/epwalsh/obsidian.nvim/issues/286。
+[05-22 12:27] Or: obsidian additional syntax features require 'conceallevel' to be set to 1 or 2, but you have 'conceallevel' set to '0'. | Tr: 黑曜石附加语法功能要求将“conceallevel”设置为 1 或 2，但您将“conceallevel”设置为“0”。
+[05-21 17:52] Or: interactive | Tr: 交互的
+[05-21 16:39] Or: adapter | Tr: 适配器
+[05-21 16:36] Or: claude-plugins-official — Official Anthropic directory of Claude Code plugins with MCP servers, skills, and commands | Tr: claude-plugins-official — Claude Code 插件的官方 Anthropic 目录，包含 MCP 服务器、技能和命令
+[05-20 16:03] Or: ┌Reasoning Timeline─ | Tr: ┌推理时间线─
+[05-18 18:08] Or: thought for 4 seconds | Tr: 想了4秒
+[05-18 16:10] Or: a workspace that is intended to be used with longer model sessions | Tr: 旨在用于较长模型会话的工作区
+[05-18 16:08] Or: sth | Tr: 某事
+[05-18 16:07] Or: intended | Tr: 故意的
+[05-18 16:02] Or: that is intended to be used with | Tr: 旨在与
+[05-18 12:53] Or: focused | Tr: 专注的
+[05-18 12:50] Or: You'll add an API key, review trust for this directory, and then land   │              
+              │  in the chat | Tr: 您将添加一个 API 密钥，检查此目录的信任，然后在聊天中登陆 │ │
+[05-18 12:49] Or: A focused terminal workspace for longer model sessions. | Tr: 用于较长模型会话的集中终端工作区。
+[05-18 12:45] Or: privileged | Tr: 特权
+[05-16 16:01] Or: From fractions to the coordinate plane, and only the really important stuff in between — you know, the stuff that’s usually on the test. | Tr: 从分数到坐标平面，只有中间真正重要的东西 - 你知道，通常在测试中的东西。
+[05-16 11:55] Or: PLEASURE | Tr: 乐趣
+[05-16 11:38] Or: numbers | Tr: 数字
+[05-16 11:37] Or: felt lost. | Tr: 感到失落。
+[05-16 11:23] Or: Kite | Tr: 风筝
+[05-15 12:14] Or: business | Tr: 商业
+[05-15 11:42] Or: title | Tr: 标题
+[05-12 16:11] Or: Imagine this at construction sites, loading bays, commercial farming... The 4th industrial revolution is here. ￼
+￼ | Tr: 想象一下建筑工地、装货场、商业农场的情况……第四次工业革命已经到来。 ￼￼
+[05-12 16:00] Or: this  garbage just for government subsidies is even better than anything new your country can create | Tr: 这些只是为了政府补贴的垃圾甚至比你们国家创造的任何新东西都要好
+[05-12 15:59] Or: Awhh looks like someone is salty:(( We mech fans were waiting for stuff like these, and besides it ain't your money, so cry about it. | Tr: 啊啊看起来有人很咸:((我们机甲迷一直在等这样的东西，而且这又不是你的钱，所以哭吧。
+[05-12 15:59] Or: Just another piece of giant garbage with zero actual utility to get government subsidies for
+￼ | Tr: 只是又一个实际效用为零的巨型垃圾，以获得政府补贴￼
+[05-12 15:59] Or: standby for titanfall
+￼ | Tr: 等待泰坦陨落￼
+[05-11 10:38] Or: Download the desktop app to unlock offline mode and take Notion with you wherever you go | Tr: 下载桌面应用程序以解锁离线模式并随身携带 Notion
+[05-09 14:23] Or: ※ recap: Knowledge loop keybindings (C-n promote, C-b browse, C-f search, C-a attach) are wired across 
+  model/view/update — builds and passes vet. Ready for testing or next feature. (disable recaps in 
+  /config) | Tr: ※ 回顾：知识循环键绑定（Cn 提升、Cb 浏览、Cf 搜索、Ca 附加）跨模型/视图/更新进行连接 - 构建并通过审查。准备好测试或下一个功能。 （在 /config 中禁用重述）
+[05-09 14:22] Or: recap: Knowledge loop keybindings (C-n promote, C-b browse, C-f search, C-a attach) are wired across 
+  model/view/update — builds and passes vet. Ready for testing or next feature. (disable recaps in 
+  /config) | Tr: 回顾一下：知识循环键绑定（Cn 提升、Cb 浏览、Cf 搜索、Ca 附加）跨模型/视图/更新进行连接 — 构建并通过审查。准备好测试或下一个功能。 （在 /config 中禁用重述）
+[05-09 14:17] Or: Truck/lorry = trolley
+￼
+￼ | Tr: 卡车/货车 = 手推车 ￼ ￼
+[05-09 14:17] Or: I've seen the rubbish collectors in my neighborhood using a similar vehicle to transport some large rubbish. It wasn't their usual vehicle with a trolley behind them. | Tr: 我见过我家附近的垃圾收集者使用类似的车辆来运输一些大件垃圾。这不是他们平常的车，后面还跟着一辆手推车。
+[05-09 14:16] Or: Municipal services vehicle. I see them collecting and moving refuse to the refuse centre with these
+￼
+￼ | Tr: 市政服务车辆。我看到他们用这些￼￼收集垃圾并将其移至垃圾中心
+[05-09 14:16] Or: Best part of all the driver parked in a no parking zone
+￼ | Tr: 最好的部分是把车停在禁止停车区的司机￼
+[05-09 14:16] Or: Wonder how do they even get this into sg. There is no license plate etc. | Tr: 想知道他们是如何将其纳入 sg 的。没有车牌等。
+[05-09 14:15] Or: vehicle | Tr: 车辆
+[05-08 17:26] Or: musing | Tr: 沉思
+[05-08 17:15] Or: ⎿  Tip: Use /btw to ask a quick side question without interrupting Claude's current work | Tr: ⎿ 提示：使用 /btw 快速提出附带问题，而不会中断 Claude 当前的工作
+[05-08 16:48] Or: architecture phase。 | Tr: 架构阶段。
+[05-08 16:45] Or: ※ recap: We're redesigning the project from a TUI AI chat app into a terminal-native AI knowledge
+  workspace — a "LazyVim-style Obsidian." You've confirmed: nvim for editing, configurable multiple
+  vaults, only Normal/Insert modes, Inbox→promote workflow, AI search without embedding. We haven't
+  started any code. Next step is starting P0 detailed design (data structures, interfaces, keymap
+  registry) when you're ready. (disable recaps in /config) | Tr: ※ 回顾：我们正在将项目从 TUI AI 聊天应用程序重新设计为终端原生 AI 知识工作区——“LazyVim 风格的 Obsidian”。您已确认：nvim 用于编辑、可配置多个保管库、仅正常/插入模式、收件箱→促进工作流程、无需嵌入的 AI 搜索。我们还没有开始任何代码。准备好后，下一步是开始 P0 详细设计（数据结构、接口、键盘映射注册表）。 （在 /config 中禁用重述）
+[05-08 16:05] Or: native | Tr: 本国的
+[05-08 12:43] Or: Claude has written up a plan and is ready to execute. Would you like to proceed?
+ ❯ 1. Yes, auto-accept edits
+   2. Yes, manually approve edits
+   3. Tell Claude what to change
+      shift+tab to approve with this feedback
+ ctrl-g to edit in Nvim · ~/.claude/plans/zesty-snacking-moon.md | Tr: 克劳德已经写好了计划并准备执行。您想继续吗？ ❯ 1. 是，自动接受编辑 2. 是，手动批准编辑 3. 告诉 Claude 要更改哪些内容 shift+tab 批准此反馈 ctrl-g 在 Nvim 中进行编辑 · ~/.claude/plans/zesty-snacking-moon.md
+[05-08 12:17] Or: ⏸ plan mode on (shift+tab to cycle) | Tr: ⏸ 计划模式开启（Shift+Tab 循环）
+[05-08 12:16] Or: ⏵⏵ accept edits on (shift+tab to cycle) | Tr: ⏵⏵ 接受编辑（Shift+Tab 循环）
+[05-08 12:02] Or: ⏵⏵ accept edits on (shift+tab to cycle) · esc to interrupt · ctrl+t to hide tasks | Tr: ⏵⏵ 接受编辑（shift+tab 循环） · esc 中断 · ctrl+t 隐藏任务
+[05-08 12:02] Or: 2. Yes, allow all edits during this session (shift+tab) | Tr: 2. 是，允许在此会话期间进行所有编辑（Shift+Tab）
+[05-08 12:01] Or: ● Let me re-read the key files to confirm current state before making changes.
+  Read 2 files (ctrl+o to expand)    
+● Now I have the full picture. The fix requires changes to update.go:
+  1. Replace the tea.Printf goroutine with a proper tea.Cmd that reads from the channel
+  2. Chain the command so each streamResultMsg triggers the next read                                   
+  3. Update callers to propagate the returned command | Tr: ● 在进行更改之前，让我重新阅读密钥文件以确认当前状态。读取 2 个文件（ctrl+o 展开） ● 现在我有了完整的图片。该修复需要更改 update.go： 1. 将 tea.Printf goroutine 替换为从通道读取的适当的 tea.Cmd 2. 链接命令，以便每个streamResultMsg 触发下一次读取 3. 更新调用者以传播返回的命令
+[05-08 12:01] Or: ● Let me re-read the key files to confirm current state before making changes. | Tr: ● 在进行更改之前，让我重新阅读密钥文件以确认当前状态。
+[05-08 12:00] Or: ⎿  ◼ Fix AI streaming (P0) — replace tea.Printf with proper tea.Cmd | Tr: ⎿ ◼ 修复 AI 流 (P0) — 将 tea.Printf 替换为适当的 tea.Cmd
+[05-08 11:56] Or: 1. Default (recommended)  Use the default model (currently deepseek-v4-pro[1m][1m]) · $5/$25 per    
+                              Mtok                                                                      
+    2. deepseek-v4-pro[1m]    Custom Opus model (1M context)                                            
+    3. deepseek-v4-pro[1m]    Custom Sonnet model (1M context)                                          
+    4. deepseek-v4-flash      Custom Haiku model                                                        
+  ❯ 5. deepseek-v4-flash ✔    Custom model | Tr: 1. 默认（推荐） 使用默认模型（当前是 deepseek-v4-pro[1m][1m]） · 每个 Mtok $5/$25 2. deepseek-v4-pro[1m] 自定义 Opus 模型（1M 上下文） 3. deepseek-v4-pro[1m] 自定义 Sonnet 模型（1M 上下文） 4. deepseek-v4-flash 自定义 Haiku 模型 ❯ 5. deepseek-v4-flash ✔ 自定义模型
+[05-08 11:56] Or: Custom Opus model | Tr: 定制 Opus 模型
+[05-08 11:46] Or: ● Now I have a complete picture of the codebase. Let me create the CLAUDE.md. | Tr: ● 现在我对代码库有了一个完整的了解。让我创建 CLAUDE.md。
+[05-08 11:45] Or: View recent git history | Tr: 查看最近的git历史记录
+[05-08 11:44] Or: Do you want to proceed? | Tr: 您想继续吗？
+[05-08 11:44] Or: This command requires approval | Tr: 此命令需要批准
+[05-08 11:44] Or: Now I have a thorough understanding of the codebase. Let me check if there's a Makefile or any build
+  scripts. | Tr: 现在我对代码库有了透彻的了解。让我检查一下是否有 Makefile 或任何构建脚本。
+[05-08 11:43] Or: Searched for 3 patterns, read 18 files, listed 2 directories (ctrl+o to expand) | Tr: 搜索了3个模式，读取了18个文件，列出了2个目录（ctrl+o展开）
+[05-08 11:43] Or: ● Let me explore the codebase first. | Tr: ● 让我先探索一下代码库。
+[05-08 11:36] Or: Nothing else is required—your repo already has a master branch: | Tr: 不需要其他任何东西——您的存储库已经有一个主分支：
+[05-08 11:33] Or: prepare your workflow accordingly | Tr: 相应地准备您的工作流程
+[05-08 11:33] Or: Git prints this warning so you’re aware of the upcoming change and can | Tr: Git 打印此警告，以便您了解即将发生的更改并可以
+[05-08 11:32] Or: *Future default | Tr: *未来默认值
+[05-08 11:32] Or: Current default | Tr: 当前默认值
+[05-08 11:32] Or: hint: Using 'master' as the name for the initial branch.
+hint: This default branch name will change to main in Git 3.0. | Tr: 提示：使用“master”作为初始分支的名称。提示：此默认分支名称将在 Git 3.0 中更改为 main。
+[05-08 11:31] Or: What you just saw | Tr: 你刚刚看到的
+[05-08 11:30] Or: You can choose to ignore the hint, change the default for all new repos, or
+just rename the branch in this repository. | Tr: 您可以选择忽略提示，更改所有新存储库的默认值，或者仅重命名此存储库中的分支。
+[05-08 11:29] Or: branch will be called **main** instead of **master**, unless you tell
+Git otherwise | Tr: 分支将被称为 **main** 而不是 **master**，除非你另外告诉 Git
+[05-08 11:29] Or: The warning is telling you that the next time you run git init, the initial | Tr: 该警告告诉您下次运行 git init 时，初始
+[05-08 11:29] Or: That’s the normal *“git init”* output for current‑day Git. | Tr: 这是当前 Git 的正常 *“git init”* 输出。
+[05-08 11:20] Or: ╭─── Claude Code v2.1.133 ─────────────────────────────────────────────────────────────────────────────╮
+│                                             │ Tips for getting started                               │
+│                Welcome back!                │ Run /init to create a CLAUDE.md file with instruction… │
+│                                             │ ────────────────────────────────────────────────────── │
+│                   ▐▛███▜▌                   │ What's new                                             │
+│                  ▝▜█████▛▘                  │ Added `worktree.baseRef` setting (`fresh` | `head`) t… │
+│                    ▘▘ ▝▝                    │ Added `sandbox.bwrapPath` and `sandbox.socatPath` man… │
+│                                             │ Added `parentSettingsBehavior` admin-tier key (`'firs… │
+│   deepseek-v4-pro[1m] · API Usage Billing   │ /release-notes for more | Tr: ╭──── Claude Code v2.1.133 ────────────────────────────────────────────────────────────────────────╮ │ │ 入门技巧 │ │ 欢迎回来！ │ 运行 /init 以使用指令创建 CLAUDE.md 文件... │ │ │ ──────────────────────────────────────────────── │ │ ▐▛███▜▌ │ 新增功能 │ │ ▝▜█████▛▘ │ 新增 `worktree.baseRef` 设置 (`fresh` | `head`) t… │ │ ▘▘ ▝▝ │ 添加了 `sandbox.bwrapPath` 和 `sandbox.socatPath` man… │ │ │ 添加了 `parentSettingsBehavior` 管理层密钥 (`&#39;firs... │ │ deepseek-v4-pro[1m] · API 使用计费 │ /release-notes 了解更多
+[05-08 11:19] Or: Quick safety check: Is this a project you created or one you trust? (Like your own code, a well-known
+ open source project, or work from your team). If not, take a moment to review what's in this folder
+ first. | Tr: 快速安全检查：这是您创建的项目还是您信任的项目？ （比如您自己的代码、著名的开源项目或您团队的工作）。如果没有，请先花点时间查看此文件夹中的内容。
+[05-07 17:06] Or: - **Refactor code** — "Can you refactor this module to use async/await instead of callbacks?"
+- **Explain code** — "What does this function do and how does it work?"
+Just let me know what you'd like me to help with! | Tr: - **重构代码** — “你能重构这个模块以使用 async/await 而不是回调吗？” - **解释代码** — “这个函数有什么作用以及它是如何工作的？”请告诉我您需要我提供什么帮助！
+[05-07 15:22] Or: You have enabled 'lazyredraw' (see :h 'lazyredraw')  │
+~                                                │This is only meant to be set temporarily.            │
+~                                                │You'll experience issues using Noice. | Tr: 您已启用“lazyredraw”（请参阅​​：h“lazyredraw”） │ ~ │这只是临时设置。 │ ~ │您在使用 Noice 时会遇到问题。
+[05-07 11:14] Or: prompt | Tr: 迅速的
+[05-05 18:13] Or: completion | Tr: 完成
+[05-05 15:57] Or: format | Tr: 格式
+[05-05 11:54] Or: leader | Tr: 领导者
+[05-05 11:53] Or: ￼ | Tr: ￼
+[05-05 11:12] Or: ai copilot | Tr: 你有副驾驶
+[05-05 11:11] Or: copilot | Tr: 副驾驶
+[04-30 16:23] Or: whole | Tr: 所有的
+[04-30 16:21] Or: negative | Tr: 消极的
+[04-30 16:21] Or: decimal part | Tr: 小数部分
+[04-30 16:19] Or: fractional | Tr: 分数
+[04-30 16:19] Or: fractional | Tr: 分数
+[04-30 16:19] Or: WHOLE  NUMBERS: A number with no fractional or  decimal part.  Cannot be negative. | Tr: 整数：没有小数或小数部分的数字。不能为负数。
+[04-30 16:19] Or: whole numbers: A number with no fractional or decimal    
+        part.Cannot be negative | Tr: 整数：没有小数或小数部分的数字。不能为负数
+[04-30 16:19] Or: whole numbers: A number with no fractional or decimal    
+        part.Cannot be negative | Tr: 整数：没有小数或小数部分的数字。不能为负数
+[04-30 15:53] Or: friendly | Tr: 友好的
+[04-30 15:52] Or: the girl who sings | Tr: 唱歌的女孩
+[04-30 15:51] Or: who | Tr: WHO
+[04-30 15:50] Or: the man who called me | Tr: 给我打电话的人
+[04-30 15:49] Or: the book that was written by him | Tr: 他写的书
+[04-30 15:48] Or: the types that are used most often | Tr: 最常用的类型
+[04-30 15:48] Or: the types used most often | Tr: 最常用的类型
+[04-30 15:46] Or: book written | Tr: 写的书
+[04-30 15:46] Or: homework done | Tr: 作业完成
+[04-30 15:43] Or: the smell of fresh bread | Tr: 新鲜面包的香味
+[04-30 15:42] Or: the price of this book | Tr: 这本书的价格
+[04-30 15:41] Or: the meaning of this word | Tr: 这个词的意思
+[04-30 15:32] Or: used | Tr: 用过的
+[04-30 15:32] Or: often | Tr: 经常
+[04-30 15:20] Or: number used and often: | Tr: 使用的数量和经常使用的数量：
+[04-30 15:19] Or: different types | Tr: 不同类型
+[04-28 16:55] Or: chapter | Tr: 章
+[04-28 16:54] Or: unit | Tr: 单元
+[04-28 16:43] Or: I HEARD 
+ THERE WAS CHEESE 
+ SOMEWHERE IN 
+ THIS BOOK | Tr: 我听说这本书里有奶酪
+[04-28 16:42] Or: CONTENTS | Tr: 内容
+[04-28 16:37] Or: Recovery completed | Tr: 恢复完成
+[04-28 16:36] Or: Now that I've aced math | Tr: 现在我数学成绩很好
+[04-28 16:35] Or: silly. | Tr: 愚蠢的。
+[04-28 16:30] Or: these cats are all mine.
+    3   │ | Tr: 这些猫都是我的。 3 │
+[04-28 16:24] Or: You are being silly.*/*Being a               student is hard. | Tr: 你太傻了。*/*当学生很难。
+[04-28 16:22] Or: You need to be careful | Tr: 你需要小心
+[04-28 16:19] Or: great. | Tr: 伟大的。
+[04-28 15:24] Or: this notebook's purpose in life | Tr: 这本笔记本的人生目的
+[04-28 15:17] Or: remember | Tr: 记住
+[04-28 15:17] Or: ### Now that I've aced math, this notebook is YOURS I'm done with it, so this notebook's purpose in life is to help you learn and remember just what you need to ace YOUR math class | Tr: ### 既然我已经取得了数学成绩，这本笔记本就是你的了，我已经受够了，所以这本笔记本的人生目的是帮助你学习和记住在数学课上取得优异成绩所需的知识
+[04-28 15:12] Or: ### If you're not loving your textbook and you're not so great at taking notes in class, this notebook will help. It hits all the major points.(But if your teacher spends a whole class talking about something that's not covered, go ahead and write that down for yourself.) | Tr: ### 如果您不喜欢教科书并且不太擅长在课堂上记笔记，那么这本笔记本会有所帮助。它涵盖了所有要点。（但是，如果您的老师花了整节课的时间来谈论未涵盖的内容，请自己写下来。）
+[04-27 16:56] Or: points | Tr: 点
+[04-27 16:56] Or: major | Tr: 主要的
+[04-27 16:47] Or: *hits all the major | Tr: *触及所有主要
+[04-27 16:45] Or: ### If you're not loving your textbook and you're not so great at taking notes in class, this notebook will help. It hits all the major points.(But if your teacher spends a whole class talking about something that's not covered, go ahead and writhe that down for yourself.) | Tr: ### 如果您不喜欢教科书并且不太擅长在课堂上记笔记，那么这本笔记本会有所帮助。它击中了所有要点。（但是，如果你的老师花了整节课的时间谈论一些没有涵盖的内容，那么你自己把它写下来。）
+[04-27 16:29] Or: Doodle a pretty sweet pie chart and whatnot to visually show the big ideas. | Tr: 涂鸦一个非常可爱的饼图之类的东西，以直观地展示重要的想法。
+[04-27 16:26] Or: Doodle a pretty sweet pie chart and whatnot to          visually show the big ideas. | Tr: 涂鸦一个非常可爱的饼图之类的东西，以直观地展示重要的想法。
+[04-27 16:25] Or: Use BLUE PEN for important people, places,              dates, and terms | Tr: 使用蓝笔标记重要的人物、地点、日期和术语
+[04-27 16:22] Or: Use BLUE PEN for important people, places,              dates, and terms | Tr: 使用蓝笔标记重要的人物、地点、日期和术语
+[04-27 16:22] Or: important people | Tr: 重要的人
+[04-27 16:16] Or: Color in definitions | Tr: 定义中的颜色
+[04-27 16:10] Or: ulary | Tr: 成年人
+[04-27 16:10] Or: bulary | Tr: 布拉里
+[04-27 16:06] Or: words | Tr: 字
+[04-27 16:06] Or: vocabulary | Tr: 词汇
+[04-27 16:05] Or: Highlight vocabulary words | Tr: 突出显示词汇
+[04-27 16:05] Or: vocabulary words | Tr: 词汇词
+[04-27 15:58] Or: I tried to keep everything organized, so I almost always: | Tr: 我试图让一切井井有条，所以我几乎总是：
+[04-27 15:47] Or: almost always: | Tr: 几乎总是：
+[04-27 15:31] Or: bones | Tr: 骨头
+[04-27 15:16] Or: betwwen | Tr: 之间
+[04-27 15:10] Or: that’s usually on the test | Tr: 这通常是在测试中
+[04-27 15:08] Or: between | Tr: 之间
+[04-27 14:53] Or: and only the really important stuff in between-
+ you know, the stuff that’s usually on the test! | Tr: 只有中间真正重要的东西 - 你知道，通常在测试中的东西！
+[04-27 14:53] Or: and only the really important stuff in between-
+ you know, the stuff that’s usually on the test! | Tr: 只有中间真正重要的东西 - 你知道，通常在测试中的东西！
+[04-27 12:57] Or: random | Tr: 随机的
+[04-27 12:27] Or: I wrote everything you need to ace MATH, from  FRACTIONS to the COORDINATE PLANE, | Tr: 我写了数学高手所需的一切，从分数到坐标平面，
+[04-27 12:20] Or: form | Tr: 形式
+[04-27 11:51] Or: current | Tr: 当前的
+[04-27 11:36] Or: repo | Tr: 回购协议
+[04-27 11:36] Or: filter | Tr: 筛选
+[04-27 11:35] Or: garbage collection， | Tr: 垃圾收集，
+[04-27 11:35] Or: garbage | Tr: 垃圾
+[04-27 11:06] Or: restroom | Tr: 卫生间
+[04-27 11:06] Or: restroom | Tr: 卫生间
+[04-27 11:06] Or: restroom | Tr: 卫生间
+[04-27 11:05] Or: toilet | Tr: 洗手间
+[04-27 11:05] Or: toilet | Tr: 洗手间
+[04-27 11:05] Or: toilet | Tr: 洗手间
+[04-27 10:47] Or: Your branch is up to date with 'origin/main'. | Tr: 您的分支已更新为“origin/main”。
+[04-26 17:05] Or: It hits all the major  points. | Tr: 它击中了所有要点。
+[04-26 17:05] Or: If you're not loving your textbook and  you’re not so great at taking notes in class,  this notebook will help. | Tr: 如果您不喜欢教科书并且不太擅长在课堂上记笔记，那么这本笔记本会有所帮助。
+[04-26 17:04] Or: loving | Tr: 爱着
+[04-26 17:03] Or: great | Tr: 伟大的
+[04-26 17:02] Or: keep | Tr: 保持
+[04-26 17:02] Or: almost always | Tr: 几乎总是
+[04-26 17:02] Or: organized, | Tr: 有组织的，
+[04-26 17:01] Or: almost | Tr: 几乎
+[04-26 17:01] Or: COORDINATE | Tr: 协调
+[04-26 17:01] Or: COORDINATE PLANE | Tr: 坐标平面
+[04-26 17:01] Or: FRACTIONS | Tr: 分数
+[04-26 17:01] Or: usually on the test | Tr: 通常在考试时
+[04-26 17:00] Or: between | Tr: 之间
+[04-26 17:00] Or: important | Tr: 重要的
+[04-26 17:00] Or: you know, the stuff that’s usually on the test! | Tr: 你知道，通常在测试中的东西！
+[04-26 17:00] Or: and only the really important stuff in between-
+ you know, the stuff that’s usually on the test! | Tr: 只有中间真正重要的东西 - 你知道，通常在测试中的东西！
+[04-26 16:59] Or: I wrote everything you need to ace MATH, from  FRACTIONS to the COORDINATE PLANE, | Tr: 我写了数学高手所需的一切，从分数到坐标平面，
+[04-26 16:56] Or: answer | Tr: 回答
+[04-26 16:55] Or: smartest | Tr: 最聪明的
+[04-26 16:47] Or: smartest | Tr: 最聪明的
+[04-26 16:21] Or: Oh, who am I? Well, some people said I was the 
+ smartest kid in class. | Tr: 哦，我是谁？嗯，有人说我是班上最聪明的孩子。
+[04-26 16:17] Or: These are the notes from my math class. | Tr: 这些是我数学课的笔记。
+[04-26 16:15] Or: Vocab | Tr: 词汇
+[04-26 16:14] Or: EVERYTHING YOU NEED TO KNOW TO ACE MATH | Tr: 取得数学优异成绩所需了解的一切
+[04-26 15:57] Or: EVERYTHING YOU NEED TO KNOW TO ACE MATH | Tr: 取得数学优异成绩所需了解的一切
+[04-26 15:56] Or: -- 插入模式下删除整行（Ctrl + d）
+vim.keymap.set("i", "<C-d>", "<C-o>dd", { desc = "Delete current line" })
+-- 插入模式下跳转到下一个单词开头（Ctrl + f，f=forward）
+vim.keymap.set("i", "<C-f>", "<C-o>w", { desc = "Jump to next word" })
+-- 插入模式下跳转到上一个单词开头（Ctrl + b，b=backward）
+vim.keymap.set("i", "<C-b>", "<C-o>b", { desc = "Jump to previous word" }) | Tr: -- 插入模式下删除整行（Ctrl + d）
+vim.keymap.set("i", "<C-d>", "<C-o>dd", { desc = "Delete current line" })
+-- 插入模式下跳转到下一个单词开头（Ctrl + f，f=forward）
+vim.keymap.set("i", "<C-f>", "<C-o>w", { desc = "Jump to next word" })
+-- 插入模式下跳转到上一个单词开头（Ctrl + b，b=backward）
+vim.keymap.set("i", "<C-b>", "<C-o>b", { desc = "Jump to previous word" })
+[04-26 15:42] Or: EVERYTHING YOU NEED TO KNOW TO ACE MATH | Tr: 取得数学优异成绩所需了解的一切
+[04-26 15:33] Or: These | Tr: 这些
+[04-26 15:25] Or: These are the notes from my math class. Oh,who am I? Well, some people said i was the smartest kid in class. | Tr: 这些是我数学课的笔记。哦，我是谁？嗯，有人说我是班上最聪明的孩子。
+[04-26 15:25] Or: These are the notes from my math class. Oh,who am I? Well, some people said i was the smartest kid in class. | Tr: 这些是我数学课的笔记。哦，我是谁？嗯，有人说我是班上最聪明的孩子。
+[04-26 15:22] Or: These are the notes from my math class. | Tr: 这些是我数学课的笔记。
+[04-26 15:22] Or: "Oh, who am I? Well, some people said I was the smartest kid in class." | Tr: “哦，我是谁？嗯，有人说我是班上最聪明的孩子。”
+[04-26 15:20] Or: These are the notes from my math class. 
+ Oh, who am I? Well, some people said I was the 
+ smartest kid in class. | Tr: 这些是我数学课的笔记。哦，我是谁？嗯，有人说我是班上最聪明的孩子。
+[04-26 11:57] Or: Welcome to fish, the friendly interactive shell | Tr: 欢迎使用 Fish，友好的交互式 shell
+[04-26 11:56] Or: Welcome to fish, the friendly interactive shell | Tr: 欢迎使用 Fish，友好的交互式 shell
+[04-26 11:56] Or: Type help for instructions on how to use fish | Tr: 输入 help 来获取有关如何使用 Fish 的说明
+[04-26 11:56] Or: Type help for instructions on how to use fish | Tr: 输入 help 来获取有关如何使用 Fish 的说明
+[04-26 11:56] Or: Type help for instructions on how to use fish | Tr: 输入 help 来获取有关如何使用 Fish 的说明
+[04-26 11:56] Or: Type help for instructions on how to use fish | Tr: 输入 help 来获取有关如何使用 Fish 的说明
+[04-26 11:44] Or: Type help for instructions on how to use fish | Tr: 输入 help 来获取有关如何使用 Fish 的说明
+[04-26 11:44] Or: Welcome to fish, the friendly interactive shell | Tr: 欢迎使用 Fish，友好的交互式 shell
+[04-26 11:43] Or: #28 | Tr: #28
+[04-26 11:30] Or: Hello world | Tr: 你好世界
+[04-26 11:30] Or: .Hello world | Tr: 。你好世界
+[04-26 11:30] Or: .Hello world | Tr: 。你好世界
+[04-26 11:30] Or: subprocess | Tr: 子流程
+[04-26 11:30] Or: models | Tr: 型号
+[04-26 11:29] Or: Hello world | Tr: 你好世界
+[04-26 11:29] Or: Piper | Tr: 派珀

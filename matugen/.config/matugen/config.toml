@@ -1,0 +1,31 @@
+[settings]
+contrast = 0.2
+
+[config.wallpaper]
+#command = "swww"
+command = "swaybg"
+#arguments = ["img", "--transition-type", "center"]
+set = false 
+
+[templates.waybar]
+input_path = '~/dotfiles/matuge/.config/matuge/templates/colors.css'
+output_path = '~/dotfiles/waybar/.config/waybar/colors.css'
+
+
+ [templates.fuzzel]
+ input_path = '~/.config/matugen/templates/fuzzel.ini'
+ output_path = '~/.config/fuzzel/colors.ini'
+
+[templates.mako]
+input_path = '~/.config/matugen/templates/mako-colors.conf'
+output_path = '~/.config/mako/colors.conf'
+post_hook='makoctl reload &'
+
+ [templates.niri]
+ input_path = '~/.config/matugen/templates/niri-colors.kdl'
+ output_path = '~/.config/niri/colors.kdl'
+
+ [templates.fastfetch]
+ input_path = '~/.config/matugen/templates/fastfetch-config.jsonc'
+ output_path = '~/.config/fastfetch/config.jsonc'
+

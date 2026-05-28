@@ -1,0 +1,949 @@
+model: deepseek:deepseek-chat
+compressed_messages:
+- role: user
+  content: |2-
+
+    ### Using templates
+
+    To insert a template in the current note, run the command `:ObsidianTemplate`. This will open a list of available templates in your templates folder with your preferred picker. Select a template and hit `<CR>` to insert.
+    To create a new note from a template, run the command `:ObsidianNewFromTemplate`. This will prompt you for an optional path for the new note and will open a list of available templates in your templates folder with your preferred picker. Select a template and hit `<CR>` to create the new note with the selected template.
+    Substitutions for `{{id}}`, `{{title}}`, `{{path}}`, `{{date}}`, and `{{time}}` are supported out-of-the-box.
+    For example, with the following configuration
+
+    ```lua
+    {
+      -- other fields ...
+
+      templates = {
+          folder = "my-templates-folder",
+          date_format = "%Y-%m-%d-%a",
+          time_format = "%H:%M",
+      },
+    }
+    ```
+
+    and the file `~/my-vault/my-templates-folder/note template.md`:
+
+    ```markdown
+    # {{title}}
+
+    Date created: {{date}}
+    ```
+
+    creating the note `Configuring Neovim.md` and executing `:ObsidianTemplate` will insert
+
+    ```markdown
+    # Configuring Neovim
+
+    Date created: 2023-03-01-Wed
+    ```
+
+    above the cursor position.
+
+    You can also define custom template substitutions with the configuration field `templates.substitutions`. For example, to automatically substitute the template variable `{{yesterday}}` when inserting a template, you could add this to your config:
+
+    ```lua
+    {
+    -- other fields ...
+    templates = {
+      substitutions = {
+        yesterday = function()
+          return os.date("%Y-%m-%d", os.time() - 86400)
+        end
+      }
+    }
+    这段配置说明，如何在obsidianconfig中配置template
+- role: assistant
+  content: "这段配置说明展示了如何在 Obsidian 的 Neovim 插件中配置模板功能。以下是完整的配置示例：\n\n## 基础模板配置\n\n```lua\n{\n  -- 其他配置字段 ...\n\n  templates = {\n    folder = \"my-templates-folder\",  -- 模板文件夹名称\n    date_format = \"%Y-%m-%d-%a\",     -- 日期格式\n    time_format = \"%H:%M\",           -- 时间格式\n  },\n}\n```\n\n## 自定义模板替换配置\n\n```lua\n{\n  -- 其他配置字段 ...\n  \n  templates = {\n    folder = \"my-templates-folder\",\n    date_format = \"%Y-%m-%d-%a\",\n    time_format = \"%H:%M\",\n    \n    -- 自定义模板变量替换\n    substitutions = {\n      yesterday = function()\n        return os.date(\"%Y-%m-%d\", os.time() - 86400)\n      end,\n      \n      -- 可以添加更多自定义变量\n      author = function()\n        return \"Your Name\"\n      end,\n      \n      timestamp = function()\n        return os.date(\"%Y-%m-%d %H:%M:%S\")\n      end,\n    },\n  },\n}\n```\n\n## 完整配置示例\n\n```lua\n-- 完整的 obsidian.nvim 配置\nrequire('obsidian').setup({\n  workspaces = {\n    {\n      name = \"personal\",\n      path = \"~/vaults/personal\",\n    },\n    {\n      name = \"work\",\n      path = \"~/vaults/work\",\n    },\n  },\n\n  -- 模板配置\n  templates = {\n    folder = \"templates\",\n    date_format = \"%Y-%m-%d\",\n    time_format = \"%H:%M\",\n    \n    -- 自定义变量替换\n    substitutions = {\n      yesterday = function()\n        return os.date(\"%Y-%m-%d\", os.time() - 86400)\n      end,\n      tomorrow = function()\n        return os.date(\"%Y-%m-%d\", os.time() + 86400)\n      end,\n      current_time = function()\n        return os.date(\"%H:%M:%S\")\n      end,\n    },\n  },\n\n  -- 其他可选配置\n  completion = {\n    nvim_cmp = true,\n    min_chars = 2,\n  },\n\n  mappings = {\n    [\"gf\"] = {\n      action = function()\n        return require(\"obsidian\").util.gf_passthrough()\n      end,\n      opts = { noremap = false, expr = true, buffer = true },\n    },\n  },\n})\n```\n\n## 模板文件示例\n\n在你的模板文件夹（如 `templates/`）中创建模板文件：\n\n**`templates/note template.md`**:\n```markdown\n# {{title}}\n\n- 创建日期: {{date}}\n- 更新时间: {{time}}\n- 昨天是: {{yesterday}}\n\n## 笔记内容\n\n```\n\n**`templates/daily.md`**:\n```markdown\n# {{date}}\n\n## 待办事项\n- [ ] \n\n## 今日笔记\n\n```\n\n## 使用方法\n\n1. **插入模板到当前笔记**：\n   ```\n   :ObsidianTemplate\n   ```\n\n2. **从模板创建新笔记**：\n   ```\n   :ObsidianNewFromTemplate\n   ```\n\n3. **支持的自动替换变量**：\n   - `{{id}}` - 自动生成的 ID\n   - `{{title}}` - 笔记标题\n   - `{{path}}` - 笔记路径\n   - `{{date}}` - 当前日期（按 date_format 格式化）\n   - `{{time}}` - 当前时间（按 time_format 格式化）\n   - `{{yesterday}}` - 自定义变量示例\n\n这样配置后，你就可以在 Obsidian 中方便地使用模板功能来提高笔记效率了。"
+- role: user
+  content: nvim 中关于buffer操作，拆分窗口和调整大小以及让某个buffer全屏占用
+- role: assistant
+  content: "在 Neovim 中进行 buffer 操作、窗口拆分和调整大小是非常核心的操作。以下是完整的命令和快捷键指南：\n\n## 1. Buffer 基本操作\n\n### 导航和切换\n```vim\n:bnext      \" 下一个 buffer (或 :bn)\n:bprevious  \" 上一个 buffer (或 :bp)\n:bfirst     \" 第一个 buffer\n:blast      \" 最后一个 buffer\n:bdelete    \" 删除当前 buffer (或 :bd)\n:buffer N   \" 跳转到编号为 N 的 buffer\n:ls         \" 列出所有 buffer\n\n\" 快捷键映射（可以在配置中添加）\nnnoremap <Tab> :bnext<CR>\nnnoremap <S-Tab> :bprevious<CR>\n```\n\n### Buffer 管理\n```vim\n:badd file.txt     \" 添加文件到 buffer 列表而不打开\n:bd!               \" 强制删除 buffer（忽略未保存更改）\n:bw                \" 彻底删除 buffer（buffer wipeout）\n:ene               \" 打开新的空 buffer\n:q                 \" 关闭当前窗口\n:qa                \" 关闭所有窗口\n```\n\n## 2. 窗口拆分操作\n\n### 创建拆分窗口\n\n```vim\n:split          \" 水平拆分（或 :sp）\n:vsplit         \" 垂直拆分（或 :vs）\n:new            \" 水平拆分并创建新文件\n:vnew           \" 垂直拆分并创建新文件\n:split file.txt \" 水平拆分开文件\n:vsplit f.txt   \" 垂直拆分开文件\n```\n\n### 快捷键\n```vim\n\" 水平拆分\n<C-w>s  \" 快捷键：Ctrl+w 然后 s\n\n\" 垂直拆分  \n<C-w>v  \" 快捷键：Ctrl+w 然后 v\n\n\" 新建空文件\n<C-w>n  \" 水平拆分新文件\n<C-w>^  \" 垂直拆分新文件\n```\n\n## 3. 窗口导航\n\n### 基本导航\n```vim\n<C-w>h      \" 向左移动光标到左窗口\n<C-w>j      \" 向下移动光标到下窗口\n<C-w>k      \" 向上移动光标到上窗口\n<C-w>l      \" 向右移动光标到右窗口\n<C-w>w      \" 循环切换到下一个窗口\n<C-w>p      \" 回到上一个窗口\n<C-w>t      \" 移动到顶部窗口\n<C-w>b      \" 移动到底部窗口\n```\n\n### 更好用的导航映射\n```lua\n-- Neovim Lua 配置\nvim.keymap.set('n', '<C-h>', '<C-w>h', { desc = 'Move to left window' })\nvim.keymap.set('n', '<C-j>', '<C-w>j', { desc = 'Move to bottom window' })\nvim.keymap.set('n', '<C-k>', '<C-w>k', { desc = 'Move to top window' })\nvim.keymap.set('n', '<C-l>', '<C-w>l', { desc = 'Move to right window' })\n```\n\n## 4. 调整窗口大小\n\n### 基本命令\n```vim\n:resize +5      \" 水平增加窗口高度 5 行\n:resize -5      \" 水平减少窗口高度 5 行\n:vertical resize +10  \" 垂直增加窗口宽度 10 列\n:vertical resize -10  \" 垂直减少窗口宽度 10 列\n:resize 20      \" 设置窗口高度为 20 行\n:vertical resize 80  \" 设置窗口宽度为 80 列\n```\n\n### 快捷键调整\n```vim\n<C-w>=          \" 使所有窗口等宽等高\n<C-w>_          \" 最大化当前窗口高度\n<C-w>|          \" 最大化当前窗口宽度\n<C-w>+          \" 增加窗口高度\n<C-w>-          \" 减少窗口高度\n<C-w>>          \" 增加窗口宽度\n<C-w><          \" 减少窗口宽度\n```\n\n## 5. 让某个 Buffer 全屏占用\n\n### 方法一：最大化当前窗口\n```vim\n<C-w>_   \" 垂直最大化（填满整个高度）\n<C-w>|   \" 水平最大化（填满整个宽度）\n```\n然后再按一次恢复原状。\n\n### 方法二：关闭其他窗口\n```vim\n:only    \" 关闭除当前窗口外的所有窗口（或 :on）\n<C-w>o   \" 快捷键：只保留当前窗口\n```\n\n### 方法三：使用 Tab 页\n```vim\n:tabnew        \" 在新标签页中打开当前 buffer\n:tabedit file  \" 在新标签页中编辑文件\n:tab split     \" 将当前窗口移到新标签页\n:tabclose      \" 关闭当前标签页\n:tabnext       \" 下一个标签页\n:tabprevious   \" 上一个标签页\n\n\" 快捷键\ngt             \" 下一个标签页\ngT             \" 上一个标签页\nNgt            \" 跳到第 N 个标签页\n```\n\n### 方法四：Zoom 功能（推荐）\n安装像 `vim-maximizer` 或 `zoomwintab.vim` 插件：\n\n```lua\n-- 使用 lazy.nvim 安装\n{\n  \"szw/vim-maximizer\",\n  keys = {\n    { \"<leader>z\", \":MaximizerToggle<CR>\", desc = \"Toggle zoom\" }\n  }\n}\n```\n\n## 6. 高级窗口操作\n\n### 移动和交换窗口\n```vim\n<C-w>r          \" 旋转窗口（向下/向右）\n<C-w>R          \" 反向旋转窗口\n<C-w>x          \" 交换当前窗口与下一个窗口\n<C-w>K          \" 将当前窗口移到顶部\n<C-w>J          \" 将当前窗口移到底部\n<C-w>H          \" 将当前窗口移到最左\n<C-w>L          \" 将当前窗口移到最右\n```\n\n### 创建终端窗口\n```vim\n:terminal       \" 在新窗口中打开终端\n:term           \" 同上\n:split | term   \" 水平拆分并打开终端\n:vsplit | term  \" 垂直拆分并打开终端\n```\n\n## 7. 实用配置示例\n\n```lua\n-- 在 init.lua 中添加\nvim.keymap.set('n', '<leader>z', '<C-w>_ | <C-w>|', { desc = 'Maximize window' })\nvim.keymap.set('n', '<leader>o', '<C-w>=', { desc = 'Equalize windows' })\nvim.keymap.set('n', '<leader>w', '<C-w>w', { desc = 'Switch window' })\n\n-- 使用方向键调整窗口大小\nvim.keymap.set('n', '<C-Up>', ':resize +2<CR>', { desc = 'Increase height' })\nvim.keymap.set('n', '<C-Down>', ':resize -2<CR>', { desc = 'Decrease height' })\nvim.keymap.set('n', '<C-Left>', ':vertical resize -2<CR>', { desc = 'Decrease width' })\nvim.keymap.set('n', '<C-Right>', ':vertical resize +2<CR>', { desc = 'Increase width' })\n\n-- Buffer 导航\nvim.keymap.set('n', '<leader>bn', ':bnext<CR>', { desc = 'Next buffer' })\nvim.keymap.set('n', '<leader>bp', ':bprevious<CR>', { desc = 'Previous buffer' })\nvim.keymap.set('n', '<leader>bd', ':bdelete<CR>', { desc = 'Delete buffer' })\nvim.keymap.set('n', '<leader>bl', ':ls<CR>', { desc = 'List buffers' })\n```\n\n## 快速参考表\n\n| 操作 | 命令 | 快捷键 |\n|------|------|--------|\n| 水平拆分 | `:split` | `<C-w>s` |\n| 垂直拆分 | `:vsplit` | `<C-w>v` |\n| 关闭其他窗口 | `:only` | `<C-w>o` |\n| 最大化高度 | - | `<C-w>_` |\n| 最大化宽度 | - | `<C-w>\\|` |\n| 等宽等高 | - | `<C-w>=` |\n| 删除 buffer | `:bd` | - |\n| 下一个窗口 | - | `<C-w>w` |\n\n这些操作可以让你在 Neovim 中高效地管理多个文件和窗口布局。"
+- role: user
+  content: "\n---\nid: math_note\naliases: []\ntags: []\n---\n\n### everything you need to know to ace math \n\n  **logic**: \n      **need to know** -> *want to go* -> **to ace math**\n        [*to know*] -> *to ace math*\n        *to know to doing ace math*\n  \n  **vocab**:\n      *ace math* = math get A \n\n### These are the notes from my math class\n\n  **logic**: \n      [from my math class]<-[the notes]->[these]\n      These = [*the notes*]\n      the notes [***from***] my math class\n\n### Oh, who am I? Well, some people said I was the smartest kid in class.\n  \n  **logic**: \n      **I** = ***the smartest kid in class***\n  \n  **vocab**: \n      *smartest* 最聪明的\n\n## I wrote everything you need to ace MATH, from FRACTIONS to the COORDINATE PLANE, and only the really important stuff in between- you know, the stuff that’s usually on the test! \n\n  **logic**: \n      ***need to do***\n      ***from A to B*** 范围\n      ***in between*** 在中间\n      *** A you know, B 这里B是对A的解释\n  \n  **translate**: \n      *我写了你搞定数学所需要的一切，从分数到坐标平面，而且只有中间真正重要的内容--就是通常考试考得那些！*\n\n### I wrote everything you need to ace MATH, from FRACTIONS to the COORDINATE PLANE.\n  \n  **logic**: \n      ***need to do***\n      *you need to ace MATH*\n      ***from A to B***\n        *from FRACTIONS to the COORDINATE PLANE*\n  \n  **vocab**: \n      *FRACTIONS/fractions* 分数 (泛指)\n      *the COORDINATE PLANE/coordinate plane* 坐标平面 (不是独一无二，但是是学科唯一能清晰指代所以用the)\n\n### and only the really important stuff in between- you know, the stuff that`s usually on the test.\n  \n  **logic**: \n      **the really important stuff** and **the stuff that`s usually on the test** = *wrote you need to ace MATH*\n  \n  **vocab**: \n      ***in** between(之间)* 在中间 \n      *really important stuff* 真正重要的事情\n      *usually on the test* 通常在考试中\n\n### I tried to keep everything organized, so I almost always:\n\n    Highlight vocabulary words in YELLOW.\n    Color in definitions in green highlighter.\n    Use BLUE PEN for important people, places, dates, and terms.\n    Doodle a pretty sweet pie chart and whatnot to visually show the big ideas.\n\n  **logic**: \n      **try to do**\n      **keep everything organized**\n      **so**\n      *in* + 颜色* 用什么颜色\n      *use A for B* 用A做B\n      \n  **vocab**: \n      *keep everything organized* 让一切井井有条\n      *almost always* 几乎总是\n      *vocabulary words* 词汇单词\n        *unfamiliar words* 不熟悉的词\n        *new words* 新词\n        *unknown words* 未知的词\n      *highlight* 标亮\n      *color in* 涂色\n      *highlighter* 荧光笔\n      *important people* 重要人物\n      *places* 地点\n      *dates* 日期\n      *terms* 术语\n      *doodle* 随手画\n      *pie chart* 饼图\n      *whatnot* 诸如此类\n      *visually show* 直观地展示\n      *big ideas* 核心观念/大思路\n\n### If you're not loving your textbook and you're not so great at taking notes in class, this notebook will help. It hits all the major points.(But if your teacher spends a whole class talking about something that's not covered, go ahead and write that down for yourself.)\n  \n  **logic**: \n      *If...and..* 如果...而且...(条件)\n      *not so great at*/*bad at* 前者更委婉\n      *spend time doing* 花时间做某事\n      *something that's not covered* 没有被覆盖的内容\n      *go ahead and do something* 尽量去做某事\n      *write that down* 把它写下来\n      \n  **vocab**: \n      *textbook* 教科书\n      *hits all the major points* hits击中覆盖，讲到/涵盖所有重点\n      *major* 主要\n      *points* 点\n### Now that I've aced math, this notebook is YOURS I'm done with it, so this notebook's purpose in life is to help you learn and remember just what you need to ace YOUR math class\n\n  **logic**: \n      *now that* 既然\n      *I've aced* 我已经搞定了\n      *be done with* 用完/结束\n      *purpoes in life* 人生目标\n      *just what you need* 恰恰是你需要的\n      \n### I heard there was cheese somewhere in this book.\n  **logic**: \n      **there be**存在，句型: *there was* 有(过去时态，曾经有) / *there is* 有(现在有)，***(区别在于was代表曾经有，过去/is代表现在有，存在 )***\n\n  **there was** + 单数/不可数名词\n  **there were** + 复数名词\n\n  **vocab**: \n      *cheese* 一般不可数，不轻易加s\n        *The store sells many cheeses.*\n  **example**: \n      *There was cheese on the table.*\n      *There were three cats on the table.*\n\n### There are many different types of numbers with different names. Here are the types of number used most often:\n\n  **logic**: \n      *there are* + 复数名词 = 存在/有\n      *types of...* ...的类型\n      *with...* 带有\n      *here are ...* 这些是...\n      *used most often* 最常使用的(省略了*that are*)\n        **动词是'被动'(be+过去分词)即可省略***详细解释在后面表格*\n  **vocab**: \n     ： *often* 经常\n      *types* 类型\n\n### Tom was not good at math. He looked at the numbers and felt lost.\n  **vocab**:\n        *felt lost* feel 的过去式,lost 迷失的\n            感到迷茫/不知所措\n            *He felt lost*\n\n### From fractions to the coordinate plane, and only the really important stuff in between -- you know, the stuff that's usually on the test.\n  **vocab**:\n        *fractions* 分数\n        *coordinate plane* 平面直角坐标系\n        *really important* 真正重要的\n        *in between* 在之间\n        **usually on the test* 通常在考试中\n\n### A focused terminal workspace for longer model sessions.\n\n  **logic**:\n        workspace > [for] > longer model sessions (for 专用于/针对) \n\n  **translate**:\n        *一个专用于长时间模型会话的、聚集的终端工作区\n    \n## for 例句\n    \n\n\n### 对照表\n  **this**/(眼前，能指) - *This cat is sleeping.*\n\n  **that**/(远处，能指) - *That cat across the street.*\n\n  **these**/(眼前多个) - *these cats are all mine.*\n\n  **those**/(远处多个) - *Those cats over there.*\n\n  **the**/(你知道哪个，不需要指) - *The cat is one the mat.*\n\n### be \n  **am** 主语是**I**                        (现在)    *I am happy.*\n\n  **is** 主语是**他/她/他**或**单数名词**       (现在)    *He is here.*/*The cat is sleeping.*\n\n  **are** 主语是**you/we/they**或**复数名词**   (现在)    *You are nice.*/*They are students.*\n\n  **was** 主语是**I/他/她/它**或**单数名词**    (过去)    *I was tired.*/*He was late.*\n\n  **were** 主语是**you/we/they**或**复数名词**  (过去)    *You were great.*/*They were happy.*\n\n  **be** 跟在**will/can/should/must/to**后            *I will be there.*/*You need to be  careful.*\n\n  **being** 表示**正在处于**或**行为状态**                *You are being silly.*/*Being a student is hard.*\n\n  **been** 跟在**have/has/had**后面                   *I have been busy.*/*She has been here.*\n\n\n### 介词短语\n介词 + 名词 = 介词短语\n作用：告诉你在哪里、什么时候、怎么、和谁\n\n**常见介词**: \nof, with, on, in, at, for, to, from\n\n**例子**: \non the table = 在桌子上\nwith a pen = 用笔\nfor you = 为你\n\n### 能省 that/which/who + be 的三种情况\n\n1. 被动（过去分词）：the book (that was) written\n2. 进行（-ing）：the man (who is) sleeping\n3. 介词短语：the book (that is) on the table\n\n### 不能省的情况\n\n1. 主动动词：the man who called me（不能省 who called）\n2. be + 名词：the man who is a teacher（不能省 who is）\n\n### 过去分词 \n  **表示已经被做完了的动词形式**\n    强调**完**或**被**。\n    它不关心谁做的，只关心“已经是这样了”。\n  **例子**: \n      *eat*       *eaten*\n      *use*       *used*\n      *write*       *written*\n      *break*       *broken* 被打破了的\n"
+- role: assistant
+  content: |-
+    看起来你在整理英语笔记，特别是关于逻辑分析、词汇和语法结构的笔记。这段内容主要是对你提供的英语文本进行拆解分析，很有学习价值！我来帮你整理和补充一些要点：
+
+    ## 你的笔记亮点 ✨
+
+    ### 逻辑分析做得很好
+    - 你成功拆解了句子中的主谓宾关系和修饰关系
+    - 比如对 "These are the notes from my math class" 的分析很清晰
+
+    ### 词汇标注很实用
+    - 区分了 `ace math`（数学得A）、`smartest`（最聪明的）等口语化表达
+    - 注意到了 `whatnot`（诸如此类）这样的地道用法
+
+    ## 补充学习建议 📝
+
+    ### 关于 `there be` 句型
+    你分析得对：
+    ```
+    There was cheese...  (过去有)
+    There is cheese...   (现在有)
+    There were cats...   (复数过去)
+    ```
+
+    ### 关于省略规则
+    你整理的"能省/不能省 that/which/who + be"的表很好！补充一点：
+    ```
+    The man (who is) sleeping → 可以省（进行时）
+    The man sleeping on the bed → 更自然的省略形式
+    ```
+
+    ### 介词短语
+    ```
+    on the table   = 介词 + 名词
+    with a pen     = 说明方式
+    for you        = 说明目的
+    ```
+
+    ## 你的笔记还可以怎样优化？🤔
+
+    1. **用颜色标记** - 就像你笔记里说的，用黄色标词汇，绿色标定义
+    2. **加例句** - 每个语法点配一个自己的例句
+    3. **思维导图** - 把逻辑关系画出来，比如：
+    ```
+    [笔记] ─── 来自 ─── [数学课]
+       │
+       └── 帮助你 ─── [数学拿A]
+    ```
+
+    你想继续分析更多句子，还是想让我帮你把某个语法点讲得更清楚？
+- role: system
+  content: |-
+    This is a summary of the chat history as a recap: Here's a brief summary of our discussion:
+
+    The user shared detailed English learning notes analyzing sentence logic, vocabulary, and grammar structures from math-related texts. Key areas covered include:
+
+    1. **Sentence logic analysis**: Breaking down sentences into subject-verb-object relationships (e.g., "These are the notes from my math class")
+
+    2. **Vocabulary**: Noting expressions like "ace math" (get an A in math), "whatnot" (et cetera), and "smartest" (most intelligent)
+
+    3. **Grammar points discussed**:
+       - `there be` structure (there was/is/were)
+       - When to omit "that/which/who + be" (passive, progressive, prepositional phrases)
+       - Prepositional phrases (on, with, for, etc.)
+       - Past participles indicating completed actions
+       - Pronouns (this/that/these/those)
+       - Forms of "be" (am/is/are/was/were/being/been)
+
+    4. **Learning methodology**: The user suggested using color coding (yellow for vocabulary, green for definitions), adding personal example sentences, and creating mind maps for logical relationships.
+
+    The conversation also touched on Neovim buffer operations (window splitting, resizing, zooming) and Obsidian template configuration in Neovim, but the main focus was English grammar analysis.
+- role: user
+  content: 我需要让这种笔记契合obsidian.nvim，而不是像现在这样单纯的纯文本，如何使用双链
+- role: assistant
+  content: "非常好！我来帮你把这个英语学习笔记改造成更适合 Obsidian 的格式，充分利用双链、标签和元数据功能。\n\n## 改造方案 🚀\n\n### 1. 建立主题笔记结构\n\n```markdown\n---\nid: english_grammar_index\naliases: [\"英语语法索引\", \"Grammar Guide\"]\ntags: [index/grammar, index/vocabulary]\n---\n\n# 英语学习笔记总索引\n\n## 语法专题\n- [[there_be句型|there be 句型详解]]\n- [[省略规则|that/which/who + be 省略规则]]\n- [[介词短语|介词短语用法]]\n- [[be动词变形|be动词所有形式]]\n- [[过去分词|过去分词用法]]\n\n## 词汇专题\n- [[数学相关词汇|Math Vocabulary]]\n- [[考试相关表达|Test & Study Expressions]]\n- [[口语化表达|Casual English]]\n\n## 句子分析案例\n- [[句子分析_数学笔记|\"Everything you need to ace math\" 分析]]\n- [[句子分析_自我介绍|\"Who am I?\" 分析]]\n\n## 学习资源\n- [[学习笔记_math_class|Math Class 笔记]]\n```\n\n### 2. 改造具体笔记页\n\n```markdown\n---\nid: grammar_省略规则\naliases: [\"省略规则\", \"that/which/who省略\", \"省略be动词\"]\ntags: [grammar/omission, grammar/relative_clause]\ncreated: 2024-01-20\nrelated: [[there_be句型]], [[过去分词]], [[介词短语]]\n---\n\n# that/which/who + be 省略规则\n\n## 可以省略的三种情况\n\n### 1. 被动（过去分词）\n**规则**：`that was/were` + 过去分词 → 可省略\n- 原文：the book [[book_note|(that was) written]]\n- 例子：the car [[car_note|(that is) made in Japan]]\n\n### 2. 进行时（-ing）\n**规则**：`who is/was` + 现在分词 → 可省略\n- 原文：the man [[man_note|(who is) sleeping]]\n- 例子：the girl [[girl_note|(who is) running]]\n\n### 3. 介词短语\n**规则**：`that is/was` + 介词短语 → 可省略\n- 原文：the book [[book_note|(that is) on the table]]\n- 例子：the house [[house_note|(that is) near the school]]\n\n## 不能省略的情况\n\n### 1. 主动动词\n- ~~the man called me~~ → ❌\n- [[man_note|the man who called me]] → ✅\n\n### 2. be + 名词\n- ~~the man a teacher~~ → ❌\n- [[teacher_note|the man who is a teacher]] → ✅\n\n## 练习句子\n```dataview\nTABLE file.tags as Tags\nFROM #practice/omission \n```\n```\n\n### 3. 创建词汇卡片\n\n```markdown\n---\nid: vocab_ace\naliases: [\"ace\", \"ace_math\"]\ntags: [vocabulary/slang, vocabulary/math]\nexamples:\n  - \"I aced the exam\"\n  - \"She wants to ace math\"\nrelated: [[vocab_smartest]], [[vocab_whatnot]]\n---\n\n# ace (动词)\n\n**发音**: /eɪs/\n\n**定义**: 取得 A 成绩 / 完美完成\n- 原文本义：纸牌中的\"A\" → 引申为\"A级、优秀\"\n\n**例句**:\n1. [[sentence_math_notes|原文]]: \"everything you need to ace math\"\n2. [[sentence_exam|自编]]: \"I need to ace this test tomorrow\"\n\n**同义词**: \n- [[vocab_excel|excel in]]\n- [[vocab_master|master]]\n- [[vocab_perfect|perfect]]\n\n**反义词**:\n- [[vocab_fail|fail]]\n- [[vocab_flunk|flunk]]\n\n**相关短语**:\n- [[phrase_ace_in_the_hole|ace in the hole]]\n- [[phrase_ace_up_sleeve|ace up sleeve]]\n```\n\n### 4. 建立句子分析笔记\n\n```markdown\n---\ntype: sentence_analysis\nsource: \"数学笔记引言\"\nanalyzed: 2024-01-20\ntags: [analysis/sentence, grammar/need_to_do, grammar/from_to]\nconnected: [[vocab_ace]], [[vocab_fractions]], [[vocab_coordinate_plane]]\n练习题: [[练习_句子改写]]\n---\n\n# \"I wrote everything you need to ace MATH...\"\n\n## 原句\n> I wrote everything you need to ace MATH, from FRACTIONS to the COORDINATE PLANE, and only the really important stuff in between\n\n## 结构分析\n\n### 主干\n- [[主语_I|I]] → [[谓语_wrote|wrote]] → [[宾语_everything|everything]]\n\n### 修饰层\n1. **定语从句**修饰`everything`：\n   `(that) you need` → `to ace MATH`\n   \n2. **范围状语**：\n   `from [[vocab_fractions|FRACTIONS]] to [[vocab_coordinate_plane|the COORDINATE PLANE]]`\n\n3. **并列补充**：\n   `and only the really important stuff in between`\n\n## 知识点\n- [[grammar_need_to_do|need to do]]\n- [[grammar_from_to|from...to...]]\n- [[grammar_in_between|in between]]\n```\n\n### 5. 使用 Dataview 建立学习视图\n\n```markdown\n# 📚 所有词汇卡片\n\n```dataview\nTABLE \n  定义 as \"中文释义\",\n  词性 as \"Part of Speech\"\nFROM #vocabulary\nSORT file.name ASC\n```\n\n# 📖 语法点索引\n\n```dataview\nTABLE \n  related as \"相关知识点\"\nFROM #grammar\nSORT file.ctime DESC\n```\n\n# ✍️ 待练习句子\n\n```dataview\nLIST \nFROM #pending_practice\n```\n\n# 🔗 关联最多的笔记\n\n```dataview\nTABLE \n  length(file.outlinks) as \"向外链接数\",\n  length(file.inlinks) as \"被引用数\"\nSORT length(file.inlinks) DESC\nLIMIT 10\n```\n```\n\n### 6. 关键改造点总结\n\n| 原纯文本 | 改造后 |\n|---------|--------|\n| 纯文本词汇 | `[[vocab_ace\\|ace]]` 双链词汇卡 |\n| 语法规则 | 独立笔记 + 标签分类 |\n| 例句 | 指向源句子笔记 |\n| 逻辑关系 | `related` 元数据关联 |\n| 知识点归类 | `#grammar/...` `#vocabulary/...` 标签树 |\n| 学习统计 | Dataview 查询 |\n\n## 下一步建议 🎯\n\n1. **先创建基础笔记**：词汇卡、语法点\n2. **再建立关联**：用双链连接相关概念\n3. **添加元数据**：tags、related、examples\n4. **设置 Dataview**：用查询建立学习视图\n\n要不要我帮你创建一个 Obsidian 模板文件，这样以后新建笔记就能自动包含这些元数据结构？"
+- role: user
+  content: |-
+    我这种方式是通过 句子来学习生词、短语以及语法，你给的方式太繁琐了r.za@r ~/obsidian (main)> tree -L 1
+    .
+    ├── 00-Daily
+    ├── 10-Notes
+    ├── 20-Templates
+    ├── 99-Archive
+    └── 图片  这是我当前的笔记结构，00-daily为唯一输入，
+- role: assistant
+  content: "明白了！你想要的是**轻量级、以句子为中心的笔记系统**。我来给你一个更简洁的方案 🎯\n\n## 简洁方案：以句子为核心\n\n### 1. 在 `00-Daily` 中直接嵌入双链\n\n```markdown\n# 2024-01-20 英语学习笔记\n\n## 📝 今日句子分析\n\n### Sentence 1\n> I wrote everything [[you need to ace MATN → something needed]]，from FRACTIONS [[fractions→分数]] to the COORDINATE PLANE [[coordinate plane→坐标系]]，and only the really important stuff [[stuff→东西]] in between [[in between→介于之间]]\n\n**生词**：\n- [[ace→精通]]：取得A / 精通\n- [[whatnot→等等]]：诸如此类\n\n**语法**：\n- [[that/which/who省略规则]]：`(that) you need`\n- [[there be结构]]：`there is/was`\n\n---\n\n### Sentence 2\n> 第二个句子...\n\n## 📚 今日复习\n- 昨天学的 [[ace→精通]] 用法\n```\n\n### 2. 词汇笔记模板（极简）\n\n```markdown\n---\ntags: [vocab]\n---\n\n# ace\n\n**意思**：精通，取得A\n**原句**：[2024-01-20](2024-01-20.md#Sentence1)\n```\n\n### 3. 语法笔记模板（极简）\n\n```markdown\n---\ntags: [grammar]\n---\n\n# that/which/who 省略规则\n\n**示例句**：[2024-01-20](2024-01-20.md#Sentence1)\n```\n\n## 你的工作流\n\n### 每天（在 `00-Daily`）\n\n```markdown\n# 2024-01-XX\n\n## 📖 英语句子\n> 句子原文\n\n**重点**：\n- [[生词A]]：中文释义\n- [[生词B]]：中文释义  \n- [[语法点X]]：说明\n\n## ⏰ 复习提醒\n- 复习 [[ace→精通]]（3天前学的）\n```\n\n### 懒人包：一个文件搞定所有\n\n**其实你甚至可以只在 Daily 里记录，不需要单独创建笔记文件**：\n\n```markdown\n# 2024-01-20\n\n## 英语\n句子...\n→ ace/g/精通\n→ whatnot/g/等等\n→ 省略规则/g：相关说明\n\n## 昨天复习\n→ ace/g ✅ 记住了\n```\n\n标签含义：\n- `→ word/g/释义` = 需要创建笔记的生词\n- `→ concept/g/说明` = 语法点\n\n## 这样做的优势\n\n1. **输入点唯一**：所有内容从 `00-Daily` 开始\n2. **按需创建**：只有需要细看的生词/语法才创建独立笔记\n3. **双链轻量**：直接在句子中标记，不破坏阅读流\n4. **可搜索**：用 `Dataview` 或搜索 `#vocab` `#grammar` 就能找到\n\n## 如果需要更多细节\n\n**只有在你需要深入分析时**才建新笔记：\n```markdown\n# ace 详细笔记（按需创建）\n- 多种用法...\n- 例句集合...\n- 练习...\n```\n\n**或者**用 `99-Archive` 做年度汇总：\n```markdown\n# 2024年英语词汇汇总\n- [[ace]]：来源于 2024-01-20 句子\n- [[whatever]]：来源于 2024-01-22 句子\n```\n\n## 总结\n\n**核心原则**：\n1. ✅ 句子是一切学习的起点\n2. ✅ 双链只标记重点（生词/语法点）\n3. ✅ 按需创建详细笔记，不是必须\n4. ✅ 保持 Daily 笔记流畅可读\n\n这样够轻量了吗？还是你觉得哪里还可以再简化？"
+- role: user
+  content: |2
+
+    <h1 align="center">obsidian.nvim</h1>
+    <div><h4 align="center"><a href="#setup">Setup</a> · <a href="#configuration-options">Configure</a> · <a href="#contributing">Contribute</a> · <a href="https://github.com/epwalsh/obsidian.nvim/discussions">Discuss</a></h4></div>
+    <div align="center"><a href="https://github.com/epwalsh/obsidian.nvim/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/epwalsh/obsidian.nvim?style=for-the-badge&logo=starship&logoColor=D9E0EE&labelColor=302D41&&color=d9b3ff&include_prerelease&sort=semver" /></a> <a href="https://github.com/epwalsh/obsidian.nvim/pulse"><img alt="Last commit" src="https://img.shields.io/github/last-commit/epwalsh/obsidian.nvim?style=for-the-badge&logo=github&logoColor=D9E0EE&labelColor=302D41&color=9fdf9f"/></a> <a href="https://github.com/neovim/neovim/releases/latest"><img alt="Latest Neovim" src="https://img.shields.io/github/v/release/neovim/neovim?style=for-the-badge&logo=neovim&logoColor=D9E0EE&label=Neovim&labelColor=302D41&color=99d6ff&sort=semver" /></a> <a href="http://www.lua.org/"><img alt="Made with Lua" src="https://img.shields.io/badge/Built%20with%20Lua-grey?style=for-the-badge&logo=lua&logoColor=D9E0EE&label=Lua&labelColor=302D41&color=b3b3ff"></a> <a href="https://www.buymeacoffee.com/epwalsh"><img alt="Buy me a coffee" src="https://img.shields.io/badge/Buy%20me%20a%20coffee-grey?style=for-the-badge&logo=buymeacoffee&logoColor=D9E0EE&label=Sponsor&labelColor=302D41&color=ffff99" /></a></div>
+    <hr>
+
+    A Neovim plugin for writing and navigating [Obsidian](https://obsidian.md) vaults, written in Lua.
+
+    Built for people who love the concept of Obsidian -- a simple, markdown-based notes app -- but love Neovim too much to stand typing characters into anything else.
+
+    If you're new to Obsidian I highly recommend watching [this excellent YouTube video](https://youtu.be/5ht8NYkU9wQ?si=8nbnNsRVnw0xfX2S) for a great overview.
+
+    _Keep in mind this plugin is not meant to replace Obsidian, but to complement it._ The Obsidian app is very powerful in its own way; it comes with a mobile app and has a lot of functionality that's not feasible to implement in Neovim, such as the graph explorer view. That said, this plugin stands on its own as well. You don't necessarily need to use it alongside the Obsidian app.
+
+    ## Table of contents
+
+    - 👉 [Features](#features)
+      - [Commands](#commands)
+      - [Demo](#demo)
+    - ⚙️ [Setup](#setup)
+      - [System requirements](#system-requirements)
+      - [Install and configure](#install-and-configure)
+      - [Plugin dependencies](#plugin-dependencies)
+      - [Configuration options](#configuration-options)
+      - [Notes on configuration](#notes-on-configuration)
+      - [Using templates](#using-templates)
+      - [Usage outside of a workspace or vault](#usage-outside-of-a-workspace-or-vault)
+    - ➕ [Contributing](#contributing)
+
+    ## Features
+
+    ▶️ **Completion:** Ultra-fast, asynchronous autocompletion for note references and tags via [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) (triggered by typing `[[` for wiki links, `[` for markdown links, or `#` for tags), powered by [`ripgrep`](https://github.com/BurntSushi/ripgrep).
+
+    [![See this screenshot](https://github.com/epwalsh/obsidian.nvim/assets/8812459/90d5f218-06cd-4ebb-b00b-b59c2f5c3cc1)](https://github.com/epwalsh/obsidian.nvim/assets/8812459/90d5f218-06cd-4ebb-b00b-b59c2f5c3cc1)
+
+    🏃 **Navigation:** Navigate throughout your vault by typing `gf` on any link to another note.
+
+    📷 **Images:** Paste images into notes.
+
+    💅 **Syntax:** Additional markdown syntax highlighting, concealing, and extmarks for references, tags, and check-boxes.
+
+    [![See this screenshot](https://github.com/epwalsh/obsidian.nvim/assets/8812459/e74f5267-21b5-49bc-a3bb-3b9db5fa6687)](https://github.com/epwalsh/obsidian.nvim/assets/8812459/e74f5267-21b5-49bc-a3bb-3b9db5fa6687)
+
+    ### Commands
+
+    - `:ObsidianOpen [QUERY]` to open a note in the Obsidian app.
+      This command has one optional argument: a query used to resolve the note to open by ID, path, or alias. If not given, the note corresponding to the current buffer is opened.
+
+    - `:ObsidianNew [TITLE]` to create a new note.
+      This command has one optional argument: the title of the new note.
+
+    - `:ObsidianQuickSwitch` to quickly switch to (or open) another note in your vault, searching by its name using [ripgrep](https://github.com/BurntSushi/ripgrep) with your preferred picker (see [plugin dependencies](#plugin-dependencies) below).
+
+    - `:ObsidianFollowLink [vsplit|hsplit]` to follow a note reference under the cursor, optionally opening it in a vertical or horizontal split.
+
+    - `:ObsidianBacklinks` for getting a picker list of references to the current buffer.
+
+    - `:ObsidianTags [TAG ...]` for getting a picker list of all occurrences of the given tags.
+
+    - `:ObsidianToday [OFFSET]` to open/create a new daily note. This command also takes an optional offset in days, e.g. use `:ObsidianToday -1` to go to yesterday's note. Unlike `:ObsidianYesterday` and `:ObsidianTomorrow` this command does not differentiate between weekdays and weekends.
+
+    - `:ObsidianYesterday` to open/create the daily note for the previous working day.
+
+    - `:ObsidianTomorrow` to open/create the daily note for the next working day.
+
+    - `:ObsidianDailies [OFFSET ...]` to open a picker list of daily notes. For example, `:ObsidianDailies -2 1` to list daily notes from 2 days ago until tomorrow.
+
+    - `:ObsidianTemplate [NAME]` to insert a template from the templates folder, selecting from a list using your preferred picker. See ["using templates"](#using-templates) for more information.
+
+    - `:ObsidianSearch [QUERY]` to search for (or create) notes in your vault using `ripgrep` with your preferred picker.
+
+    - `:ObsidianLink [QUERY]` to link an inline visual selection of text to a note.
+      This command has one optional argument: a query that will be used to resolve the note by ID, path, or alias. If not given, the selected text will be used as the query.
+
+    - `:ObsidianLinkNew [TITLE]` to create a new note and link it to an inline visual selection of text.
+      This command has one optional argument: the title of the new note. If not given, the selected text will be used as the title.
+
+    - `:ObsidianLinks` to collect all links within the current buffer into a picker window.
+
+    - `:ObsidianExtractNote [TITLE]` to extract the visually selected text into a new note and link to it.
+
+    - `:ObsidianWorkspace [NAME]` to switch to another workspace.
+
+    - `:ObsidianPasteImg [IMGNAME]` to paste an image from the clipboard into the note at the cursor position by saving it to the vault and adding a markdown image link. You can configure the default folder to save images to with the `attachments.img_folder` option.
+
+    - `:ObsidianRename [NEWNAME] [--dry-run]` to rename the note of the current buffer or reference under the cursor, updating all backlinks across the vault. Since this command is still relatively new and could potentially write a lot of changes to your vault, I highly recommend committing the current state of your vault (if you're using version control) before running it, or doing a dry-run first by appending "--dry-run" to the command, e.g. `:ObsidianRename new-id --dry-run`.
+
+    - `:ObsidianToggleCheckbox` to cycle through checkbox options.
+
+    - `:ObsidianNewFromTemplate [PATH] [TEMPLATE]` to create a new note from a template in the templates folder. Selecting from a list using your preferred picker.
+      This command has one optional argument: the path to the new note.
+
+    - `:ObsidianTOC` to load the table of contents of the current note into a picker list.
+
+    ### Demo
+
+    [![2024-01-31 14 22 52](https://github.com/epwalsh/obsidian.nvim/assets/8812459/2986e1d2-13e8-40e2-9c9e-75691a3b662e)](https://github.com/epwalsh/obsidian.nvim/assets/8812459/2986e1d2-13e8-40e2-9c9e-75691a3b662e)
+
+    ## Setup
+
+    ### System requirements
+
+    - NeoVim >= 0.8.0 (this plugin uses `vim.fs` which was only added in 0.8).
+    - If you want completion and search features (recommended) you'll need [ripgrep](https://github.com/BurntSushi/ripgrep) to be installed and on your `$PATH`.
+      See [ripgrep#installation](https://github.com/BurntSushi/ripgrep) for install options.
+
+    Specific operating systems also require additional dependencies in order to use all of obsidian.nvim's functionality:
+
+    - **Windows WSL** users need [`wsl-open`](https://gitlab.com/4U6U57/wsl-open) for the `:ObsidianOpen` command.
+    - **MacOS** users need [`pngpaste`](https://github.com/jcsalterego/pngpaste) (`brew install pngpaste`) for the `:ObsidianPasteImg` command.
+    - **Linux** users need xclip (X11) or wl-clipboard (Wayland) for the `:ObsidianPasteImg` command.
+
+    Search functionality (e.g. via the `:ObsidianSearch` and `:ObsidianQuickSwitch` commands) also requires a picker such [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) (see [plugin dependencies](#plugin-dependencies) below).
+
+    ### Install and configure
+
+    To configure obsidian.nvim you just need to call `require("obsidian").setup({ ... })` with the desired options.
+    Here are some examples using different plugin managers. The full set of [plugin dependencies](#plugin-dependencies) and [configuration options](#configuration-options) are listed below.
+
+    > ⚠️ WARNING: if you install from the latest release (recommended for stability) instead of `main`, be aware that the README on `main` may reference features that haven't been released yet. For that reason I recommend viewing the README on the tag for the [latest release](https://github.com/epwalsh/obsidian.nvim/releases) instead of `main`.
+
+    #### Using [`lazy.nvim`](https://github.com/folke/lazy.nvim)
+
+    ```lua
+    return {
+      "epwalsh/obsidian.nvim",
+      version = "*",  -- recommended, use latest release instead of latest commit
+      lazy = true,
+      ft = "markdown",
+      -- Replace the above line with this if you only want to load obsidian.nvim for markdown files in your vault:
+      -- event = {
+      --   -- If you want to use the home shortcut '~' here you need to call 'vim.fn.expand'.
+      --   -- E.g. "BufReadPre " .. vim.fn.expand "~" .. "/my-vault/**.md"
+      --   "BufReadPre path/to/my-vault/**.md",
+      --   "BufNewFile path/to/my-vault/**.md",
+      -- },
+      dependencies = {
+        -- Required.
+        "nvim-lua/plenary.nvim",
+
+        -- see below for full list of optional dependencies 👇
+      },
+      opts = {
+        workspaces = {
+          {
+            name = "personal",
+            path = "~/vaults/personal",
+          },
+          {
+            name = "work",
+            path = "~/vaults/work",
+          },
+        },
+
+        -- see below for full list of options 👇
+      },
+    }
+    ```
+
+    #### Using [`packer.nvim`](https://github.com/wbthomason/packer.nvim)
+
+    ```lua
+    use({
+      "epwalsh/obsidian.nvim",
+      tag = "*",  -- recommended, use latest release instead of latest commit
+      requires = {
+        -- Required.
+        "nvim-lua/plenary.nvim",
+
+        -- see below for full list of optional dependencies 👇
+      },
+      config = function()
+        require("obsidian").setup({
+          workspaces = {
+            {
+              name = "personal",
+              path = "~/vaults/personal",
+            },
+            {
+              name = "work",
+              path = "~/vaults/work",
+            },
+          },
+
+          -- see below for full list of options 👇
+        })
+      end,
+    })
+    ```
+
+    ### Plugin dependencies
+
+    The only **required** plugin dependency is [plenary.nvim](https://github.com/nvim-lua/plenary.nvim), but there are a number of optional dependencies that enhance the obsidian.nvim experience.
+
+    **Completion:**
+
+    - **[recommended]** [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp): for completion of note references.
+
+    **Pickers:**
+
+    - **[recommended]** [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim): for search and quick-switch functionality.
+    - [Mini.Pick](https://github.com/echasnovski/mini.pick) from the mini.nvim library: an alternative to telescope for search and quick-switch functionality.
+    - [ibhagwan/fzf-lua](https://github.com/ibhagwan/fzf-lua): another alternative to telescope for search and quick-switch functionality.
+
+    **Syntax highlighting:**
+
+    - **[recommended]** [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter): for base markdown syntax highlighting. See [syntax highlighting](#syntax-highlighting) for more details.
+    - [preservim/vim-markdown](https://github.com/preservim/vim-markdown): an alternative to nvim-treesitter for syntax highlighting (see [syntax highlighting](#syntax-highlighting) for more details), plus other cool features.
+
+    **Miscellaneous:**
+
+    - 🆕 [pomo.nvim](https://github.com/epwalsh/pomo.nvim): for running lightweight [pomodoro](https://en.wikipedia.org/wiki/Pomodoro_Technique) timers.
+
+    If you choose to use any of these you should include them in the "dependencies" or "requires" field of the obsidian.nvim plugin spec for your package manager.
+
+    ### Configuration options
+
+    This is a complete list of all of the options that can be passed to `require("obsidian").setup()`. The settings below are *not necessarily the defaults, but represent reasonable default settings*. Please read each option carefully and customize it to your needs:
+
+    ```lua
+    {
+      -- A list of workspace names, paths, and configuration overrides.
+      -- If you use the Obsidian app, the 'path' of a workspace should generally be
+      -- your vault root (where the `.obsidian` folder is located).
+      -- When obsidian.nvim is loaded by your plugin manager, it will automatically set
+      -- the workspace to the first workspace in the list whose `path` is a parent of the
+      -- current markdown file being edited.
+      workspaces = {
+        {
+          name = "personal",
+          path = "~/vaults/personal",
+        },
+        {
+          name = "work",
+          path = "~/vaults/work",
+          -- Optional, override certain settings.
+          overrides = {
+            notes_subdir = "notes",
+          },
+        },
+      },
+
+      -- Alternatively - and for backwards compatibility - you can set 'dir' to a single path instead of
+      -- 'workspaces'. For example:
+      -- dir = "~/vaults/work",
+
+      -- Optional, if you keep notes in a specific subdirectory of your vault.
+      notes_subdir = "notes",
+
+      -- Optional, set the log level for obsidian.nvim. This is an integer corresponding to one of the log
+      -- levels defined by "vim.log.levels.*".
+      log_level = vim.log.levels.INFO,
+
+      daily_notes = {
+        -- Optional, if you keep daily notes in a separate directory.
+        folder = "notes/dailies",
+        -- Optional, if you want to change the date format for the ID of daily notes.
+        date_format = "%Y-%m-%d",
+        -- Optional, if you want to change the date format of the default alias of daily notes.
+        alias_format = "%B %-d, %Y",
+        -- Optional, default tags to add to each new daily note created.
+        default_tags = { "daily-notes" },
+        -- Optional, if you want to automatically insert a template from your template directory like 'daily.md'
+        template = nil
+      },
+
+      -- Optional, completion of wiki links, local markdown links, and tags using nvim-cmp.
+      completion = {
+        -- Set to false to disable completion.
+        nvim_cmp = true,
+        -- Trigger completion at 2 chars.
+        min_chars = 2,
+      },
+
+      -- Optional, configure key mappings. These are the defaults. If you don't want to set any keymappings this
+      -- way then set 'mappings = {}'.
+      mappings = {
+        -- Overrides the 'gf' mapping to work on markdown/wiki links within your vault.
+        ["gf"] = {
+          action = function()
+            return require("obsidian").util.gf_passthrough()
+          end,
+          opts = { noremap = false, expr = true, buffer = true },
+        },
+        -- Toggle check-boxes.
+        ["<leader>ch"] = {
+          action = function()
+            return require("obsidian").util.toggle_checkbox()
+          end,
+          opts = { buffer = true },
+        },
+        -- Smart action depending on context, either follow link or toggle checkbox.
+        ["<cr>"] = {
+          action = function()
+            return require("obsidian").util.smart_action()
+          end,
+          opts = { buffer = true, expr = true },
+        }
+      },
+
+      -- Where to put new notes. Valid options are
+      --  * "current_dir" - put new notes in same directory as the current buffer.
+      --  * "notes_subdir" - put new notes in the default notes subdirectory.
+      new_notes_location = "notes_subdir",
+
+      -- Optional, customize how note IDs are generated given an optional title.
+      ---@param title string|?
+      ---@return string
+      note_id_func = function(title)
+        -- Create note IDs in a Zettelkasten format with a timestamp and a suffix.
+        -- In this case a note with the title 'My new note' will be given an ID that looks
+        -- like '1657296016-my-new-note', and therefore the file name '1657296016-my-new-note.md'
+        local suffix = ""
+        if title ~= nil then
+          -- If title is given, transform it into valid file name.
+          suffix = title:gsub(" ", "-"):gsub("[^A-Za-z0-9-]", ""):lower()
+        else
+          -- If title is nil, just add 4 random uppercase letters to the suffix.
+          for _ = 1, 4 do
+            suffix = suffix .. string.char(math.random(65, 90))
+          end
+        end
+        return tostring(os.time()) .. "-" .. suffix
+      end,
+
+      -- Optional, customize how note file names are generated given the ID, target directory, and title.
+      ---@param spec { id: string, dir: obsidian.Path, title: string|? }
+      ---@return string|obsidian.Path The full path to the new note.
+      note_path_func = function(spec)
+        -- This is equivalent to the default behavior.
+        local path = spec.dir / tostring(spec.id)
+        return path:with_suffix(".md")
+      end,
+
+      -- Optional, customize how wiki links are formatted. You can set this to one of:
+      --  * "use_alias_only", e.g. '[[Foo Bar]]'
+      --  * "prepend_note_id", e.g. '[[foo-bar|Foo Bar]]'
+      --  * "prepend_note_path", e.g. '[[foo-bar.md|Foo Bar]]'
+      --  * "use_path_only", e.g. '[[foo-bar.md]]'
+      -- Or you can set it to a function that takes a table of options and returns a string, like this:
+      wiki_link_func = function(opts)
+        return require("obsidian.util").wiki_link_id_prefix(opts)
+      end,
+
+      -- Optional, customize how markdown links are formatted.
+      markdown_link_func = function(opts)
+        return require("obsidian.util").markdown_link(opts)
+      end,
+
+      -- Either 'wiki' or 'markdown'.
+      preferred_link_style = "wiki",
+
+      -- Optional, customize the default name or prefix when pasting images via `:ObsidianPasteImg`.
+      ---@return string
+      image_name_func = function()
+        -- Prefix image names with timestamp.
+        return string.format("%s-", os.time())
+      end,
+
+      -- Optional, boolean or a function that takes a filename and returns a boolean.
+      -- `true` indicates that you don't want obsidian.nvim to manage frontmatter.
+      disable_frontmatter = false,
+
+      -- Optional, alternatively you can customize the frontmatter data.
+      ---@return table
+      note_frontmatter_func = function(note)
+        -- Add the title of the note as an alias.
+        if note.title then
+          note:add_alias(note.title)
+        end
+
+        local out = { id = note.id, aliases = note.aliases, tags = note.tags }
+
+        -- `note.metadata` contains any manually added fields in the frontmatter.
+        -- So here we just make sure those fields are kept in the frontmatter.
+        if note.metadata ~= nil and not vim.tbl_isempty(note.metadata) then
+          for k, v in pairs(note.metadata) do
+            out[k] = v
+          end
+        end
+
+        return out
+      end,
+
+      -- Optional, for templates (see below).
+      templates = {
+        folder = "templates",
+        date_format = "%Y-%m-%d",
+        time_format = "%H:%M",
+        -- A map for custom variables, the key should be the variable and the value a function
+        substitutions = {},
+      },
+
+      -- Optional, by default when you use `:ObsidianFollowLink` on a link to an external
+      -- URL it will be ignored but you can customize this behavior here.
+      ---@param url string
+      follow_url_func = function(url)
+        -- Open the URL in the default web browser.
+        vim.fn.jobstart({"open", url})  -- Mac OS
+        -- vim.fn.jobstart({"xdg-open", url})  -- linux
+      end,
+
+      -- Optional, set to true if you use the Obsidian Advanced URI plugin.
+      -- https://github.com/Vinzent03/obsidian-advanced-uri
+      use_advanced_uri = false,
+
+      -- Optional, set to true to force ':ObsidianOpen' to bring the app to the foreground.
+      open_app_foreground = false,
+
+      picker = {
+        -- Set your preferred picker. Can be one of 'telescope.nvim', 'fzf-lua', or 'mini.pick'.
+        name = "telescope.nvim",
+        -- Optional, configure key mappings for the picker. These are the defaults.
+        -- Not all pickers support all mappings.
+        mappings = {
+          -- Create a new note from your query.
+          new = "<C-x>",
+          -- Insert a link to the selected note.
+          insert_link = "<C-l>",
+        },
+      },
+
+      -- Optional, sort search results by "path", "modified", "accessed", or "created".
+      -- The recommend value is "modified" and `true` for `sort_reversed`, which means, for example,
+      -- that `:ObsidianQuickSwitch` will show the notes sorted by latest modified time
+      sort_by = "modified",
+      sort_reversed = true,
+
+      -- Set the maximum number of lines to read from notes on disk when performing certain searches.
+      search_max_lines = 1000,
+
+      -- Optional, determines how certain commands open notes. The valid options are:
+      -- 1. "current" (the default) - to always open in the current window
+      -- 2. "vsplit" - to open in a vertical split if there's not already a vertical split
+      -- 3. "hsplit" - to open in a horizontal split if there's not already a horizontal split
+      open_notes_in = "current",
+
+      -- Optional, define your own callbacks to further customize behavior.
+      callbacks = {
+        -- Runs at the end of `require("obsidian").setup()`.
+        ---@param client obsidian.Client
+        post_setup = function(client) end,
+
+        -- Runs anytime you enter the buffer for a note.
+        ---@param client obsidian.Client
+        ---@param note obsidian.Note
+        enter_note = function(client, note) end,
+
+        -- Runs anytime you leave the buffer for a note.
+        ---@param client obsidian.Client
+        ---@param note obsidian.Note
+        leave_note = function(client, note) end,
+
+        -- Runs right before writing the buffer for a note.
+        ---@param client obsidian.Client
+        ---@param note obsidian.Note
+        pre_write_note = function(client, note) end,
+
+        -- Runs anytime the workspace is set/changed.
+        ---@param client obsidian.Client
+        ---@param workspace obsidian.Workspace
+        post_set_workspace = function(client, workspace) end,
+      },
+
+      -- Optional, configure additional syntax highlighting / extmarks.
+      -- This requires you have `conceallevel` set to 1 or 2. See `:help conceallevel` for more details.
+      ui = {
+        enable = true,  -- set to false to disable all additional syntax features
+        update_debounce = 200,  -- update delay after a text change (in milliseconds)
+        max_file_length = 5000,  -- disable UI features for files with more than this many lines
+        -- Define how various check-boxes are displayed
+        checkboxes = {
+          -- NOTE: the 'char' value has to be a single character, and the highlight groups are defined below.
+          [" "] = { char = "󰄱", hl_group = "ObsidianTodo" },
+          ["x"] = { char = "", hl_group = "ObsidianDone" },
+          [">"] = { char = "", hl_group = "ObsidianRightArrow" },
+          ["~"] = { char = "󰰱", hl_group = "ObsidianTilde" },
+          ["!"] = { char = "", hl_group = "ObsidianImportant" },
+          -- Replace the above with this if you don't have a patched font:
+          -- [" "] = { char = "☐", hl_group = "ObsidianTodo" },
+          -- ["x"] = { char = "✔", hl_group = "ObsidianDone" },
+
+          -- You can also add more custom ones...
+        },
+        -- Use bullet marks for non-checkbox lists.
+        bullets = { char = "•", hl_group = "ObsidianBullet" },
+        external_link_icon = { char = "", hl_group = "ObsidianExtLinkIcon" },
+        -- Replace the above with this if you don't have a patched font:
+        -- external_link_icon = { char = "", hl_group = "ObsidianExtLinkIcon" },
+        reference_text = { hl_group = "ObsidianRefText" },
+        highlight_text = { hl_group = "ObsidianHighlightText" },
+        tags = { hl_group = "ObsidianTag" },
+        block_ids = { hl_group = "ObsidianBlockID" },
+        hl_groups = {
+          -- The options are passed directly to `vim.api.nvim_set_hl()`. See `:help nvim_set_hl`.
+          ObsidianTodo = { bold = true, fg = "#f78c6c" },
+          ObsidianDone = { bold = true, fg = "#89ddff" },
+          ObsidianRightArrow = { bold = true, fg = "#f78c6c" },
+          ObsidianTilde = { bold = true, fg = "#ff5370" },
+          ObsidianImportant = { bold = true, fg = "#d73128" },
+          ObsidianBullet = { bold = true, fg = "#89ddff" },
+          ObsidianRefText = { underline = true, fg = "#c792ea" },
+          ObsidianExtLinkIcon = { fg = "#c792ea" },
+          ObsidianTag = { italic = true, fg = "#89ddff" },
+          ObsidianBlockID = { italic = true, fg = "#89ddff" },
+          ObsidianHighlightText = { bg = "#75662e" },
+        },
+      },
+
+      -- Specify how to handle attachments.
+      attachments = {
+        -- The default folder to place images in via `:ObsidianPasteImg`.
+        -- If this is a relative path it will be interpreted as relative to the vault root.
+        -- You can always override this per image by passing a full path to the command instead of just a filename.
+        img_folder = "assets/imgs",  -- This is the default
+        -- A function that determines the text to insert in the note when pasting an image.
+        -- It takes two arguments, the `obsidian.Client` and an `obsidian.Path` to the image file.
+        -- This is the default implementation.
+        ---@param client obsidian.Client
+        ---@param path obsidian.Path the absolute path to the image file
+        ---@return string
+        img_text_func = function(client, path)
+          path = client:vault_relative_path(path) or path
+          return string.format("![%s](%s)", path.name, path)
+        end,
+      },
+    }
+    ```
+
+    ### Notes on configuration
+
+    #### Workspaces
+
+    For most Obsidian users, each workspace you configure in your obsidian.nvim config should correspond to a unique Obsidian vault, in which case the `path` of each workspace should be set to the corresponding vault root path.
+
+    For example, suppose you have an Obsidian vault at `~/vaults/personal`, then the `workspaces` field in your config would look like this:
+
+    ```lua
+    config = {
+      workspaces = {
+        {
+          name = "personal",
+          path = "~/vaults/personal",
+        },
+      }
+    }
+    ```
+
+    However obsidian.nvim's concept of workspaces is a little more general than that of vaults, since it's also valid to configure a workspace that doesn't correspond to a vault, or to configure multiple workspaces for a single vault. The latter case can be useful if you want to segment a single vault into multiple directories with different settings applied to each directory. For example:
+
+    ```lua
+    config = {
+      workspaces = {
+        {
+          name = "project-1",
+          path = "~/vaults/personal/project-1",
+          -- `strict=true` here tells obsidian to use the `path` as the workspace/vault root,
+          -- even though the actual Obsidian vault root may be `~/vaults/personal/`.
+          strict = true,
+          overrides = {
+            -- ...
+          },
+        },
+        {
+          name = "project-2",
+          path = "~/vaults/personal/project-2",
+          strict = true,
+          overrides = {
+            -- ...
+          },
+        },
+      }
+    }
+    ```
+
+    obsidian.nvim also supports "dynamic" workspaces. These are simply workspaces where the `path` is set to a Lua function (that returns a path) instead of a hard-coded path. This can be useful in several scenarios, such as when you want a workspace whose `path` is always set to the parent directory of the current buffer:
+
+
+    ```lua
+    config = {
+      workspaces = {
+        {
+          name = "buf-parent",
+          path = function()
+            return assert(vim.fs.dirname(vim.api.nvim_buf_get_name(0)))
+          end,
+        },
+      }
+    }
+    ```
+
+    Dynamic workspaces are also useful when you want to use a subset of this plugin's functionality on markdown files outside of your "fixed" vaults.
+    See [using obsidian.nvim outside of a workspace / Obsidian vault](#usage-outside-of-a-workspace-or-vault).
+
+    #### Completion
+
+    obsidian.nvim will set itself up as an nvim-cmp source automatically when you enter a markdown buffer within your vault directory, you do **not** need to specify this plugin as a cmp source manually.
+
+    Note that in order to trigger completion for tags _within YAML frontmatter_ you still need to type the "#" at the start of the tag. obsidian.nvim will remove the "#" when you hit enter on the tag completion item.
+
+    #### Syntax highlighting
+
+    If you're using [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter/blob/master/README.md) you're configuration should include both "markdown" and "markdown_inline" sources:
+
+    ```lua
+    require("nvim-treesitter.configs").setup({
+      ensure_installed = { "markdown", "markdown_inline", ... },
+      highlight = {
+        enable = true,
+      },
+    })
+    ```
+
+    If you use `vim-markdown` you'll probably want to disable its frontmatter syntax highlighting (`vim.g.vim_markdown_frontmatter = 1`) which I've found doesn't work very well.
+
+    #### Concealing characters
+
+    If you wish to use the formatting concealment features, you will need to have `conceallevel` set to a value that allows it (either `1` or `2`), for example:
+    `set conceallevel=1` in viml or `vim.opt.conceallevel = 1` in a lua config.
+
+    #### Note naming and location
+
+    The `notes_subdir` and `note_id_func` options are not mutually exclusive. You can use them both. For example, using a combination of both of the above settings, a new note called "My new note" will assigned a path like `notes/1657296016-my-new-note.md`.
+
+    #### `gf` passthrough
+
+    If you want the `gf` passthrough functionality but you've already overridden the `gf` keybinding, just change your `gf` mapping definition to something like this:
+
+    ```lua
+    vim.keymap.set("n", "gf", function()
+      if require("obsidian").util.cursor_on_markdown_link() then
+        return "<cmd>ObsidianFollowLink<CR>"
+      else
+        return "gf"
+      end
+    end, { noremap = false, expr = true })
+    ```
+
+    Then make sure to comment out the `gf` keybinding in your obsidian.nvim config:
+
+    ```lua
+    mappings = {
+      -- ["gf"] = ...
+    },
+    ```
+
+    Or alternatively you could map obsidian.nvim's follow functionality to a different key:
+
+    ```lua
+    mappings = {
+      ["fo"] = {
+        action = function()
+          return require("obsidian").util.gf_passthrough()
+        end,
+        opts = { noremap = false, expr = true, buffer = true },
+      },
+    },
+    ```
+
+    ### Using templates
+
+    To insert a template in the current note, run the command `:ObsidianTemplate`. This will open a list of available templates in your templates folder with your preferred picker. Select a template and hit `<CR>` to insert.
+    To create a new note from a template, run the command `:ObsidianNewFromTemplate`. This will prompt you for an optional path for the new note and will open a list of available templates in your templates folder with your preferred picker. Select a template and hit `<CR>` to create the new note with the selected template.
+    Substitutions for `{{id}}`, `{{title}}`, `{{path}}`, `{{date}}`, and `{{time}}` are supported out-of-the-box.
+    For example, with the following configuration
+
+    ```lua
+    {
+      -- other fields ...
+
+      templates = {
+          folder = "my-templates-folder",
+          date_format = "%Y-%m-%d-%a",
+          time_format = "%H:%M",
+      },
+    }
+    ```
+
+    and the file `~/my-vault/my-templates-folder/note template.md`:
+
+    ```markdown
+    # {{title}}
+
+    Date created: {{date}}
+    ```
+
+    creating the note `Configuring Neovim.md` and executing `:ObsidianTemplate` will insert
+
+    ```markdown
+    # Configuring Neovim
+
+    Date created: 2023-03-01-Wed
+    ```
+
+    above the cursor position.
+
+    You can also define custom template substitutions with the configuration field `templates.substitutions`. For example, to automatically substitute the template variable `{{yesterday}}` when inserting a template, you could add this to your config:
+
+    ```lua
+    {
+    -- other fields ...
+    templates = {
+      substitutions = {
+        yesterday = function()
+          return os.date("%Y-%m-%d", os.time() - 86400)
+        end
+      }
+    }
+    ```
+
+    ### Usage outside of a workspace or vault
+
+    It's possible to configure obsidian.nvim to work on individual markdown files outside of a regular workspace / Obsidian vault by configuring a "dynamic" workspace. To do so you just need to add a special workspace with a function for the `path` field (instead of a string), which should return a *parent* directory of the current buffer. This tells obsidian.nvim to use that directory as the workspace `path` and `root` (vault root) when the buffer is not located inside another fixed workspace.
+
+    For example, to extend the configuration above this way:
+
+    ```diff
+    {
+      workspaces = {
+         {
+           name = "personal",
+           path = "~/vaults/personal",
+         },
+         ...
+    +    {
+    +      name = "no-vault",
+    +      path = function()
+    +        -- alternatively use the CWD:
+    +        -- return assert(vim.fn.getcwd())
+    +        return assert(vim.fs.dirname(vim.api.nvim_buf_get_name(0)))
+    +      end,
+    +      overrides = {
+    +        notes_subdir = vim.NIL,  -- have to use 'vim.NIL' instead of 'nil'
+    +        new_notes_location = "current_dir",
+    +        templates = {
+    +          folder = vim.NIL,
+    +        },
+    +        disable_frontmatter = true,
+    +      },
+    +    },
+    +  },
+       ...
+    }
+    ```
+
+    With this configuration, anytime you enter a markdown buffer outside of "~/vaults/personal" (or whatever your configured fixed vaults are), obsidian.nvim will switch to the dynamic workspace with the path / root set to the parent directory of the buffer.
+
+    Please note that in order to avoid unexpected behavior (like a new directory being created for `notes_subdir`) it's important to carefully set the workspace `overrides` options.
+    And keep in mind that to reset a configuration option to `nil` you'll have to use `vim.NIL` there instead of the builtin Lua `nil` due to the way Lua tables work.
+
+    ## Contributing
+
+    Please read the [CONTRIBUTING](https://github.com/epwalsh/obsidian.nvim/blob/main/.github/CONTRIBUTING.md) guide before submitting a pull request.
+
+    And if you're feeling especially generous I always appreciate some coffee funds! ❤️
+
+    [![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/epwalsh)
+- role: assistant
+  content: "明白了！你是在使用 `epwalsh/obsidian.nvim` 这个插件，并且你的 vault 结构是：\n\n```\n├── 00-Daily  # 唯一输入点\n├── 10-Notes  # 知识笔记\n├── 20-Templates # 模板\n├── 99-Archive   # 归档\n└── 图片\n```\n\n## 针对你的工作流，最简洁的双链方案\n\n### 1. 在 Daily 笔记中使用双链（轻量方式）\n\n```markdown\n# 2024-01-20\n\n## 📖 英语学习\n\n> I wrote everything [[you need to ace MATN → something needed]]，from FRACTIONS [[01-fractions|分数]] to the COORDINATE PLANE [[02-coordinate-plane|坐标系]]\n\n### 今日重点\n- [[ace→精通]]：取得A / 精通\n- [[whatnot→等等]]：诸如此类\n- [[省略规则→语法]]：that/who/which 省略\n```\n\n### 2. 智能使用别名\n\n利用 Obsidian 的别名功能，让双链更简洁：\n\n```markdown\n# 2024-01-20\n\n## 📖 句子\nI wrote everything you need to [[ace math]], from [[fractions]] to [[coordinate plane]]\n\n## 生词\n- [[ace]] 精通 | 取得A\n- [[whatnot]] 等等\n```\n\n然后在 `ace.md` 的 frontmatter 里：\n\n```yaml\n---\naliases: [\"ace\", \"ace math\", \"精通\"]\ntags: [vocab/english]\n---\n```\n\n这样 `[[ace math]]` 会自动匹配到 `ace.md`。\n\n### 3. 利用 `obsidian.nvim` 的模板功能\n\n在你的 `20-Templates` 目录下创建 `英语笔记模板.md`：\n\n```markdown\n---\ntags: [english/{{title}}]\ncreated: {{date}}\n---\n\n# {{title}}\n\n## 原句\n> \n\n## 生词与短语\n- [[]] :\n\n## 语法点\n- [[]] :\n\n## 个人例句\n- \n```\n\n然后用 `:ObsidianTemplate` 插入模板。\n\n### 4. 最佳实践：从 Daily 到 10-Notes\n\n**Daily 是入口**，只记录最精简的信息：\n\n```markdown\n# 2024-01-20\n\n## 英语\n句子 → [[ace]] [[fractions]] [[省略规则语法]]\n```\n\n**当需要深入整理时**，才在 `10-Notes` 下创建：\n\n```markdown\n# 10-Notes/English/ace.md\n---\ntags: [english/vocab]\naliases: [\"ace math\", \"精通\"]\n---\n\n# ace /eɪs/\n\n**意思**：精通，取得A\n**来源**：[[2024-01-20]] 句子\n**例句**：I need to ace this exam\n```\n\n### 5. 实用的 obsidian.nvim 快捷键\n\n在你的配置中添加：\n\n```lua\nmappings = {\n  -- 快速创建笔记并链接\n  [\"<leader>on\"] = {\n    action = function()\n      require(\"obsidian\").command(\"ObsidianNewFromTemplate\")\n    end,\n    opts = { buffer = true },\n  },\n  -- 搜索笔记\n  [\"<leader>os\"] = {\n    action = function()\n      require(\"obsidian\").command(\"ObsidianSearch\")\n    end,\n  },\n}\n```\n\n## 总结：你的完整工作流\n\n### 每天\n\n1. 打开 `00-Daily/2024-01-20.md`\n2. 记录句子，用 `[[word]]` 标记生词/语法点\n3. 必要时在 `10-Notes` 下创建详细笔记\n\n### 复习时\n\n```\n:ObsidianSearch ace    → 找到所有提到 ace 的笔记\n:ObsidianBacklinks      → 查看当前笔记被哪些笔记引用\n```\n\n### 归档\n\n```\n:ObsidianQuickSwitch    → 快速跳转到任何笔记\n:ObsidianTags           → 查看所有标签\n```\n\n这样既保持了 Daily 笔记的简洁性，又利用了双链的强大功能。你觉得这个方案适合你吗？"
+messages:
+- role: system
+  content: |-
+    This is a summary of the chat history as a recap: Here's a brief summary of our discussion:
+
+    The user shared detailed English learning notes analyzing sentence logic, vocabulary, and grammar structures from math-related texts. Key areas covered include:
+
+    1. **Sentence logic analysis**: Breaking down sentences into subject-verb-object relationships (e.g., "These are the notes from my math class")
+
+    2. **Vocabulary**: Noting expressions like "ace math" (get an A in math), "whatnot" (et cetera), and "smartest" (most intelligent)
+
+    3. **Grammar points discussed**:
+       - `there be` structure (there was/is/were)
+       - When to omit "that/which/who + be" (passive, progressive, prepositional phrases)
+       - Prepositional phrases (on, with, for, etc.)
+       - Past participles indicating completed actions
+       - Pronouns (this/that/these/those)
+       - Forms of "be" (am/is/are/was/were/being/been)
+
+    4. **Learning methodology**: The user suggested using color coding (yellow for vocabulary, green for definitions), adding personal example sentences, and creating mind maps for logical relationships.
+
+    The conversation also touched on Neovim buffer operations (window splitting, resizing, zooming) and Obsidian template configuration in Neovim, but the main focus was English grammar analysis.
+
+    This is a summary of the chat history as a recap: Here's a summary of our discussion:
+
+    The user is using Neovim with `epwalsh/obsidian.nvim` and has a vault structure: `00-Daily` (sole input point), `10-Notes`, `20-Templates`, `99-Archive`, and an images folder. They learn English through sentence analysis, tracking vocabulary, grammar points, and phrases from example sentences.
+
+    We discussed different approaches to integrate Obsidian-style double brackets (`[[]]`) into their workflow. The user rejected an overly complex approach with separate detailed notes for every concept. Instead, they preferred a lightweight, sentence-centric system where:
+
+    1. **Daily notes** remain the only input point, with minimal `[[word]]` markers embedded directly in sentences
+    2. **Aliases** (`aliases` in frontmatter) make linking simpler (e.g., `[[ace math]]` automatically links to `ace.md`)
+    3. **10-Notes** are used only when deeper organization is needed
+    4. **Templates** in `20-Templates` streamline note creation via `:ObsidianTemplate`
+
+    The core principle: keep Daily notes clean and readable, use minimal linking, and only create separate notes when necessary for long-term reference.
+- role: user
+  content: im/lazy/obsidian.nvim
+- role: assistant
+  content: "明白了！你使用 `lazy.nvim` 来管理 `obsidian.nvim`。这里是针对你 vault 结构的完整配置：\n\n## lazy.nvim 配置\n\n```lua\n-- ~/.config/nvim/lua/plugins/obsidian.lua\nreturn {\n  \"epwalsh/obsidian.nvim\",\n  version = \"*\",  -- 使用最新稳定版\n  lazy = true,\n  ft = \"markdown\",\n  event = {\n    -- 仅在你的 vault 目录下加载\n    \"BufReadPre \" .. vim.fn.expand(\"~/path/to/your/vault/**.md\"),\n    \"BufNewFile \" .. vim.fn.expand(\"~/path/to/your/vault/**.md\"),\n  },\n  dependencies = {\n    \"nvim-lua/plenary.nvim\",\n    -- 如果你使用 telescope（推荐）\n    \"nvim-telescope/telescope.nvim\",\n    -- 如果你使用 nvim-cmp（推荐）\n    \"hrsh7th/nvim-cmp\",\n  },\n  opts = {\n    workspaces = {\n      {\n        name = \"main\",\n        path = \"~/path/to/your/vault\",\n      },\n    },\n\n    -- 根据你的 vault 结构\n    notes_subdir = \"10-Notes\",\n\n    daily_notes = {\n      folder = \"00-Daily\",\n      date_format = \"%Y-%m-%d\",\n      alias_format = \"%B %-d, %Y\",\n      default_tags = { \"daily\" },\n      template = \"20-Templates/daily.md\",\n    },\n\n    templates = {\n      folder = \"20-Templates\",\n      date_format = \"%Y-%m-%d\",\n      time_format = \"%H:%M\",\n    },\n\n    attachments = {\n      img_folder = \"assets/imgs\",  -- 你的图片文件夹\n    },\n\n    completion = {\n      nvim_cmp = true,\n      min_chars = 2,\n    },\n\n    mappings = {\n      [\"gf\"] = {\n        action = function()\n          return require(\"obsidian\").util.gf_passthrough()\n        end,\n        opts = { noremap = false, expr = true, buffer = true },\n      },\n      [\"<leader>ch\"] = {\n        action = function()\n          return require(\"obsidian\").util.toggle_checkbox()\n        end,\n        opts = { buffer = true },\n      },\n    },\n\n    -- 自定义 note ID 格式\n    note_id_func = function(title)\n      local suffix = \"\"\n      if title ~= nil then\n        suffix = title:gsub(\" \", \"-\"):gsub(\"[^A-Za-z0-9-]\", \"\"):lower()\n      else\n        for _ = 1, 4 do\n          suffix = suffix .. string.char(math.random(65, 90))\n        end\n      end\n      return tostring(os.time()) .. \"-\" .. suffix\n    end,\n\n    -- 首选链接样式\n    preferred_link_style = \"wiki\",\n\n    picker = {\n      name = \"telescope.nvim\",\n      mappings = {\n        new = \"<C-x>\",\n        insert_link = \"<C-l>\",\n      },\n    },\n\n    ui = {\n      enable = true,\n      checkboxes = {\n        [\" \"] = { char = \"󰄱\", hl_group = \"ObsidianTodo\" },\n        [\"x\"] = { char = \"\", hl_group = \"ObsidianDone\" },\n      },\n    },\n  },\n}\n```\n\n## 模板配置\n\n创建 `20-Templates/daily.md`：\n\n```markdown\n---\ntags: [daily/{{date}}]\ncreated: {{date}}\n---\n\n# {{date}}\n\n## 📖 英语学习\n\n### 今日句子\n\n### 生词\n\n### 语法点\n\n## ✅ 任务\n- [ ] \n\n## 💭 想法\n```\n\n创建 `20-Templates/english-note.md`（用于英语笔记）：\n\n```markdown\n---\ntags: [english/{{title}}]\ncreated: {{date}}, {{time}}\naliases: []\n---\n\n# {{title}}\n\n## 原句\n\n## 生词\n\n## 语法点\n\n## 例句\n```\n\n## 常用命令\n\n```vim\n\" 创建新笔记\n:ObsidianNew 文件名\n\n\" 创建今日日记\n:ObsidianToday\n\n\" 基于模板创建\n:ObsidianNewFromTemplate english-note\n\n\" 插入模板到当前笔记\n:ObsidianTemplate\n\n\" 搜索笔记\n:ObsidianSearch 查询\n\n\" 快速切换\n:ObsidianQuickSwitch\n\n\" 查看反向链接\n:ObsidianBacklinks\n```\n\n## 在你的英语笔记工作流中\n\n1. **Daily 笔记** (`00-Daily/2024-01-20.md`):\n```markdown\n---\ntags: [daily/2024-01-20]\n---\n\n## 📖 英语\n\n> I wrote everything [[you need to ace math → something needed]]\n\n### 生词\n- [[ace]] 精通\n- [[whatnot]] 等等\n```\n\n2. **如果需要详细笔记**，在 `10-Notes/English/` 下创建：\n```\n:ObsidianNewFromTemplate english-note\n# 标题：ace\n```\n\n3. **使用双链**连接相关概念：\n```markdown\n- [[ace]] 相关：[[精通级学科词汇]]\n```\n\n这样的配置完全符合你的工作流：Daily 是唯一输入点，用 `[[word]]` 标记，必要时在 `10-Notes` 创建详细笔记。需要我帮你调整某些特定部分吗？"
