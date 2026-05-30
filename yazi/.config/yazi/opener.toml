@@ -1,0 +1,7 @@
+[text]
+open = [
+  { run = 'nvim "$@"', block = true, for = "unix" },
+]
+edit = [
+  { run = 'nvim "$@"', block = true, for = "unix" },
+]
