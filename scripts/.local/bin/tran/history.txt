@@ -1,3 +1,6 @@
+[05-28 17:54] Or: 1 Pi bundles core packages for extensions and skills. If you import any of these, list them in peerDependencies with a       "*" range and do not bundle them: @earendil-works/pi-ai, @earendil-works/pi-agent-core, @earendil-works/pi-codin           g-agent, @earendil-works/pi-tui, typebox. | Tr: 1 Pi 捆绑了用于扩展和技能的核心包。如果导入其中任何一个，请在peerDependency中用“*”范围列出它们，并且不要捆绑它们：@earendil-works/pi-ai、@earendil-works/pi-agent-core、@earendil-works/pi-codin g-agent、@earendil-works/pi-tui、typebox。
+[05-28 17:35] Or: Panes | Tr: 窗格
+[05-28 17:10] Or: content | Tr: 内容
 [05-28 10:00] Or: failed to connect to local tailscaled; it doesn't appear to be running (sudo systemctl start tailscaled ?) | Tr: 无法连接到本地tailscaled；它似乎没有运行（sudo systemctl start tailscaled？）
 [05-25 12:33] Or: Hi,
 You've recently submitted a download my data request to OpenAI. We are working on the request and will notify you by email when the request is complete. Visit our Privacy Request Portal at https://privacy.openai.com/en/ to check the status of your request or cancel it at any time.
@@ -295,6 +298,3 @@ vim.keymap.set("i", "<C-b>", "<C-o>b", { desc = "Jump to previous word" })
 [04-26 11:30] Or: .Hello world | Tr: 。你好世界
 [04-26 11:30] Or: .Hello world | Tr: 。你好世界
 [04-26 11:30] Or: subprocess | Tr: 子流程
-[04-26 11:30] Or: models | Tr: 型号
-[04-26 11:29] Or: Hello world | Tr: 你好世界
-[04-26 11:29] Or: Piper | Tr: 派珀

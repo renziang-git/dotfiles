@@ -8,16 +8,16 @@ command = "swaybg"
 set = false 
 
 
-[templates.foot]
-input_path = '~/.config/matugen/templates/foot.conf'
-output_path = '~/.config/foot/colors.ini'
-
+# [templates.foot]
+# input_path = '~/.config/matugen/templates/foot.conf'
+# output_path = '~/.config/foot/colors.ini'
+#
 # 切換桌布後，自動通知所有開啟的 foot 實例重新載入顏色
-post_hook = 'pkill -USR1 foot'
+# post_hook = 'pkill -USR1 foot'
 
 [templates.waybar]
-input_path = '~/.config/matugen/templates/colors.css'
-output_path = '~/.config/waybar/colors.css'
+input_path = '~/dotfiles/matuge/.config/matuge/templates/colors.css'
+output_path = '~/dotfiles/waybar/.config/waybar/colors.css'
 
 # [templates.pywalfox]
 # input_path = '~/.config/matugen/templates/pywalfox-colors.json'
