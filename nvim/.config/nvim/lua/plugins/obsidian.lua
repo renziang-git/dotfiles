@@ -10,36 +10,56 @@ return {
 				{ name = "obsidian", path = "~/obsidian" },
 			},
 			daily_notes = {
-				folder = "00-Daily",
+				folder = "Inbox",
 				date_format = "%Y-%m-%d",
 			},
+			new_notes_location = "Wiki",
 			completion = {
-				nvim_cmp = true, -- 关键：禁用 nvim-cmp
+				nvim_cmp = true,
 				min_chars = 2,
 			},
-			-- Optional, configure key mappings. These are the defaults. If you don't want to set any keymappings this
-			-- way then set 'mappings = {}'.
 			mappings = {
-				-- Overrides the 'gf' mapping to work on markdown/wiki links within your vault.
 				["gf"] = {
 					action = function()
 						return require("obsidian").util.gf_passthrough()
 					end,
 					opts = { noremap = false, expr = true, buffer = true },
 				},
-				-- Toggle check-boxes.
+				["<cr>"] = {
+					action = function()
+						return require("obsidian").util.smart_action()
+					end,
+					opts = { buffer = true, expr = true },
+				},
 				["<leader>ch"] = {
 					action = function()
 						return require("obsidian").util.toggle_checkbox()
 					end,
 					opts = { buffer = true },
 				},
-				-- Smart action depending on context, either follow link or toggle checkbox.
-				["<cr>"] = {
-					action = function()
-						return require("obsidian").util.smart_action()
-					end,
-					opts = { buffer = true, expr = true },
+				["<leader>os"] = {
+					action = function() return require("obsidian").cmd.search() end,
+					opts = { buffer = true },
+				},
+				["<leader>ot"] = {
+					action = function() return require("obsidian").cmd.search_tags() end,
+					opts = { buffer = true },
+				},
+				["<leader>on"] = {
+					action = function() return require("obsidian").cmd.new() end,
+					opts = { buffer = true },
+				},
+				["<leader>od"] = {
+					action = function() return require("obsidian").cmd.dailies() end,
+					opts = { buffer = true },
+				},
+				["<leader>op"] = {
+					action = function() return require("obsidian").cmd.paste_img() end,
+					opts = { buffer = true },
+				},
+				["<leader>ob"] = {
+					action = function() return require("obsidian").cmd.backlinks() end,
+					opts = { buffer = true },
 				},
 			},
 
