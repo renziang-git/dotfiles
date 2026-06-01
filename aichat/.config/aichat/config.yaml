@@ -5,8 +5,4 @@ clients:
   - type: openai-compatible
     name: deepseek
     api_base: https://api.deepseek.com
-<<<<<<< HEAD
-    api_key: sk-54eea060d0644f2c872862d8c0583ed7
-=======
-    # api_key 放在 ~/.config/fish/conf.d/secrets.fish 中通过 DEEPSEEK_API_KEY 环境变量提供
->>>>>>> 11ba34d (clean: 迁出更多 API key 到 secrets.fish，gitignore 会话目录)
+    # api_key 在 secrets.fish 中通过 DEEPSEEK_API_KEY 环境变量提供

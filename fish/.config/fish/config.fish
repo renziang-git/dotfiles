@@ -11,15 +11,7 @@ set -gx PATH ~/.npm_global/bin $PATH
 # 用户本地 bin
 set -gx PATH ~/.local/bin $PATH
 
-<<<<<<< HEAD
-# DeepSeek API 密钥（两个变量名都设置，确保兼容）
-set -x DEEPSEEK_API_KEY "sk-f3ea66bf71884ba692262115f66ad9f0"
-set -x ANTHROPIC_API_KEY "sk-f3ea66bf71884ba692262115f66ad9f0"
-set -x ANTHROPIC_AUTH_TOKEN "sk-f3ea66bf71884ba692262115f66ad9f0"
-
-=======
 # DeepSeek API — 密钥在 conf.d/secrets.fish 中设置
->>>>>>> 999544d (clean: 移除硬编码的 API 密钥，改用 conf.d/secrets.fish)
 # 端点与模型
 set -x ANTHROPIC_BASE_URL https://api.deepseek.com/anthropic
 set -x ANTHROPIC_MODEL deepseek-v4-pro
