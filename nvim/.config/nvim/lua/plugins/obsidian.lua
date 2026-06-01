@@ -35,46 +35,56 @@ return {
 					action = function()
 						return require("obsidian").util.toggle_checkbox()
 					end,
-					opts = { buffer = true },
+					opts = { buffer = true, desc = "切换复选框" },
 				},
 				["<leader>os"] = {
-					action = function() return require("obsidian").cmd.search() end,
-					opts = { buffer = true },
+					action = function() vim.cmd("ObsidianSearch") end,
+					opts = { buffer = true, desc = "搜索笔记" },
 				},
 				["<leader>ot"] = {
-					action = function() return require("obsidian").cmd.search_tags() end,
-					opts = { buffer = true },
+					action = function() vim.cmd("ObsidianTags") end,
+					opts = { buffer = true, desc = "搜索标签" },
 				},
 				["<leader>on"] = {
-					action = function() return require("obsidian").cmd.new() end,
-					opts = { buffer = true },
+					action = function() vim.cmd("ObsidianNew") end,
+					opts = { buffer = true, desc = "新建笔记" },
 				},
 				["<leader>od"] = {
-					action = function() return require("obsidian").cmd.dailies() end,
-					opts = { buffer = true },
+					action = function() vim.cmd("ObsidianDailies") end,
+					opts = { buffer = true, desc = "今日日记" },
 				},
 				["<leader>op"] = {
-					action = function() return require("obsidian").cmd.paste_img() end,
-					opts = { buffer = true },
+					action = function() vim.cmd("ObsidianPasteImg") end,
+					opts = { buffer = true, desc = "粘贴图片" },
 				},
 				["<leader>ob"] = {
-					action = function() return require("obsidian").cmd.backlinks() end,
-					opts = { buffer = true },
+					action = function() vim.cmd("ObsidianBacklinks") end,
+					opts = { buffer = true, desc = "反向链接" },
 				},
 			},
-
 			ui = {
-				enable = true, -- 保留 UI 增强，但需配合 conceallevel
+				enable = true,
 			},
 		},
-		-- 追加一个 config 函数来强制设置 conceallevel
 		config = function(_, opts)
 			require("obsidian").setup(opts)
-			-- 针对 markdown 文件设置 conceallevel = 2
 			vim.api.nvim_create_autocmd("FileType", {
 				pattern = "markdown",
 				callback = function()
 					vim.opt_local.conceallevel = 2
+					-- 注册 which-key 标签
+					local wk_ok, wk = pcall(require, "which-key")
+					if wk_ok then
+						wk.add({
+							{ "<leader>o",  group = "+obsidian" },
+							{ "<leader>on", desc = "新建笔记" },
+							{ "<leader>os", desc = "搜索笔记" },
+							{ "<leader>ot", desc = "搜索标签" },
+							{ "<leader>od", desc = "今日日记" },
+							{ "<leader>ob", desc = "反向链接" },
+							{ "<leader>op", desc = "粘贴图片" },
+						})
+					end
 				end,
 			})
 		end,
